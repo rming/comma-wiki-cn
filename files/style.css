@@ -1,3 +1,9 @@
+h2{
+    text-align: center;
+}
+p{
+    text-indent: 2em;
+}
 a.gitbook-link{
     display:none !important;
 }

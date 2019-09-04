@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [新手必读](cn/faq.md)
+* [新手必读](cn/FAQ.md)
 * [主要问题](cn/problems.md)
 * [常见硬件](cn/hardwares.md)
 * [安装 Giraffe](cn/Installing_Giraffe.md)

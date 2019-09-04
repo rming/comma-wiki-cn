@@ -1,56 +1,51 @@
-# 快速入门
+## 快速入门
 
-## 资料网站：
+### 资料网站：
 
-- [Comma ai 官网](http://comma.ai/)
-
+- [Comma ai](http://comma.ai/)
 - [Comma wiki](https://community.comma.ai/wiki)
-
 - [Comma ai github](https://github.com/commaai)
-
 - [Commaai archive Youtube](https://www.youtube.com/channel/UCwgKmJM4ZJQRJ-U5NjvR2dg)
 
 
-新手引导
+### 新手引导
 
--   [安装 Giraffe](cn/Installing_Giraffe.md)
--   [安装 EON](cn/Installing_EON.md)
--   [在 EON 上运行 ChffrPlus](cn/Running_ChffrPlus_on_the_EON.md)
--   [Installing OpenPilot on the
+- [安装 Giraffe](cn/Installing_Giraffe.md)
+- [安装 EON](cn/Installing_EON.md)
+- [在 EON 上运行 ChffrPlus](cn/Running_ChffrPlus_on_the_EON.md)
+- [Installing OpenPilot on the
     EON](Installing_OpenPilot_on_the_EON "wikilink")
--   [Configuring OpenPilot](Configuring_OpenPilot "wikilink")
--   [First OpenPilot Drive](First_OpenPilot_Drive "wikilink")
--   [Hardware Guide](Hardware_Guide "wikilink")
--   [Software Guide](Software_Guide "wikilink")
--   [FAQ](FAQ "wikilink")
+- [Configuring OpenPilot](Configuring_OpenPilot "wikilink")
+- [First OpenPilot Drive](First_OpenPilot_Drive "wikilink")
+- [Hardware Guide](Hardware_Guide "wikilink")
+- [Software Guide](Software_Guide "wikilink")
+- [FAQ](cn/FAQ.md)
 
-Vehicles
---------
+### 车辆
 
--   [Candidate Vehicles](Candidate_Vehicles "wikilink")
--   [Working
+- [Candidate Vehicles](Candidate_Vehicles "wikilink")
+- [Working
     Vehicles](https://github.com/commaai/openpilot#supported-cars)
--   [Vehicle Makes](:Category:Vehicle_Makes "wikilink")
--   If your car isn\'t supported yet, try putting up some cash:
-    -   [Bounties](Bounties "wikilink")
+- [Vehicle Makes](:Category:Vehicle_Makes "wikilink")
+- If your car isn\'t supported yet, try putting up some cash:
+- [Bounties](Bounties "wikilink")
 
-Troubleshooting
----------------
 
-If you are having any issues with Panda or EON please refer to the links
-below\...
+### 故障排除
 
--   [Panda](Panda "wikilink")
--   [EON](EON "wikilink")
--   [FAQ](FAQ "wikilink")
+参考以下链接内容排除 Panda 和 EON 的问题。
+
+- [Panda](cn/Panda.md)
+- [EON](cn/EON.md)
+- [FAQ](cn/FAQ.md)
 
 Development
 -----------
 
--   [Panda Firmware](Panda_Firmware "wikilink")
--   [Driving Intermediate Layer](Driving_Intermediate_Layer "wikilink")
--   [Creating Fingerprints](Creating_Fingerprints "wikilink")
--   [Getting Internet at hotels or places with web
+- [Panda Firmware](Panda_Firmware "wikilink")
+- [Driving Intermediate Layer](Driving_Intermediate_Layer "wikilink")
+- [Creating Fingerprints](Creating_Fingerprints "wikilink")
+- [Getting Internet at hotels or places with web
     authentication](Getting_Internet_at_hotels_or_places_with_web_authentication "wikilink")
 
 Community
@@ -61,7 +56,7 @@ Comma.
 
 Check out the [Discord server](https://discord.comma.ai/).
 
--   [How to help](How_to_help "wikilink")
+- [How to help](How_to_help "wikilink")
 
 ### Community initiatives {#community_initiatives}
 

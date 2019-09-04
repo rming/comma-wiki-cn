@@ -1,13 +1,21 @@
-Quick Start {#quick_start}
------------
+# 快速入门
 
-If you are looking to get your EON up and running see the following
-guides
+## 资料网站：
 
--   [Installing Giraffe](Installing_Giraffe "wikilink")
--   [Installing EON](Installing_EON "wikilink")
--   [Running ChffrPlus on the
-    EON](Running_ChffrPlus_on_the_EON "wikilink")
+- [Comma ai 官网](http://comma.ai/)
+
+- [Comma wiki](https://community.comma.ai/wiki)
+
+- [Comma ai github](https://github.com/commaai)
+
+- [Commaai archive Youtube](https://www.youtube.com/channel/UCwgKmJM4ZJQRJ-U5NjvR2dg)
+
+
+新手引导
+
+-   [安装 Giraffe](cn/Installing_Giraffe.md)
+-   [安装 EON](cn/Installing_EON.md)
+-   [在 EON 上运行 ChffrPlus](cn/Running_ChffrPlus_on_the_EON.md)
 -   [Installing OpenPilot on the
     EON](Installing_OpenPilot_on_the_EON "wikilink")
 -   [Configuring OpenPilot](Configuring_OpenPilot "wikilink")

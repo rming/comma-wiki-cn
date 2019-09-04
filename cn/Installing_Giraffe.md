@@ -11,6 +11,7 @@
 
 * [丰田摄像头盖板拆卸视频](https://www.bilibili.com/video/av66404543?t=298)
 * [本田摄像头盖板拆卸视频](https://www.bilibili.com/video/av66405025?t=23)
+* [本田crv摄像头盖板拆卸视频](https://www.bilibili.com/video/av66576049/)
 
 以上是本田和丰田车型视频，其他车型基本相似。
 

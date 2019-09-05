@@ -43,13 +43,13 @@ Panda 通过预设在程序中的 车辆指纹信息(类似于车型ID)匹配到
 [openpilot port guide for Toyota models](
 https://medium.com/@comma_ai/openpilot-port-guide-for-toyota-models-e5467f4b5fe6)
 
-### EON 安装完成系统后没有进行安全训练
+### EON 安装完成系统后没有学习培训指南
 
 **原因分析：**
-从社区里的反馈情况来看，一些版本的应用程序会漏掉**查看使用引导(Training Guide)**的流程，如果没有查看过使用引导，则也可能导致无法正常进入辅助驾驶模式。
+从社区里的反馈情况来看，一些版本的应用程序会漏掉**查看培训指南(Training Guide)**的流程，如果没有查看过培训指南，则也可能导致无法正常进入辅助驾驶模式。
 
 **解决方案：**
-用户主动点击 重新查看使用引导(Review Training Guide)，完成学习。
+用户主动点击 重新查看培训指南(Review Training Guide)，完成学习。
 
 菜单：Settings - Review Training Guide
 

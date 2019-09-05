@@ -22,7 +22,8 @@
         "sharing-plus@^0.0.2",
         "tbfed-pagefooter@^0.0.1",
         "custom-favicon",
-        "anchor-navigation-ex"
+        "anchor-navigation-ex",
+        "3-ba"
     ],
     "pluginsConfig": {
         "github": {

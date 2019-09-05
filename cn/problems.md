@@ -13,6 +13,8 @@
 
 汽车启动的时候，EON 检测到 USB 电源供电，自动开机，汽车启动自检过程中会检测电路信号完整性，但是此时处于电路中的 EON 还没有准备好处理信号，因此导致汽车自检信号异常处理，所以会报出错误。
 
+有的车型会在EON启动后，报错信息就自动消失了（比如：本田Bosch），但是一些车型仍存在问题。
+
 **解决方案：**
 
 上车先手动启动 EON，进入待机界面后，然后启动汽车，也就是说需要事先确认 EON 处于正常工作状态。
@@ -40,6 +42,17 @@ Panda 通过预设在程序中的 车辆指纹信息(类似于车型ID)匹配到
 
 [openpilot port guide for Toyota models](
 https://medium.com/@comma_ai/openpilot-port-guide-for-toyota-models-e5467f4b5fe6)
+
+### EON 安装完成系统后没有进行安全训练
+
+**原因分析：**
+从社区里的反馈情况来看，一些版本的应用程序会漏掉**查看使用引导(Training Guide)**的流程，如果没有查看过使用引导，则也可能导致无法正常进入辅助驾驶模式。
+
+**解决方案：**
+用户主动点击 重新查看使用引导(Review Training Guide)，完成学习。
+
+菜单：Settings - Review Training Guide
+
 
 ### Giraffe Panda 线路异常
 

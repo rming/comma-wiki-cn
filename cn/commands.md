@@ -73,6 +73,18 @@ chmod 600 eonkey.pem
 ssh root@192.168.1.100 -p 8022 -i eonkey.pem
 ```
 
+
+### 挂载 system 分区 
+
+```bash
+# 重新挂载 system 分区为读写权限
+mount -o rw,remount /system
+
+# 重新挂载 system 分区为只读权限
+mount -o ro,remount /system
+```
+
+
 ### 打开系统界面/软件界面
 
 

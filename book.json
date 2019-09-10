@@ -23,7 +23,8 @@
         "tbfed-pagefooter@^0.0.1",
         "custom-favicon",
         "anchor-navigation-ex",
-        "3-ba"
+        "3-ba",
+        "bilibili"
     ],
     "pluginsConfig": {
         "github": {

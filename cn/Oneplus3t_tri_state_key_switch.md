@@ -3,6 +3,7 @@
 通过SSH登录到EON中，把 openpilot 不同版本的代码克隆到 `/data/forks` 目录下，然后根据自己的需求修改 `PATH_FORK_{N}` 的路径即可。
 
 修改文件存储目录：第 4 行
+
 修改不同版本OP目录：5 ~ 7 行（分别对应三段开关）
 
 ```bash
@@ -33,3 +34,4 @@ cd ${ENV_OP_PATH}
 exec ./launch_openpilot.sh
 ```
 
+脚本下载：[https://gist.github.com/Rming/c8af432cede79a18a5eee1048b95d7bb](https://gist.github.com/Rming/c8af432cede79a18a5eee1048b95d7bb)

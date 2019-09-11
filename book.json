@@ -13,6 +13,8 @@
         "-lunr",
         "-search",
         "-highlight",
+        "prism", 
+        "prism-themes",
         "search-plus@^0.0.11",
         "simple-page-toc@^0.1.1",
         "github@^2.0.0",
@@ -29,6 +31,11 @@
     "pluginsConfig": {
         "github": {
             "url": "https://github.com/Rming/comma-wiki-cn"
+        },
+        "prism": {
+            "css": [
+                "prismjs/themes/prism-tomorrow.css"
+            ]
         },
         "github-buttons": {
             "repo": "Rming/comma-wiki-cn",

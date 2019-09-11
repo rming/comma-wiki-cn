@@ -4,6 +4,7 @@
 * [主要问题](cn/problems.md)
 * [常见硬件](cn/hardwares.md)
 * [常用命令](cn/commands.md)
+* [一加3T三段式开关切换 openpilot 版本](cn/Oneplus3t_tri_state_key_switch.md)
 * [快速入门](README.md)
 * [安装 Giraffe](cn/Installing_Giraffe.md)
 * [安装 EON](cn/Installing_EON.md)

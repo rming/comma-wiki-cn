@@ -155,3 +155,23 @@ ifconfig -a
 ip addr show
 
 ```
+
+
+### Termux 包管理
+
+```bash
+pkg search <term>
+pkg show <packages>
+
+pkg list-all
+pkg list-installed
+
+pkg install <packages>
+pkg reinstall <packages>
+pkg uninstall <packages>
+
+apt list --upgradable
+pkg upgrade
+
+pkg help 
+```

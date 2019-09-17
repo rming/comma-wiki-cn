@@ -63,4 +63,26 @@ bash /sdcard/openpilot_partition_backup-master/partition_backup.sh
 
 ### 演示
 
+![下载脚本并备份 persist 分区](/files/1.gif)
+<center>下载脚本并备份 persist 分区</center>
+
+---------
+
+![备份所有分区](/files/2.gif)
+<center>备份所有分区</center>
+
+---------
+
+
+![使用备份恢复 persist 分区](/files/3.gif)
+<center>使用备份恢复 persist 分区</center>
+
+---------
+
+
+![使用备份恢复所有分区](/files/1.gif)
+<center>使用备份恢复所有分区（没有镜像自动跳过）</center>
+
+---------
+
 

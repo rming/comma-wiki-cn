@@ -17,7 +17,7 @@ WIFI 无法连接，那我怎么去下载 Openpilot 呢，怎么连接手机 SSH
 
 有微信群友建议使用 usb-eth 连接手机，我找到了一个 usb-eth 但是尝试后发现，手机并不能识别我的这个 USB网卡，可能是 NEOS 目前只支持特定网卡芯片驱动的原因。
 
-### 解决问题
+### 探究原因
 
 后来得知，一般出现莫名其妙的刷机问题，都有可以通过 [9008救砖工具](#) 解决，于是找了一台 Windows 台式机，尝试使用工具修复，但是修复完毕后，在使用 TWRP 恢复备份的时候，又出现了 `Failed to mount '/persist'(Invalid argument)` 的报错提示。
 
@@ -26,19 +26,23 @@ WIFI 无法连接，那我怎么去下载 Openpilot 呢，怎么连接手机 SSH
 
 由 TWRP 的报错得知，可能出问题的是手机 `persist` 分区，经过一番了解：
 
-    persist分区是用于保存FRP(factory reset protcect)功能用到帐号、密码等受保护的信息，避免在恢复出厂设置后被清空。 
+> persist分区是用于保存FRP(factory reset protcect)功能用到帐号、密码等受保护的信息，避免在恢复出厂设置后被清空。 
 
-    什么是Persist分区：Persist分区是系统的一个ext4分区，由于我们的线刷包都不包含这个分区，所以你需要自己动手修复，这个分区内包含DRM相关文件、传感器注册表、你的wifi、蓝牙、mac地址都在这里了。
+> 什么是Persist分区：Persist分区是系统的一个ext4分区，由于我们的线刷包都不包含这个分区，所以你需要自己动手修复，这个分区内包含DRM相关文件、传感器注册表、你的wifi、蓝牙、mac地址都在这里了。
 
-    一般解锁手机都要强制禁止访问PERSIST分区中的账号信息，因此需要配合修改版的系统，让系统不读取账号信息也能工作（原生安卓表示你们都是渣渣）
+> 一般解锁手机都要强制禁止访问PERSIST分区中的账号信息，因此需要配合修改版的系统，让系统不读取账号信息也能工作（原生安卓表示你们都是渣渣）
 
 
-    检查系统persist分区或主板硬件wf模块persist分区里面有个文件persist.img管蓝牙和wf的       Persist: persist分区是系统的一个ext4分区，这个分区内包含DRM相关文件、传感器注册表、你的wifi、蓝牙、mac地址都在这里了，如果你发现指南针不动了，陀螺仪没反应了，相机打开要好几秒了，那么恭喜你，多半是Pensist分区问题
+> 检查系统persist分区或主板硬件wf模块persist分区里面有个文件persist.img管蓝牙和wf的       Persist: persist分区是系统的一个ext4分区，这个分区内包含DRM相关文件、传感器注册表、你的wifi、蓝牙、mac地址都在这里了，如果你发现指南针不动了，陀螺仪没反应了，相机打开要好几秒了，那么恭喜你，多半是Pensist分区问题
+
+
+
+### 解决问题
 
 
 于是找微信群大佬们导出了别人手机里的 persist.img 镜像，然后倒入到我的手机里，然后重启进入系统，问题解决了，不过因为倒入的是别人手机的 persist 分区信息，所以，我的手机 WIFI mac 地址变得和别人一样，但是并无大碍。
 
-1. 从正常使用的手机中导出 persist.img 镜像到电脑
+#### 从正常使用的手机中导出 persist.img 镜像到电脑
 
 找到一台可以正常使用的手机，连接到电脑，开启 adb 调试，重启进入 TWRP 模式，在电脑端命令行运行：
   
@@ -50,7 +54,7 @@ adb shell "dd if=/dev/block/bootdevice/by-name/persist of=/sdcard/persist.img"
 adb pull /sdcard/persist.img  ~/
 ```
 
-2. 把 persist.img 镜像导入到 mac 丢失的手机 
+#### 把 persist.img 镜像导入到 mac 丢失的手机 
 
 丢失 mac 的手机，连接到电脑，开启 adb 调试，重启进入 TWRP 模式，在电脑端命令行运行：
 

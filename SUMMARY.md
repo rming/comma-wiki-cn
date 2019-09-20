@@ -4,6 +4,7 @@
 * [主要问题](cn/problems.md)
 * [常见硬件](cn/hardwares.md)
 * [常用命令](cn/commands.md)
+* [Openpilot 版本更新记录](cn/openpilot_releases.md)
 * [一加3T三段式开关切换 openpilot 版本](cn/Oneplus3t_tri_state_key_switch.md)
 * [一加3T手机WIFI mac 丢失问题](cn/Oneplus3t_wifi_mac_02_00.md)
 * [一加3T手机分区一键备份恢复工具](cn/openpilot_partition_backup.md)

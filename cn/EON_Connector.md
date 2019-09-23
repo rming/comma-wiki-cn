@@ -1,5 +1,9 @@
 ## EON 快拆底座
 
+
+> EON Connector by **CloudJ** is licensed under the [Creative Commons - Attribution license](https://zh.wikipedia.org/wiki/%E7%9F%A5%E8%AF%86%E5%85%B1%E4%BA%AB%E8%AE%B8%E5%8F%AF%E5%8D%8F%E8%AE%AE).
+
+
 因为 EON 手机里有锂电池，不能长时间暴晒在阳光下，如果温度过高有爆炸风险，所以台湾网友 **CloudJ** 制作了一个磁吸快拆底座，既实现了 EON 的位置固定，又可以方便连接 EON 和 panda 的数据线，避免每次拔插插头的繁琐。
 
 

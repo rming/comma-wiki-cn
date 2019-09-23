@@ -156,6 +156,14 @@ ip addr show
 
 ```
 
+### git代理设置
+
+```bash
+# http 代理地址 192.168.1.101:1087
+# 代理可以是设置在同局域网的电脑上，也可以是公网服务器上
+git clone https://github.com/commaai/openpilot.git --config "http.proxy=192.168.1.101:1087"
+```
+
 
 ### Termux 包管理
 
@@ -175,3 +183,4 @@ pkg upgrade
 
 pkg help 
 ```
+

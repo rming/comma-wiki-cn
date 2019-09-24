@@ -26,7 +26,8 @@
         "custom-favicon",
         "anchor-navigation-ex",
         "3-ba",
-        "bilibili"
+        "bilibili",
+        "copy-code-button"
     ],
     "pluginsConfig": {
         "github": {

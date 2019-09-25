@@ -6,9 +6,9 @@
 
 因为 EON 手机里有锂电池，不能长时间暴晒在阳光下，如果温度过高有爆炸风险，所以台湾网友 **CloudJ** 制作了一个磁吸快拆底座，既实现了 EON 的位置固定，又可以方便连接 EON 和 panda 的数据线，避免每次拔插插头的繁琐。
 
-
-![EON Connector 快拆底座](/files/eon_connector.jpg)
-
+<center>
+<image src="/files/eon_connector.jpg" alt="EON Connector 快拆底座">
+</center>
 
 ### 材料列表
 

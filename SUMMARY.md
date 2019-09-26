@@ -14,6 +14,7 @@
 * [一加3T三段式开关切换 openpilot 版本](cn/Oneplus3t_tri_state_key_switch.md)
 * [一加3T手机WIFI mac 丢失问题](cn/Oneplus3t_wifi_mac_02_00.md)
 * [一加3T手机分区一键备份恢复工具](cn/openpilot_partition_backup.md)
+* [Openpilot 一键安装脚本](/cn/openpilot_install.md)
 * [EON 快拆底座](cn/EON_Connector.md)
 * [版权声明](copyright.md)
 * ---------------------

@@ -3,12 +3,14 @@
 
 名称|别名|链接|解释
 -|-|-|-
-EON 套件|EON, EON Gold|[buy](https://comma.ai/shop/products/eon-gold-dashcam-devkit) [install](https://community.comma.ai/Installing_EON)|1+ 3T 手机 或者 乐视 3 pro 手机，加上3D打印的带有散热风扇的框架，手机上运行的是修改定制的 Android 系统，用来运行 Openpilot。
+EON|EON DevKit|[buy](https://comma.ai/shop/products/eon-gold-dashcam-devkit) [install](https://community.comma.ai/Installing_EON)|1+ 3T 手机 或者 乐视 3 pro 手机，加上3D打印的带有散热风扇的框架，手机上运行的是修改定制的 Android 系统，用来运行 Openpilot。
+EON Gold|LEON|-|乐视 3 pro 版本的 EON。
 NEOS|-|-|运行在 EON 手机上的系统，是基于 Android 定制修改的系统，在此系统基础上运行 Openpilot
 TWRP|-|[维基百科](https://zh.wikipedia.org/wiki/TWRP)|Team Win Recovery Project是一个开放源码软件的定制恢复模式映像，供基于安卓的设备使用。它提供了一个支持触摸屏的界面，允许用户向第三方安装固件和备份当前的系统。因此，经常在root系统时安装，虽然它并不是root之后才能安装。
 一加 3T|OP3T|[维基百科](https://en.wikipedia.org/wiki/OnePlus_3T)<br>[参数规格](https://www.oneplus.com/cn/support/spec/oneplus-3t)|上一代 EON 中使用的手机。由于供应不足，官方已停止使用。
 乐视 Pro 3|Lepro, LeEco, x727|[参数规格](http://www.lemall.com/cn/phone/lepro3.html)|EON 套件里的手机，x727
-OpenPilot|OP|[维基百科](https://en.wikipedia.org/wiki/Openpilot)|自动驾驶系统软件，主要由 Python、c++、java、React Native编写
+openpilot|OP|[维基百科](https://en.wikipedia.org/wiki/Openpilot)|自动驾驶系统软件，主要由 Python、c++、java、React Native编写
+dragonpilot|DP, 龙芯驾驶辅助系统|[github](https://github.com/dragonpilot-community/dragonpilot)|基于 openpilot 的开源驾驶辅助系统。dragonpilot 的 fork
 Panda OBD-II Interface|熊猫, Panda|[buy](https://comma.ai/shop/products/panda-obd-ii-dongle)|CAN总线转USB的适配器，分灰熊猫（有报警度GPS，没有WIFI）、白熊猫（有WIFI，没有高精度GPS）2个版本
 Giraffe connector|长颈鹿, Giraffe|[buy](https://comma.ai/shop/products/giraffe) [install](https://community.comma.ai/Installing_Giraffe)|转接原车OBD接口出来，可以从中读取信息，不同车型设计了不同的版本
 车道保持辅助系统|LKAS|[维基百科](https://en.wikipedia.org/wiki/Lane_departure_warning_system#Lane_keeping)<br>[百度百科](https://baike.baidu.com/item/LKAS)|自动检测并操作转向，把车辆保持在车道内的系统。

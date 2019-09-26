@@ -2,7 +2,7 @@
 
 小白用户初次接触 shell，因为对 shell 不熟悉，如果需要切换 openpilot 的 fork 和 分支，可能碰到各种问题，这个一键安装脚本可以输入安装选项，简单安装更新不同的 openpilot 版本分支。
 
-* 安装脚本使用了 [Openpilot 国内镜像](https://doc.sdut.me/mirror.html)，文件下载也会相比较 github 快一点。
+* 安装脚本使用了 [Openpilot 国内镜像](/mirror.md)，文件下载也会相比较 github 快一点。
 
 
 ### 使用教程

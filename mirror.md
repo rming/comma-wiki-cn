@@ -10,6 +10,8 @@
 
 项目代码每 30 分钟同步更新一次，根据运行情况和需求，未来可能会有调整。
 
+<iframe src="/mirror_status.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes" style="width: 100%;height: 220px;border: none;"></iframe>
+
 ### 地址列表
 
 分支版本|git 地址

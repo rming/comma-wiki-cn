@@ -114,6 +114,24 @@ am start -n ai.comma.plus.offroad/.MainActivity
 - [SETTINGS CONSTANTS](https://developer.android.com/reference/android/provider/Settings?hl=en#ACTION_ACCESSIBILITY_SETTINGS)
 settings
 
+### 获取设备属性选项
+
+```bash
+# 获取所有配置选项，ro 开头的是只读
+getprop
+
+# 获取 IMEI
+getprop oem.device.imeicache 
+
+# 获取 serialno
+getprop ro.serialno
+
+# 获取 把 IMEI 设置为 517923590773528
+setprop oem.device.imeicache 517923590773528
+```
+
+
+
 ### 获取设置系统配置
 
 ```bash
@@ -183,4 +201,7 @@ pkg upgrade
 
 pkg help 
 ```
+
+
+
 

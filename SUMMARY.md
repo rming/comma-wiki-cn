@@ -19,6 +19,8 @@
 * [EON 快拆底座](cn/EON_Connector.md)
 * [版权声明](copyright.md)
 * ---------------------
+* [Openpilot在无车道线道路上行驶时，规划路线会远离路边停靠的车辆](videos/OpenPilot_0.6.5_laneless_models.md)
+* [Openpilot新版自动驾驶硬件（car harness）安装视频](videos/comma_Installation_Guide.md)
 * [Openpilot 064功能测试： 无车道线跟随前车轨迹行驶](videos/Openpilot_064_test.md)
 * [一加3T安装Openpilot自动驾驶系统安装过程全纪录](videos/How_to_install_OpenPilot_on_an_OP3T_phone.md)
 * [Openpilot test drive of poly-center-LQRPIF-062 branch on Gernby's fork](videos/Openpilot_test_Gernby_poly_center_LQRPIF_062.md)

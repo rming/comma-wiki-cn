@@ -128,7 +128,11 @@ getprop ro.serialno
 
 # 获取 把 IMEI 设置为 517923590773528
 setprop oem.device.imeicache 517923590773528
+
+# 设置时区为上海东八区
+setprop  persist.sys.timezone Asia/Shanghai
 ```
+
 
 
 

@@ -10,6 +10,7 @@
 * [快速入门](README.md)
 * [安装 Giraffe](cn/Installing_Giraffe.md)
 * [Panda 固件更新教程](cn/how_to_flash_panda.md)
+* [Openpilot 自动开启 WIFI 热点](cn/enable_wifi_hotspot.md)
 * [在 EON 上运行 ChffrPlus](cn/Running_ChffrPlus_on_the_EON.md)
 * [在 EON 上安装 Openpilot](cn/Installing_OpenPilot_on_the_EON.md)
 * [一加3T三段式开关切换 openpilot 版本](cn/Oneplus3t_tri_state_key_switch.md)

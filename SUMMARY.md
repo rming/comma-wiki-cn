@@ -9,6 +9,7 @@
 * [更新记录](cn/openpilot_releases.md)
 * [快速入门](README.md)
 * [安装 Giraffe](cn/Installing_Giraffe.md)
+* [常用软件资料下载](cn/openpilot_software_free_download.md)
 * [Panda 固件更新教程](cn/how_to_flash_panda.md)
 * [EON 开机自动开启 WIFI 热点](cn/openpilot_enable_wifi_hotspot.md)
 * [在 EON 上运行 ChffrPlus](cn/Running_ChffrPlus_on_the_EON.md)

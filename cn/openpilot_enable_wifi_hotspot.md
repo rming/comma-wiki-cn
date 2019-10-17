@@ -1,4 +1,4 @@
-## Openpilot 自动开启 WIFI 热点
+## EON 开机自动开启 WIFI 热点
 
 如果你的 EON 里装了 sim 卡，并且流量很多，可能会想车里的其他设备通过 EON 共享 WIFI 上网，EON 是可以设置 开机自动开启 WIFI 共享的。
 

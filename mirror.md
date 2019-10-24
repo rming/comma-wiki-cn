@@ -17,6 +17,7 @@
 分支版本|git 地址
 -|-
 官方版本|https://gitee.com/afaaa/openpilot.git
+官方中文版|https://gitee.com/afaaa/openpilot-cn.git
 dragonpilot|https://gitee.com/afaaa/dragonpilot.git
 Gernby|https://gitee.com/afaaa/gernby.git
 kegman|https://gitee.com/afaaa/kegman.git

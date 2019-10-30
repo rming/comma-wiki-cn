@@ -13,14 +13,14 @@
 **单次使用**，不用下载存储脚本：
 ```bash
 # 下载并运行脚本
-bash <(curl -s -L https://git.io/op_install.sh) 
+bash <(curl -s -L  https://gitee.com/afaaa/openpilot_install/raw/master/op_install.sh) 
 ```
 
 
 **重复使用**，下载脚本放到 /sdcard 目录：
 ```bash
 # 下载脚本到 /sdcard/op_install.sh
-curl -o /sdcard/op_install.sh -L https://git.io/op_install.sh
+curl -o /sdcard/op_install.sh -L  https://gitee.com/afaaa/openpilot_install/raw/master/op_install.sh
 
 # 运行脚本
 bash /sdcard/op_install.sh

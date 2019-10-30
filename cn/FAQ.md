@@ -1,5 +1,14 @@
 ## FAQ
 
+### Openpilot 一代硬件和二代硬件有什么区别？
+
+* [Openpilot 硬件一览表](/cn/hardwares.md)
+
+第二代相比较第一代有 2 个明显改进：
+1. 体积缩小了，panda 和 harness 变成了 2 个小黑盒子，giraffe 变成了线束，可以放进原车的 ACC 盒子里，第一代不行。
+2. 新增硬件 harness ，可以检测是否连接了EON，自动切换原车和 OP，而第一代需要手动拨动开关切换。
+
+
 ### Openpilot 的主要特性包括哪些？
 
 Openpilot 官方版本支持 **车道保持** 与 **ACC巡航**。

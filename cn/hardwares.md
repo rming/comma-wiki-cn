@@ -19,7 +19,7 @@ Panda paw|<img src="/files/panda_paw1.webp" class="max-h-100"><img src="/files/p
 -|-|-
 Harness connectors(黑色盒子是 harness)|<img src="/files/harness_connectors_with_harness.webp" class="max-h-100"><img src="/files/harness_connectors.webp" class="max-h-100">|-
 Harness|<img src="/files/harness1.jpeg" class="max-h-100">|-
-Black panda|<img src="/files/black_panda.png" class="max-h-100"><img src="/files/black_panda1.jpeg" class="max-h-100">|-
-Comma power v2|<img src="/files/comma_power_v2.png" class="max-h-100">|-
+Black panda|<img src="/files/black_panda.png" class="max-h-100"><img src="/files/black_panda1.webp" class="max-h-100">|-
+Comma power v2|<img src="/files/comma_power_v2.webp" class="max-h-100">|-
 
 

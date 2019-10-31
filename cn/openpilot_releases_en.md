@@ -1,109 +1,110 @@
 ## Openpilot 版本更新记录
 
-- [更新记录[英文原版]](openpilot_releases_en.md)
+- [更新记录[中文翻译]](openpilot_releases.md)
 
 
 ### Version 0.6.6 (2019-10-31)
 
- * 支持大众车型（感谢 jyoung8607）
- * 支持丰田卡罗拉混动（TSS 2.0）（感谢 u8511049） 
- * 支持雷克萨斯 ES（TSS 2.0）（感谢 energee）
- * 修复了通用车型的点火检测，不再需要锁定安全模式
- * 记录Panda 固件和Dongle ID（感谢 martinl）
- * 使用新的驾驶模型: 改进路径规划和前车检测
- * 新的监控模型，体积缩小了 4 倍，可以运行在 DSP 上
- * 如果 Panda 的固件错误，则显示警告并不启动 openpilot
+ * Volkswagen support thanks to jyoung8607!
+ * Toyota Corolla Hybrid with TSS 2.0 support thanks to u8511049! 
+ * Lexus ES with TSS 2.0 support thanks to energee!
+ * Fix GM ignition detection and lock safety mode not required anymore 
+ * Log panda firmware and dongle ID thanks to martinl!
+ * New driving model: improve path prediction and lead detection 
+ * New monitoring model, 4x smaller and running on DSP
+ * Display an alert and don't start openpilot if panda has wrong firmware
+
 
 ### Version 0.6.5 (2019-10-07)
 
-* NEOS 更新：升级到 Python3 并且 更新了安装程序
-* 支持新版本硬件（comma Harness）
-* 使用新的驾驶模型: 横向控制对车道线的依赖性降低
-* 使用新的驾驶员监控模型: 更准确的面部识别和眼部检测
-* 重新设计 EON 停车模式的显示界面，可以用来显示更新和警告
-* 提高允许的最大加速度上限
-* 3天没有启动车辆，切断EON 供电，防止汽车电池电量耗尽
-* 支持雷克萨斯 CT 混动车系（感谢 thomaspich）
-* 紧急警告时使用更大报警音量
-* 添加切换到行车记录仪模式的开关
-* 修复在没有 DSU 的丰田车型上“无效的车辆参数”的报错问题
+ * NEOS update: upgrade to Python3 and new installer!
+ * comma Harness support!
+ * New driving model: lateral control has lower reliance on lanelines
+ * New driver monitoring model: more accurate face and eye detection
+ * Redesign offroad screen to display updates and alerts
+ * Increase maximum allowed acceleration
+ * Prevent car 12V battery drain by cutting off EON charge after 3 days of no drive
+ * Lexus CT Hybrid support thanks to thomaspich!
+ * Louder chime for critical alerts
+ * Add toggle to switch to dashcam mode
+ * Fix "invalid vehicle params" error on DSU-less Toyota
 
 ### Version 0.6.4 (2019-09-08)
 
- * 支持本田 Nidec 系列车型自动刹车辅助系统（AEB）信号的转发
- * 改进在倾斜路面工况下的车道保持
- * 不间断防撞预警系统
- * 不间断驾驶状态监控（除了在右舵驾驶的国家）
- * 驾驶状态监控学习用户的正常驾驶姿势
- * 支持本田飞度车系（感谢 energee）
- * 支持雷克萨斯IS车系
+ * Forward stock AEB for Honda Nidec
+ * Improve lane centering on banked roads
+ * Always-on forward collision warning
+ * Always-on driver monitoring, except for right hand drive countries
+ * Driver monitoring learns the user's normal driving position
+ * Honda Fit support thanks to energee!
+ * Lexus IS support
 
 ### Version 0.6.3 (2019-08-12)
 
- * 通过 EON 发出声音警告（需要更新 NEOS 系统）
- * 改进驾驶状态监控：眼动追踪和改进的意识逻辑
- * 使用新的驾驶模型改进路径预测
- * 改进在宽车道和道路出口工况下的车道定位
- * 改进 RAV4 的横向控制
- * 通过数据模型进行减速过弯
- * 使用开源回归测试以验证输出与参考日志
- * 使用开源回归测试合理检查所有车型
+ * Alert sounds from EON: requires NEOS update
+ * Improve driver monitoring: eye tracking and improved awareness logic
+ * Improve path prediction with new driving model
+ * Improve lane positioning with wide lanes and exits
+ * Improve lateral control on RAV4
+ * Slow down for turns using model
+ * Open sourced regression test to verify outputs against reference logs
+ * Open sourced regression test to sanity check all car models
 
 ### Version 0.6.2 (2019-07-29)
 
- * 新的自动驾驶模型！
- * 使用双实线改善车道跟踪
- * 极大改进了静止车辆检测
- * 极大减少了因为错误识别导致的制动
- * 弯道工况下更好的引导线跟踪
- * 利用神经网络改进车辆变道加塞预测
- * 改进丰田凯美瑞和C-HR的横向控制（感谢 zorrobyte）
- * 修复吉普车型上Openpilot异常断开控制的情况（感谢 adhintz）
- * 修复汽车熄火时延时过度到停车状态的问题
+ * New driving model!
+ * Improve lane tracking with double lines
+ * Strongly improve stationary vehicle detection
+ * Strongly reduce cases of braking due to false leads
+ * Better lead tracking around turns
+ * Improve cut-in prediction by using neural network
+ * Improve lateral control on Toyota Camry and C-HR thanks to zorrobyte!
+ * Fix unintended openpilot disengagements on Jeep thanks to adhintz!
+ * Fix delayed transition to offroad when car is turned off
 
 ### Version 0.6.1 (2019-07-21)
 
- * comma 会员可以通过[ssh.comma.ai](https://ssh.comma.ai)进行远程 SSH 访问
- * panda 代码 Misra-c2012 符合规定，针对覆盖率进行了测试
- * 驾驶员注意力不集中或没有响应，在 3 次警告后，openpilot 锁定
- * 支持丰田 Sienna（感谢 wocsor）
+ * Remote SSH with comma prime and [ssh.comma.ai](https://ssh.comma.ai)
+ * Panda code Misra-c2012 compliance, tested against cppcheck coverage
+ * Lockout openpilot after 3 terminal alerts for driver distracted or unresponsive
+ * Toyota Sienna support thanks to wocsor!
 
 ### Version 0.6 (2019-07-01)
 
- * 新的模型，2倍像素、相同时间下十倍效率
- * 在正确的车道线上时，车辆不应该驶出
- * openpilot 的CPU使用率从 75% 降到大约 65%
- * 0.2% 的数据（qlogs）上传后，即可在浏览器中看到行驶路线图
- * loggerd 和 sensord 模块也开源了，现在 openpilot 的所有代码都是开源的
- * panda 安全代码符合MISRA标准，并在发布版本中有已签名版本
- * 新的 NEOS 系统比以前小了 500MB，并且 usr/pipenv 可以复用
- * 支持雷克萨斯 ES 混动车型（感谢 wocsor）
- * 改进对已支持的丰田 TSS2 车型的调教
- * 其他一些稳定性改进
+ * New model, with double the pixels and ten times the temporal context!
+ * Car should not take exits when in the right lane
+ * openpilot uses only ~65% of the CPU (down from 75%)
+ * Routes visible in connect/explorer after only 0.2% is uploaded (qlogs)
+ * loggerd and sensord are open source, every line of openpilot is now open
+ * Panda safety code is MISRA compliant and ships with a signed version on release2
+ * New NEOS is 500MB smaller and has a reproducible usr/pipenv
+ * Lexus ES Hybrid support thanks to wocsor!
+ * Improve tuning for supported Toyota with TSS2
+ * Various other stability improvements
 
 ### Version 0.5.13 (2019-05-31)
 
- * 当汽车关闭时（不适用于GM），熊猫耗电量降低70％，降至80mW
- * 汽车关闭时，EON功耗降低40％，降至1100mW
- * 将CPU利用率降低20％并提高稳定性
- * 暂时删除已映射的功能以提高稳定性
- * 为不支持的汽车添加 openpilot 行车记录模式
- * 将 controlsd 同步到 boardd 以减少延迟
- * 删除斯巴鲁长颈鹿的熊猫支持
+ * Reduce panda power consumption by 70%, down to 80mW, when car is off (not for GM)
+ * Reduce EON power consumption by 40%, down to 1100mW, when car is off
+ * Reduce CPU utilization by 20% and improve stability
+ * Temporarily remove mapd functionalities to improve stability
+ * Add openpilot record-only mode for unsupported cars
+ * Synchronize controlsd to boardd to reduce latency
+ * Remove panda support for Subaru giraffe
 
 ### Version 0.5.12 (2019-05-16)
 
- * 改善普锐斯和普锐斯Prime的横向控制
- * 在写入磁盘之前压缩日志
- * 当存储空间达到 90％ 时，删除旧的驾驶数据
- * 修复跟随距离的小偏移
- * 各种小型 CPU 优化
- * 改善停车模式的功耗（需要 NEOS 更新）
- * 为爱沙尼亚添加默认速度限制（感谢 martinl）
- * 支持斯巴鲁 Crosstrek （感谢martinl）
- * 支持丰田亚洲龙（Avalon）（感谢njbrown09）
- * 支持丰田 Rav4 TSS 2.0（感谢 wocsor）
- * 支持丰田卡罗拉 TSS 2.0（感谢 wocsor）
+ * Improve lateral control for the Prius and Prius Prime
+ * Compress logs before writing to disk
+ * Remove old driving data when storage reaches 90% full
+ * Fix small offset in following distance
+ * Various small CPU optimizations
+ * Improve offroad power consumption: require NEOS Update
+ * Add default speed limits for Estonia thanks to martinl!
+ * Subaru Crosstrek support thanks to martinl!
+ * Toyota Avalon support thanks to njbrown09!
+ * Toyota Rav4 with TSS 2.0 support thanks to wocsor!
+ * Toyota Corolla with TSS 2.0 support thanks to wocsor!
 
 ### Version 0.5.11 (2019-04-17)
 
@@ -471,6 +472,7 @@
   * Added preliminary Docker container to run tests on PC
 
 ### Version 0.1  (2016-11-29)
+
   * Initial release of openpilot
   * Adaptive cruise control is working
   * Lane keep assist is working

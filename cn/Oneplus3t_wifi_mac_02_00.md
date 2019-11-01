@@ -1,5 +1,6 @@
 ## 一加3T手机WIFI mac 丢失问题
 
+**Mac fastboot 刷机出现这个问题，极有可能是因为 fastboot 版本的问题，请更新 fastboot 到最新版本，我更新到 fastboot version 29.0.4-5871666 就没有再出现过刷机问题了**
 
 ### 起因
 

@@ -12,6 +12,10 @@ a.gitbook-link{
     max-height:300px;
 }
 
+.max-h-500 {
+    max-height:500px;
+}
+
 p {
     text-indent: 2em;
 }

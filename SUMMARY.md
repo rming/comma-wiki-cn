@@ -13,6 +13,7 @@
 * [常用软件资料下载](cn/openpilot_software_free_download.md)
 * [Panda 固件更新教程](cn/how_to_flash_panda.md)
 * [采集车辆指纹信息](cn/Creating_Fingerprints.md)
+* [EON USB 有线网卡设置](cn/eon_usb_eth0.md)
 * [EON 开机自动开启 WIFI 热点](cn/openpilot_enable_wifi_hotspot.md)
 * [在 EON 上运行 ChffrPlus](cn/Running_ChffrPlus_on_the_EON.md)
 * [在 EON 上安装 Openpilot](cn/Installing_OpenPilot_on_the_EON.md)

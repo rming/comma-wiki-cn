@@ -52,8 +52,8 @@ v1.4.2
 
 ### 降级步骤
 
-1. 确保你的电脑上安装了 最新版的 Fastboot[fastboot 下载地址](https://developer.android.com/studio/releases/platform-tools?hl=zh_cn)）。
-2. 手机解锁了 bootloader，并且获得了 root 权限（[b站参考视频](https://www.bilibili.com/video/av66821136)）。
+1. 确保你的电脑上安装了 最新版的 Fastboot（[fastboot 下载地址](https://developer.android.com/studio/releases/platform-tools?hl=zh_cn)）。
+2. 手机解锁了 bootloader，并且获得了 root 权限（[B 站参考视频](https://www.bilibili.com/video/av66821136)）。
 3. 下载你所需要版本的系统镜像（boot.img 和 system.simg，[NEOS 镜像下载地址](http://d.sdut.me/neos)）。
 4. 按住一加手机『音量上』和 『电源键』进入 Fastboot 模式（乐视 pro3 是 『音量下』 和 『电源键』）。
 5. 手机通过 USB 数据线连接到电脑。
@@ -69,7 +69,7 @@ fastboot erase userdata
 fastboot format cache
 fastboot reboot
 ```
-8. 重启 EON 后输入 WIFI 密码，连接到无线网络（查看下 EON 的IP备用），输入安装地址：https://openpilot.comma.ai，等待安装完成
+8. 重启 EON 后输入 WIFI 密码，连接到无线网络（查看下 EON 的IP备用），输入安装地址：`https://openpilot.comma.ai`，等待安装完成
 9. openpilot 安装完成后会重启，重启后会出现升级界面，**一定不要点升级！！**
 10. SSH 进入到 EON，使用如下命令安装你需要安装的 openpilot 版本：
 ```bash

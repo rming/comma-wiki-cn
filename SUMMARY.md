@@ -11,6 +11,7 @@
 * [快速入门](README.md)
 * [安装 Giraffe](cn/Installing_Giraffe.md)
 * [常用软件资料下载](cn/openpilot_software_free_download.md)
+* [NEOS 降级指南](cn/how_to_downgrade_neos.md)
 * [Panda 固件更新教程](cn/how_to_flash_panda.md)
 * [采集车辆指纹信息](cn/Creating_Fingerprints.md)
 * [EON USB 有线网卡设置](cn/eon_usb_eth0.md)

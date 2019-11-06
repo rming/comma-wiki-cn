@@ -3,16 +3,18 @@
 - [更新记录[中文翻译]](openpilot_releases.md)
 
 
-### Version 0.6.6 (2019-10-31)
+### Version 0.6.6 (2019-11-05)
 
  * Volkswagen support thanks to jyoung8607!
- * Toyota Corolla Hybrid with TSS 2.0 support thanks to u8511049! 
+ * Toyota Corolla Hybrid with TSS 2.0 support thanks to u8511049!
  * Lexus ES with TSS 2.0 support thanks to energee!
- * Fix GM ignition detection and lock safety mode not required anymore 
+ * Fix GM ignition detection and lock safety mode not required anymore
  * Log panda firmware and dongle ID thanks to martinl!
- * New driving model: improve path prediction and lead detection 
- * New monitoring model, 4x smaller and running on DSP
+ * New driving model: improve path prediction and lead detection
+ * New driver monitoring model, 4x smaller and running on DSP
  * Display an alert and don't start openpilot if panda has wrong firmware
+ * Fix bug preventing EON from terminating processes after a drive
+ * Remove support for Toyota giraffe without the 120Ohm resistor
 
 
 ### Version 0.6.5 (2019-10-07)

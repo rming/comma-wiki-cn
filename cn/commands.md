@@ -73,6 +73,22 @@ chmod 600 eonkey.pem
 ssh root@192.168.1.100 -p 8022 -i eonkey.pem
 ```
 
+### openpilot 编译 
+
+```bash
+# 移除已经编译文件
+git clean -xdf
+
+# 移除 git 修改
+git reset --hard HEAD
+
+# 切换分支
+git checkout 0.6.6-zhs 
+
+# 切换分支并重新编译
+cd /data/openpilot && git clean -xdf && git reset --hard HEAD && git checkout 0.6.6-zhs && make && reboot
+```
+
 
 ### 挂载 system 分区 
 

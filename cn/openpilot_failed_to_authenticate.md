@@ -81,5 +81,46 @@ rm /data/params/d/AccessToken
 移除已经授权提供的 DongleId 和 授权码后，再次通过新的 IMEI 去请求官方接口，则会重新为你分配一个 DongleId，此时即可通过扫描 EON 上的二维码，完成账户绑定。
 
 
+### 问题原因探究
 
+EON 每次启动都会请求comma 服务器验证设备的绑定信息，请求的参数包含下列数据：
+
+```bash
+cat /persist/comma/id_rsa.pub
+cat /persist/comma/id_rsa
+getprop oem.device.imeicache
+getprop ro.serialno
+```
+
+openpilot 请求服务器时：
+
+```bash
+PUBLIC_KEY + IMEI + SN + JWT_TOKEN --> | Comma Server|
+[DONGLE_ID, JWT_TOKEN]             <-- | Comma Server|
+```
+
+
+其中 
+```bash
+JWT_TOKEN = RS256(PRIVATE_KEY + EXPIRE_TIME)
+```
+
+每次开机，openpilot 会用自己根据 私钥 生成的 JWT_TOKEN、公钥、IMEI、SN 去请求 comma 服务器验证 JWT_TOKEN 合法性，服务器返回设备绑定信息（Dongle ID、JWT_TOKEN）
+
+
+以下是对服务器端验证策略的猜测：
+
+设备第一次请求接口时，服务器端判断，如果 IMEI/SN 没有绑定的 公钥，则进行绑定，这样服务器端就存储了 EON公钥、IMEI、SN 的关联信息。
+
+设备再次请求接口时，服务器端使用 IMEI 作为主索引查询当前 EON 的公钥 去验证 JWT_TOKEN 请求参数 的合法性（JWT_TOKEN 本质是私钥 + 有效期），决定是否返回设备信息（Dongle ID、JWT_TOKEN）
+如果在 IMEI 注册完成后，EON 的公钥、私钥信息发生了变更（/persist/comma/id_rsa.pub、/persist/comma/id_rsa 丢失或被修改），那么服务器端就会返回 failed to authenticate 的错误信息。
+
+服务器上可能是存在这样的关联关系：
+```bash
+USER_ID <---> Devices {DONGLE_ID、PUBLIC_KEY、IMEI}
+```
+
+comma api 的数据结构也可以佐证：
+- [device info](https://api.comma.ai/#device-info)
+- [openpilot auth](https://api.comma.ai/#openpilot-auth)
 

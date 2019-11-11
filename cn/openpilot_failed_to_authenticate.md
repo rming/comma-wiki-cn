@@ -124,3 +124,39 @@ comma api 的数据结构也可以佐证：
 - [device info](https://api.comma.ai/#device-info)
 - [openpilot auth](https://api.comma.ai/#openpilot-auth)
 
+### FOR ENGLISH
+
+#### Auth request
+
+openpilot auth request params like this
+
+```bash
+PUBLIC_KEY + IMEI + SN + JWT_TOKEN --> | Comma Server|
+[DONGLE_ID, JWT_TOKEN]             <-- | Comma Server|
+```
+
+Remark: `JWT_TOKEN = RS256(PRIVATE_KEY + EXPIRE_TIME)`
+
+so if someone want to access your device (write), he need PUBLIC_KEY, PRIVATE_KEY, SN and IMEI.
+
+```bash
+IMEI        == username
+PRIVATE_KEY == password
+```
+
+It is easy to understand
+
+
+#### Issue reason
+
+openpilot store the public key and private key in the persist partition.
+
+files:
+
+```bash
+/persist/comma/id_rsa.pub
+/persist/comma/id_rsa
+```
+
+so, "failed to authenticate" issue maybe caused by persist partition lost or rewrite(factory rewrite without comma id_rsa files).
+

@@ -9,7 +9,7 @@ comma smays 是 EON 连接有线调试的工具，据说 comma smays 用的网�
 
 选项|comma smays|ax88772 USB 网卡
 -|-|-
-图片|<img src="/files/comma_smays_1.webp" class="max-h-100" alt="comma smays">|<img src="/files/ax88772_usb_eth_single.jpg" class="max-h-100" alt="ax88772 USB 网卡">
+图片|<img src="/files/comma_smays_1.png" class="max-h-100" alt="comma smays">|<img src="/files/ax88772_usb_eth_single.jpg" class="max-h-100" alt="ax88772 USB 网卡">
 芯片|（ax88772）据说| ax88772(A/B/C) 我用的 C 款
 供电线|自带，一体的| 通过 USB公对公连接任意 USB 口供电（5V）
 OTG口|Micro USB| 通常是 Type-C 的，一共用了 4 根线，可以自己改 Micro USB

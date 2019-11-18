@@ -11,6 +11,8 @@
 * [快速入门](README.md)
 * [安装 Giraffe](cn/Installing_Giraffe.md)
 * [常用软件资料下载](cn/openpilot_software_free_download.md)
+* [Windows 下一键安装 openpilot 教程](cn/how_to_flash_openpilot_on_windows.md)
+* [Windows 下手动安装 openpilot 教程](cn/how_to_flash_openpilot_on_windows_step_by_step.md)
 * [NEOS 降级指南](cn/how_to_downgrade_neos.md)
 * [Panda 固件更新教程](cn/how_to_flash_panda.md)
 * [采集车辆指纹信息](cn/Creating_Fingerprints.md)

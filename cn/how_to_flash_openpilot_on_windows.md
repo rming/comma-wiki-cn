@@ -17,7 +17,7 @@
 
 ### 下载运行一键安装脚本
 
-1. 下载 [Windows 一键安装包（v12）](http://d.sdut.me/neos/v12_for_win.zip)
+1. 下载 [Windows 一键安装包（v12）](http://d.sdut.me/neos/auto_install_v12_win.zip)
 2. 解压并打开目录，运行脚本 `flash.bat`，按照脚本提示进行操作
 
 参考视频：[Windows 下一键安装 openpilot 全过程](https://www.bilibili.com/video/av76104673/)

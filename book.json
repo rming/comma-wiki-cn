@@ -27,9 +27,13 @@
         "anchor-navigation-ex",
         "3-ba",
         "bilibili",
-        "copy-code-button"
+        "copy-code-button",
+        "disqus"
     ],
     "pluginsConfig": {
+        "disqus": {
+            "shortName": "openpilot-zhong-wen-wiki"
+        },
         "github": {
             "url": "https://github.com/Rming/comma-wiki-cn"
         },

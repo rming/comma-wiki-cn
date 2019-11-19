@@ -15,7 +15,7 @@
 
 ### 安装驱动
 
-[adb 和 fastboot 安装工具下载](http://d.sdut.me/adb/adb_fastboot_install.exe)
+[adb 和 fastboot 安装工具下载](http://d.sdut.me/adb/)
 
 [一加手机3T工具箱 V2.0.0 下载](http://d.sdut.me/%E4%B8%80%E5%8A%A0%E6%89%8B%E6%9C%BA3T%E5%B7%A5%E5%85%B7%E7%AE%B1V2.0.0/)
 - 上面提供的 2 个软件功能重叠，可全安装，或者只选择第 "一加手机3T工具箱V2.0.0" 安装。

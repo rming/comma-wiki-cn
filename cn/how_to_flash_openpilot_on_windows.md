@@ -28,3 +28,26 @@
 <center><img src="/files/windows_flash_neos2.png"></center>
 
 
+### 系统初始化设置
+
+手机将在重启后进入 openpilot 系统，但是在使用之前，还需要链接无线WIFI、编译安装openpilot，当然这些都是自动完成的，我们只需要按照界面提示，选择确认即可。
+
+<center>
+<img src="/files/openpilot_init_1.jpg" alt="openpilot 初始化" class="max-h-100" />
+<img src="/files/openpilot_init_2.jpg" alt="openpilot 初始化" class="max-h-100" />
+</center>
+
+<center>
+<img src="/files/openpilot_init_3.jpg" alt="openpilot 初始化" class="max-h-100" />
+<img src="/files/openpilot_init_4.jpg" alt="openpilot 初始化" class="max-h-100" />
+</center>
+
+<center>
+<img src="/files/openpilot_init_5.jpg" alt="openpilot 初始化" class="max-h-100" />
+<img src="/files/openpilot_init_6.jpg" alt="openpilot 初始化" class="max-h-100" />
+</center>
+
+<center>
+<img src="/files/openpilot_init_7.jpg" alt="openpilot 初始化" class="max-h-100" />
+<div style="width:220px;height:10px;display:inline-block;"></div>
+</center>

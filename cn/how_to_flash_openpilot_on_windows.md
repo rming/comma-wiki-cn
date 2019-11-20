@@ -51,3 +51,7 @@
 <img src="/files/openpilot_init_7.jpg" alt="openpilot 初始化" class="max-h-100" />
 <div style="width:220px;height:10px;display:inline-block;"></div>
 </center>
+
+<center>
+{% bilibili %}av76232185{% endbilibili %}
+</center>

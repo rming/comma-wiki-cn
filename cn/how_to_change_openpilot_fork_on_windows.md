@@ -1,4 +1,4 @@
-## Windows 下 切换 openpilot 分支版本（openpilot fork）
+## 使用 Putty SSH 切换 openpilot 分支版本
 
 ### 获取 EON 的 IP 地址
 
@@ -23,11 +23,15 @@
 
 ### 填写信息，SSH 连接到 EON
 
-1. 打开 Putty 填写 IP 和 Port
-2. 点击左侧菜单 "Connection - SSH - Auth"，点击右侧最下面 Browse 选择 ppk 私钥
-3. 点击右下角 Open 按钮，弹出窗口点击确认
-4. Putty 的 "login as :" 界面输入 `root`，然后回车
-5. 进入 EON 的 shell 环境了
+1. 打开 Putty 填写 IP 和 Port  
+<img src="/files/putty_1.png" class="max-h-400">
+2. 点击左侧菜单 "Connection - SSH - Auth"，点击右侧最下面 Browse 选择 ppk 私钥  
+<img src="/files/putty_2.png" class="max-h-400">
+3. 点击右下角 Open 按钮，弹出窗口点击 "是（Y）"  
+<img src="/files/putty_3.png" class="max-h-300">
+4. Putty 的 "login as :" 界面输入 `root`，然后回车  
+5. 进入 EON 的 shell 环境了    
+<img src="/files/putty_4.png" class="max-h-300">
 
 选项|填写|备注
 -|-|-
@@ -35,7 +39,10 @@ Host Name<br>(or IP address)| `192.168.43.1` 或者 EON 的 IP| 第一步查询�
 Port| `8022`|SSH 端口号，这里默认是 `8022`
 Private Key| 点击 Browse，选择之前下载的 ppk 文件 |ppk 格式为客户端 putty 专用
 
+
 ### 切换 openpilot 分支版本
+
+openpilot 有很多分支，[Openpilot 国内镜像](/mirror.md) 这里有一些同步到 gitee 的分支代码，可以试用一下，看看哪一个版本适合自己。
 
 依次执行下列命令切换分支版本：
 ```bash
@@ -55,7 +62,7 @@ cd openpilot
 git branch -a
 
 # 切换到目标分支
-git checkout 
+git checkout kegman-0.6.6
 
 # 重新查看确认当前分支
 git branch
@@ -63,3 +70,9 @@ git branch
 # 编译重启
 make && reboot
 ```
+
+或者用一条命令运行：
+
+<pre style="white-space: pre-wrap;word-wrap: break-word;">
+cd /data && rm -rf openpilot && git clone https://gitee.com/afaaa/kegman openpilot && cd openpilot && git checkout kegman-0.6.6 && make && reboot
+</pre>

@@ -44,6 +44,9 @@ Private Key| 点击 Browse，选择之前下载的 ppk 文件 |ppk 格式为客�
 
 openpilot 有很多分支，[Openpilot 国内镜像](/mirror.md) 这里有一些同步到 gitee 的分支代码，可以试用一下，看看哪一个版本适合自己。
 
+* [dragonpilot](https://gitee.com/afaaa/dragonpilot) 和 [openpilot-cn](https://gitee.com/afaaa/openpilot-cn) 有中文版，需要的可以尝试
+* 如果网络条件好的（有梯子）话，也可以用对应的 Github 地址
+
 依次执行下列命令切换分支版本：
 ```bash
 # 打开 data 目录

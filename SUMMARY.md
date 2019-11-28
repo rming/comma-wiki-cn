@@ -2,6 +2,7 @@
 
 * [新手必读](cn/FAQ.md)
 * [主要问题](cn/problems.md)
+* [相关视频](cn/videos.md)
 * [国内镜像](/mirror.md)
 * [常见硬件](cn/hardwares.md)
 * [常见术语](cn/Glossary_of_terminology.md)
@@ -30,15 +31,5 @@
 * [一加3T手机分区一键备份恢复工具](cn/openpilot_partition_backup.md)
 * [failed to authenticate 和 无法绑定账户问题](/cn/openpilot_failed_to_authenticate.md)
 * [Openpilot 一键安装脚本](/cn/openpilot_install.md)
-* [EON 快拆底座](cn/EON_Connector.md)
+* [EON 快拆底座制作指南](cn/EON_Connector.md)
 * [版权声明](copyright.md)
-* ---------------------
-
-* [高速路上大堵车！开启OP后全程托管、自动跟车（十代雅阁）](videos/openpilot_stop_and_go_traffic.md)
-* [Openpilot 新版硬件简介和安装（十代雅阁）](videos/openpilot_harness_install_intro.md)
-* [Openpilot在无车道线道路上行驶时，规划路线会远离路边停靠的车辆](videos/OpenPilot_0.6.5_laneless_models.md)
-* [Openpilot新版自动驾驶硬件（car harness）安装视频](videos/comma_Installation_Guide.md)
-* [Openpilot 064功能测试： 无车道线跟随前车轨迹行驶](videos/Openpilot_064_test.md)
-* [一加3T安装Openpilot自动驾驶系统安装过程全纪录](videos/How_to_install_OpenPilot_on_an_OP3T_phone.md)
-* [Openpilot test drive of poly-center-LQRPIF-062 branch on Gernby's fork](videos/Openpilot_test_Gernby_poly_center_LQRPIF_062.md)
-

@@ -11,6 +11,7 @@
 * [快速入门](README.md)
 * [安装 Giraffe](cn/Installing_Giraffe.md)
 * [常用软件资料下载](cn/openpilot_software_free_download.md)
+* [Openpilot 硬件购买篇](cn/how_to_buy_openpilot.md)
 * [使用 TWRP 恢复 openpilot 备份](cn/how_to_restore_openpilot_backup_via_twrp.md)
 * [使用 Putty SSH 切换 openpilot 分支版本](cn/how_to_change_openpilot_fork_on_windows.md)
 * [iPhone 手机上 SSH 连接到 openpilot](cn/how_to_connect_openpilot_via_iphone.md)

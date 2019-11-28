@@ -1,5 +1,17 @@
 ## macOS 下手动安装 openpilot 教程
 
+-------
+**重要：**
+
+**不要在 Android 9.0 系统下解锁刷机！！！**
+
+**请先降级到 Android 8.0 系统一下再刷机！！！**
+
+**否则会出现 fastboot `FAILED (status read failed (Too many links)) 的报错！！`**
+
+-------
+
+
 ### 开启手机 USB 调试
 
 1. 打开 "设置 - 关于手机 - 版本号"，连续点击版本号 7 次以上，打开开发者选项设置

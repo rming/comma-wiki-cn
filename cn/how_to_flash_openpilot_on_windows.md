@@ -5,7 +5,7 @@
 
 **不要在 Android 9.0 系统下解锁刷机！！！**
 
-**请先降级到 Android 8.0 系统一下再刷机！！！**
+**请先降级到 Android 8.0 系统以下再刷机！！！**
 
 **否则会出现 fastboot `FAILED (status read failed (Too many links)) 的报错！！`**
 

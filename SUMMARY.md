@@ -1,7 +1,6 @@
 # Summary
 
 * [新手必读](cn/FAQ.md)
-* [主要问题](cn/problems.md)
 * [相关视频](cn/videos.md)
 * [国内镜像](/mirror.md)
 * [常见硬件](cn/hardwares.md)

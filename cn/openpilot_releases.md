@@ -2,6 +2,14 @@
 
 - [更新记录[英文原版]](openpilot_releases_en.md)
 
+### Version 0.7.1 (2020-01-20)
+
+ * 支持 comma two 硬件
+ * 支持自动变道辅助（需车速大于 70km/h）
+ * 使用自定义的 msgq 代替 zmq
+ * Supercombo model: 校准和驾驶模型合并以后，可以更好的检测前车
+ * 更健壮的升级程序，需要升级 NEOS （感谢 jyoung8607）
+ * 改进低速 ACC 调教
 
 ### Version 0.7 (2019-12-13)
 

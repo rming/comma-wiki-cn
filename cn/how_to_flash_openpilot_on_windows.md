@@ -15,7 +15,7 @@
 ### 开启手机 USB 调试
 
 1. 打开 "设置 - 关于手机 - 版本号"，连续点击版本号 7 次以上，打开开发者选项设置
-2. 重新进入 "设置 - 开发者选项"，开启 "OEM 解锁" 选项，开启 USB 调试选项  
+2. 重新进入 "设置 - 开发者选项"，开启 "OEM 解锁" 选项，开启 USB 调试选项
 
 参考视频：[一加3T手机开启手机USB调试模式](https://www.bilibili.com/video/av76104673/)
 
@@ -29,7 +29,7 @@
 
 ### 下载运行一键安装脚本
 
-1. 下载 [Windows 一键安装包（v13）](http://d.sdut.me/neos/auto_install_v13_win.zip)
+1. 下载 [Windows 一键安装包（v14）](http://d.sdut.me/neos/auto_install_v14_win.zip)
 2. 解压并打开目录，运行脚本 `flash.bat`，按照脚本提示进行操作
 
 参考视频：[Windows 下一键安装 openpilot 全纪录](https://www.bilibili.com/video/av76232185/)

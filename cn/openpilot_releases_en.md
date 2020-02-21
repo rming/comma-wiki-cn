@@ -2,6 +2,14 @@
 
 - [更新记录[中文翻译]](openpilot_releases.md)
 
+Version 0.7.3 (2020-02-21)
+========================
+ * Improved autofocus for road facing camera
+ * Support for 2020 Highlander thanks to che220!
+ * Support for 2018 Lexus NX 300h thanks to kengggg!
+ * Speed up ECU firmware query
+ * Fix bug where manager would sometimes hang after shutting down the car
+
 
 ### Version 0.7.2 (2020-02-07)
 

@@ -7,7 +7,7 @@
 - 树莓派4B裸板（内存 2G 以上最好）
 - 16G 以上内存卡 + 读卡器（Micro SD，推荐 class 10 或更好的卡）
 - 树莓派保护壳（可选，建议使用纯散热片的那种，安静，主要起散热作用）
-- Type-A to Type-C 数据线（用于连接树莓派和 Panda，给树莓派供电，长一点好，我用的3米的；如果使用的是 BlackPanda，则需要 Type-C to Type-C 的线）
+- Type-A to Type-C 数据线（用于连接树莓派和 Panda，给树莓派供电，长一点好，我用的3米的）
 
 
 <center>

@@ -101,7 +101,7 @@ cd ~ && git clone https://github.com/Gernby/raspberry-pilot.git
 sed -i 's|pypi.org|mirrors.aliyun.com/pypi|g' ~/raspberry-pilot/Pipfile
 # 修改脚本，跳过 lock
 # **可选，推荐设置**
-sed -i 's|pipenv\ install|pipenv\ install\ --skip-lock\ -v|g' ~/raspberry-pilot/finish_install.sh
+sed -i 's|pipenv install|pipenv install --skip-lock -v|g' ~/raspberry-pilot/finish_install.sh
 ```
 
 #### 安装软件环境

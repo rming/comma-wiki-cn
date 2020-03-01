@@ -27,7 +27,7 @@ Exception: server registration failed
 - commaai 官方已经把你的设备 IMEI 标识为异常设备，无法通过接口注册 DongleId
 - 你的设备之前成功注册过 DongleID，但是后来 persist 分区的 /persist/comma/ 目录下的私钥、公钥丢失了，导致你无法正常通过 comma 的接口重新获取 DongleId 和 AccessToken
 
-不论出现以上哪种情况，因为是服务器端的拒绝访问，所以你只能通过联系 commaai 官方的人员来请求他们更改数据，允许你的设备正常访问 pilotauth 接口。
+**不论出现以上哪种情况，因为是服务器端的拒绝访问，所以你只能通过联系 commaai 官方的人员来请求他们更改数据，允许你的设备正常访问 pilotauth 接口。**
 
 
 如果你不需要把设备绑定到你的 comma 账号，只是想解决启动黑屏，让 EON 正常启动可以正常在车上工作，那么你只需要创建两个空的配置文件即可，你并不需要真实的 DongleId

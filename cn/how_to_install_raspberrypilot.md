@@ -71,7 +71,7 @@ ubuntu@ubuntu:~$
 ```bash
 # 修改 ubuntu 软件源，使用清华大学源
 # **建议修改**
-sed -i 's/ports.ubuntu.com/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list
+sudo sed -i 's/ports.ubuntu.com/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list
 sudo apt update
 ```
 

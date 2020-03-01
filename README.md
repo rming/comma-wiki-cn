@@ -34,7 +34,6 @@
 - [一加3T手机WIFI mac 丢失问题](cn/Oneplus3t_wifi_mac_02_00.md)
 - [一加3T手机分区一键备份恢复工具](cn/openpilot_partition_backup.md)
 - [failed to authenticate 和 无法绑定账户问题](/cn/openpilot_failed_to_authenticate.md)
-- [Openpilot 一键安装脚本](/cn/openpilot_install.md)
 - [EON 快拆底座制作指南](cn/EON_Connector.md)
 - [raspberry-pilot 安装指南](cn/how_to_install_raspberrypilot.md)
 - [版权声明](copyright.md)

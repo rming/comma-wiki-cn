@@ -16,9 +16,23 @@
 
 分支版本|git 地址
 -|-
-官方版本|https://gitee.com/afaaa/openpilot.git
-官方中文版|https://gitee.com/afaaa/openpilot-cn.git
-dragonpilot|https://gitee.com/afaaa/dragonpilot.git
-Gernby|https://gitee.com/afaaa/gernby.git
-kegman|https://gitee.com/afaaa/kegman.git
-arne182|https://gitee.com/afaaa/arne182.git
+官方版本|https://gitee.com/afaaa/openpilot
+官方中文版|https://gitee.com/afaaa/openpilot-cn
+dragonpilot|https://gitee.com/afaaa/dragonpilot
+Gernby|https://gitee.com/afaaa/gernby
+kegman|https://gitee.com/afaaa/kegman
+arne182|https://gitee.com/afaaa/arne182
+raspberry-pilot|https://gitee.com/afaaa/raspberry-pilot
+
+
+备用地址：
+
+分支版本|git 地址
+-|-
+官方版本|https://git.sdut.me/commaai/openpilot
+官方中文版|https://git.sdut.me/rming/openpilot
+dragonpilot|https://git.sdut.me/dragonpilot-community/dragonpilot
+Gernby|https://git.sdut.me/gernby/openpilot
+kegman|https://git.sdut.me/kegman/openpilot
+arne182|https://git.sdut.me/arne182/openpilot
+raspberry-pilot|https://git.sdut.me/gernby/raspberry-pilot

@@ -1,6 +1,6 @@
 ## failed to authenticate 和 无法绑定账户问题
 
-一些手机设备因为刷机问题、分区信息丢失等问题，即使重新安装好 NEOS 系统后，也无法正常通过 `IMEI` 和 `SN` 在 Openpilot 官方通过授权验证，在系统安装过程中，通常会出现 `openpilot failed to authenticate` 的报错，这时候可以通过变更 `IMEI` 的方式解决。
+一些手机设备安装好 NEOS 系统后，无法正常通过commaai 的 pilotauth 接口注册，在安装完成进入系统的时候，通常会出现 `openpilot failed to authenticate` 的报错。
 
 ```bash
 getting pilotauth
@@ -21,64 +21,24 @@ Exception: server registration failed
 
 <center><small>通过 ssh 进入 eon，<code>tmux at</code> 后看到的报错信息</small></center>
 
-### IMEI 生成工具
 
-IMEI 相当于设备的身份证号，有一定的格式规则，包含品牌、型号、产地等信息，但是这里 openpilot 官方对 IMEI 的验证并不严格，只要满足校验位正确就可以，如果你需要一个新的 IMEI，并且对品牌、型号没有要求，则可以通过下面这个工具生成。
+出现上述问题，根据猜测，可能是以下 2 个原因：
 
-<script src="/files/imei-generator.js" type="text/javascript" charset="utf-8" async defer></script>
-<input type="button" onclick="imei_gen()" value="生成 IMEI -&gt;" /><input type="text" value="" size="17" id="imei_num" readonly="readonly" width="600" />
+- commaai 官方已经把你的设备 IMEI 标识为异常设备，无法通过接口注册 DongleId
+- 你的设备之前成功注册过 DongleID，但是后来 persist 分区的 /persist/comma/ 目录下的私钥、公钥丢失了，导致你无法正常通过 comma 的接口重新获取 DongleId 和 AccessToken
+
+不论出现以上哪种情况，因为是服务器端的拒绝访问，所以你只能通过联系 commaai 官方的人员来请求他们更改数据，允许你的设备正常访问 pilotauth 接口。
 
 
-### 更改 IMEI
-
-设备的 IMEI 是保存在芯片中的，直接修改芯片内容比较麻烦，我们可以通过软件方法在每次软件启动之前，修改这个系统属性的值，来欺骗 Openpilot 软件。 
-
-#### 方法1（分步操作）
+如果你不需要把设备绑定到你的 comma 账号，只是想解决启动黑屏，让 EON 正常启动可以正常在车上工作，那么你只需要创建两个空的配置文件即可，你并不需要真实的 DongleId
 
 ```bash
-# 通过 ssh 登陆到 EON
-ssh eon
-
-# 编辑 openpilot 初始化脚本
-vi /data/data/com.termux/files/continue.sh
-
-# 在 exec 语句之前加入下面这行
-# 517923590773528 是新设置的 IMEI，需要通过上面工具生成替换
-setprop oem.device.imeicache 517923590773528
-
+touch /data/params/d/AccessToken
+touch /data/params/d/DongleId
 ```
 
+创建好文件后即可重启进入系统。
 
-#### 方法2（一条命令）
-
-```bash
-# 通过 ssh 登陆到 EON
-ssh eon
-# 在 continue.sh 文件 第 2 行，添加一个更新 IMEI 属性值的语句 
-# 517923590773528 是新设置的 IMEI，需要通过上面工具生成替换
-sed '2i\setprop oem.device.imeicache 517923590773528' -i /data/data/com.termux/files/continue.sh
-```
-
-EON 的 IMEI 更改完成后，重启一下，即可正常通过官方的验证，也可以通过二维码完成绑定。
-
------------
-
-
-### 重新请求 DongleId 和 授权
-
-如果你的情况是可以正常运行 Openpilot ，但是无法完成扫码绑定，那么除了需要变更 IMEI 外，你还需要下面进行这些操作。
-
-
-```bash
-# 通过 ssh 登陆到 EON
-ssh eon
-
-# 移除已经授权提供的 DongleId 和 授权码
-rm /data/params/d/DongleId
-rm /data/params/d/AccessToken
-```
-
-移除已经授权提供的 DongleId 和 授权码后，再次通过新的 IMEI 去请求官方接口，则会重新为你分配一个 DongleId，此时即可通过扫描 EON 上的二维码，完成账户绑定。
 
 
 ### 问题原因探究
@@ -100,7 +60,7 @@ PUBLIC_KEY + IMEI + SN + JWT_TOKEN --> | Comma Server|
 ```
 
 
-其中 
+其中
 ```bash
 JWT_TOKEN = RS256(PRIVATE_KEY + EXPIRE_TIME)
 ```

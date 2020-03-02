@@ -1,6 +1,8 @@
 ## failed to authenticate 和 无法绑定账户问题
 
-一些手机设备安装好 NEOS 系统后，无法正常通过commaai 的 pilotauth 接口注册，在安装完成进入系统的时候，通常会出现 `openpilot failed to authenticate` 的报错。
+一些手机设备安装好 NEOS 系统后，输入 openpilot.comma.ai 重启以后，出现设备黑屏的情况。
+
+SSH 进入命令行后，通过 tmux at 查看，发现有 `openpilot failed to authenticate` 的报错，无法正常通过commaai 的 pilotauth 接口注册。
 
 ```bash
 getting pilotauth

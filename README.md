@@ -35,6 +35,7 @@
 - [一加3T手机分区一键备份恢复工具](cn/openpilot_partition_backup.md)
 - [failed to authenticate 和 无法绑定账户问题](/cn/openpilot_failed_to_authenticate.md)
 - [EON 快拆底座制作指南](cn/EON_Connector.md)
+- [EON 亚克力外壳](cn/eon_acrylic_case.md)
 - [raspberry-pilot 安装指南](cn/how_to_install_raspberrypilot.md)
 - [版权声明](copyright.md)
 - [Comma ai](http://comma.ai/)

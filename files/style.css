@@ -7,8 +7,17 @@ a.gitbook-link{
 .max-h-100 {
     max-height:100px;
 }
+.max-h-130 {
+    max-height:130px;
+}
+.max-h-150 {
+    max-height:150px;
+}
 .max-h-200 {
     max-height:200px;
+}
+.max-h-250 {
+    max-height:250px;
 }
 .max-h-300 {
     max-height:300px;
@@ -27,6 +36,11 @@ a.gitbook-link{
 }
 .max-h-800 {
     max-height:800px;
+}
+.no-margin{
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
 }
 p {
     text-indent: 2em;

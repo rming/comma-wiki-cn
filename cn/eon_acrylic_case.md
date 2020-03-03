@@ -55,7 +55,7 @@ M3拉铆螺母 5 颗 |-|-|-
 80cm 长红黑导线各一根|-|-
 M3*25 盘头螺丝 2 颗|-|-
 M3*35 盘头螺丝 2 颗|-|-
-M3 拉铆螺母 4 颗 |-|-|-
+M3 拉铆螺母 4 颗 |-|-
 M3*12 沉头螺丝 8 颗|-|-
 M3 垫片 8 颗 |-|-
 2*6.0 弹性触点 4 粒|-|-
@@ -75,8 +75,8 @@ M3 垫片 8 颗 |-|-
 
 材料名称|图片|参考链接|备注
 -|-|-|-
-gopro 固定底座 stl 文件|<img src="/files/case_xiaoshitou_32.jpg" class="max-h-100">|[gopro 固定底座 stl 文件](https://d.sdut.me/case/xiaoshitou/gopro_mount.stl)|-
-m3*22mm 螺丝、螺母、垫片|<img src="/files/case_xiaoshitou_47.png" class="max-h-100">|[M3*22 沉头螺丝](https://detail.tmall.com/item.htm?id=14499943965&skuId=3113865560744)<br>[M3螺母平垫弹垫](https://detail.tmall.com/item.htm?id=14499943965&skuId=3587794317034)|-
+gopro 固定底座 stl 文件|<img src="/files/case_xiaoshitou_32.jpg" class="max-h-100">|[gopro 固定底座 stl 文件](https://d.sdut.me/case/xiaoshitou/gopro_mount.stl)
+m3*22mm 螺丝、螺母、垫片|<img src="/files/case_xiaoshitou_47.png" class="max-h-100">|[M3*22 沉头螺丝](https://detail.tmall.com/item.htm?id=14499943965&skuId=3113865560744)<br>[M3螺母平垫弹垫](https://detail.tmall.com/item.htm?id=14499943965&skuId=3587794317034)
 
 
 

@@ -9,6 +9,16 @@
 
 整个外壳的设计主要包括两部分，分别是 亚克力主体外壳 和 磁吸底座，下面我们分别介绍。
 
+### 工具
+
+如果你想要根据下面列出的资料自己制作一个外壳，那么除了表格中需要购买的材料外，你还需要具备一些基本的工具：
+
+- 电烙铁、焊锡丝：用于焊接数据线到弹簧针触点，使连接更可靠
+- 梅花螺丝刀、内六角螺丝刀，方便拧紧螺丝
+- 剪刀、钳子、剥线钳、镊子等方便你操作的工具
+- 根据 亚克力板设计文件 外加工切割亚克力板，或者自己有工厂加工
+- 根据 散热板尺寸设计文件 外加工散热板尺寸、开孔，或者自己有工厂加工
+
 ### 亚克力板外壳
 
 <p class="no-margin">
@@ -23,7 +33,7 @@
 材料名称|图片|参考链接|备注
 -|-|-|-
 5CM厚10MM 散热风扇|<img src="/files/case_xiaoshitou_42.png" class="max-h-100">| [12V涡轮鼓风机散热风扇](https://item.taobao.com/item.htm?id=569786345005)|此款静音风扇支持 pwm 调速，可后期改装
-散热片|<img src="/files/case_xiaoshitou_43.jpg" class="max-h-100">| - |需要按照尺寸定制切割
+散热片|<img src="/files/case_xiaoshitou_67.png" class="max-h-100">| [尺寸设计文件下载](https://d.sdut.me/case/xiaoshitou/sanreban.png) |需要按照尺寸定制切割
 2mm 厚 EVA 单面胶垫若干|<img src="/files/case_xiaoshitou_45.jpg" class="max-h-100">| [胶垫eva泡棉单面胶胶带](https://item.taobao.com/item.htm?id=592148239417)|垫在散热片下面，压紧散热片、防止损坏外壳
 双 90 度弯头 TypeC 充电线一根|<img src="/files/case_xiaoshitou_46.png" class="max-h-100">|[绿联type-c数据线双弯头](https://detail.tmall.com/item.htm?id=563863764427&skuId=4088026243561)|-
 亚克力板材若干|<img src="/files/case_xiaoshitou_44.jpg" class="max-h-100">|[亚克力板设计文件下载](https://d.sdut.me/case/xiaoshitou/eon_acrylic_case.dwg)| 需要按照设计文件定制加工
@@ -59,11 +69,12 @@ M3 拉铆螺母 4 颗 |<img src="/files/case_xiaoshitou_60.png" class="max-h-100
 M3*12 沉头螺丝 8 颗|<img src="/files/case_xiaoshitou_56.png" class="max-h-100">|[M3*12 沉头螺丝](https://detail.tmall.com/item.htm?id=606211816686&skuId=4424207991350)
 M3 螺母 8 颗 |<img src="/files/case_xiaoshitou_57.png" class="max-h-100">|[M3 螺母垫片](https://detail.tmall.com/item.htm?id=14499943965&skuId=3587794317034)
 M3 垫片 8 颗 |<img src="/files/case_xiaoshitou_58.png" class="max-h-100">|[M3 螺母垫片](https://detail.tmall.com/item.htm?id=14499943965&skuId=3587794317034)
-2*6.0 弹性触点 4 粒|-|-
-2*5.5 弹性触点 8 粒|-|-
+2*6.0 弹性触点 4 粒|<img src="/files/case_xiaoshitou_63.jpg" class="max-h-100">|[2*6.0 弹性触点](https://item.taobao.com/item.htm?id=600342336174)
+2*5.5 弹性触点 8 粒|<img src="/files/case_xiaoshitou_63.jpg" class="max-h-100">|[2*5.5 弹性触点](https://item.taobao.com/item.htm?id=600342336174)
 10*5 中间锥孔磁钢 8 颗，锥孔面 N S 成对|<img src="/files/case_xiaoshitou_54.png" class="max-h-100">|[磁铁圆形带孔强磁10*5](https://item.taobao.com/item.htm?id=575883003822)
-定制磁吸 pcb 板两块|<img src="/files/case_xiaoshitou_55.jpg" class="max-h-100">|-
-亚克力板材若干|<img src="/files/case_xiaoshitou_44.jpg" class="max-h-100">|[亚克力板设计文件下载](https://d.sdut.me/case/xiaoshitou/eon_acrylic_case.dwg)
+定制磁吸 pcb 板两块|<img src="/files/case_xiaoshitou_62.png" class="max-h-100">|[PCB 文件下载](https://d.sdut.me/case/xiaoshitou/CAM_for_neov2.rar)<br>1.6mm 厚双面绿油无铅玻纤板
+亚克力板材若干|<img src="/files/case_xiaoshitou_66.png" class="max-h-100">|[亚克力板设计文件下载](https://d.sdut.me/case/xiaoshitou/eon_acrylic_case.dwg)
+PC胶水|<img src="/files/case_xiaoshitou_65.png" class="max-h-100">|[PC胶水](https://detail.tmall.com/item.htm?id=583601617340)<br>用于快拆底座组件的粘合固定
 
 
 ### 改装 gopro 固定底座

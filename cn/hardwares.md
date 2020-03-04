@@ -22,7 +22,7 @@ Harness|<img src="/files/harness1.jpeg" class="max-h-100">|-
 Black panda|<img src="/files/black_panda.png" class="max-h-100"><img src="/files/black_panda1.png" class="max-h-100">|-
 Comma power v2|<img src="/files/comma_power_v2.png" class="max-h-100">|-
 
-### 第二代硬件
+### 第三代硬件
 
 名称|图片|链接
 -|-|-

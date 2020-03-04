@@ -1,6 +1,17 @@
 ## 一加3T手机WIFI mac 丢失问题
 
-**Mac fastboot 刷机出现这个问题，极有可能是因为 fastboot 版本的问题，请更新 fastboot 到最新版本，我更新到 fastboot version 29.0.4-5871666 就没有再出现过刷机问题了**
+-------
+**重要：**
+
+**不要在 Android 9.0 系统下解锁刷机！！！**
+
+**请先降级到 Android 8.0 系统以下再刷机！！！**
+
+**否则会出现 fastboot `FAILED (status read failed (Too many links)) 的报错！！`**
+
+**同时会导致 mac 丢失的问题！！**
+
+-------
 
 ### 起因
 
@@ -27,7 +38,7 @@ WIFI 无法连接，那我怎么去下载 Openpilot 呢，怎么连接手机 SSH
 
 由 TWRP 的报错得知，可能出问题的是手机 `persist` 分区，经过一番了解：
 
-> persist分区是用于保存FRP(factory reset protcect)功能用到帐号、密码等受保护的信息，避免在恢复出厂设置后被清空。 
+> persist分区是用于保存FRP(factory reset protcect)功能用到帐号、密码等受保护的信息，避免在恢复出厂设置后被清空。
 
 > 什么是Persist分区：Persist分区是系统的一个ext4分区，由于我们的线刷包都不包含这个分区，所以你需要自己动手修复，这个分区内包含DRM相关文件、传感器注册表、你的wifi、蓝牙、mac地址都在这里了。
 
@@ -55,13 +66,13 @@ adb shell "dd if=/dev/block/bootdevice/by-name/persist of=/sdcard/persist.img"
 adb pull /sdcard/persist.img  ~/
 ```
 
-#### 把 persist.img 镜像导入到 mac 丢失的手机 
+#### 把 persist.img 镜像导入到 mac 丢失的手机
 
 丢失 mac 的手机，连接到电脑，开启 adb 调试，重启进入 TWRP 模式，在电脑端命令行运行：
 
 ```bash
 # 把 persist.img 镜像 上传到手机
-adb push ~/persist.img /sdcard/persist.img  
+adb push ~/persist.img /sdcard/persist.img
 
 # 把 persist.img 镜像写入 persist 分区
 adb shell "dd if=/sdcard/persist.img of=/dev/block/bootdevice/by-name/persist"

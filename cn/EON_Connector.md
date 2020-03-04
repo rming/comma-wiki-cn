@@ -15,7 +15,7 @@
 名称|数量|用途|图片|参考链接
 -|-|-|-|-
 3D打印底座|1套<br>（公母）|基座框架，固定位置|<image src="/files/eon_connector_bom_1.png" class="max-h-100">|[thingiverse 文件下载](https://www.thingiverse.com/thing:3497526)
-D5*5mm 圆柱磁铁|20个|分别安装到公座和母座上，通过磁力连接固定2个底座|<image src="/files/eon_connector_bom_2.png" class="max-h-100">|[购买链接](https://item.taobao.com/item.htm?id=596765060083)
+D5*5mm 圆柱磁铁|20个|分别安装到公座和母座上，通过磁力连接固定2个底座|<image src="/files/eon_connector_bom_2.jpg" class="max-h-100">|[购买链接](https://item.taobao.com/item.htm?id=596765060083)
 M885 10P弹簧针连接器|1套<br>（公母）|通过弹簧针触点的方式，连接 EON 的数据线与 panda 的数据线|<image src="/files/eon_connector_bom_3.png" class="max-h-100">|[购买链接1](https://item.taobao.com/item.htm?id=520700001937)<br>[购买链接2](https://item.taobao.com/item.htm?id=542533555733)
 3M 双面胶|2个|粘贴固定公座到 EON 支架，<br>粘贴固定母座到前挡风玻璃|<image src="/files/eon_connector_bom_4.png" class="max-h-100">|[购买链接](https://detail.tmall.com/item.htm?id=526923033714)
 Mini USB 上弯头<br>Mini USB 右弯头|各1条|快拆公座触点连接器连接到 EON<br>快拆母座触点连接器连接到 panda|<image src="/files/eon_connector_bom_5.png" class="max-h-100">|[购买链接](https://item.taobao.com/item.htm?id=15684291170)

@@ -16,8 +16,8 @@
 - 电烙铁、焊锡丝：用于焊接数据线到弹簧针触点，使连接更可靠
 - 梅花螺丝刀、内六角螺丝刀，方便拧紧螺丝
 - 剪刀、钳子、剥线钳、镊子等方便你操作的工具
-- 根据 亚克力板设计文件 外加工切割亚克力板，或者自己有工厂加工
-- 根据 散热板尺寸设计文件 外加工散热板尺寸、开孔，或者自己有工厂加工
+- 根据 亚克力板设计文件 外加工切割亚克力板，单独加工一套一般50以内（或者自己有工厂加工）。
+- 根据 散热板尺寸设计文件 外加工散热板尺寸、开孔，大约30元左右（或者自己有工厂加工）。
 
 ### 亚克力板外壳
 
@@ -30,15 +30,15 @@
 亚克力外壳主体主要包括三部分，分别是散热风扇，散热片、亚克力外壳板材和装配所需要的螺丝螺母。
 
 
-材料名称|图片|参考链接|备注
--|-|-|-
-5CM厚10MM 散热风扇|<img src="/files/case_xiaoshitou_42.png" class="max-h-100">| [12V涡轮鼓风机散热风扇](https://item.taobao.com/item.htm?id=569786345005)|此款静音风扇支持 pwm 调速，可后期改装
-散热片|<img src="/files/case_xiaoshitou_67.png" class="max-h-100">| [尺寸设计文件下载](https://d.sdut.me/case/xiaoshitou/sanreban.png) |需要按照尺寸定制切割
-2mm 厚 EVA 单面胶垫若干|<img src="/files/case_xiaoshitou_45.jpg" class="max-h-100">| [胶垫eva泡棉单面胶胶带](https://item.taobao.com/item.htm?id=592148239417)|垫在散热片下面，压紧散热片、防止损坏外壳
-双 90 度弯头 TypeC 充电线一根|<img src="/files/case_xiaoshitou_46.png" class="max-h-100">|[绿联type-c数据线双弯头](https://detail.tmall.com/item.htm?id=563863764427&skuId=4088026243561)|-
-亚克力板材若干|<img src="/files/case_xiaoshitou_44.jpg" class="max-h-100">|[亚克力板设计文件下载](https://d.sdut.me/case/xiaoshitou/eon_acrylic_case.dwg)| 需要按照设计文件定制加工
-M3*20盘头螺丝 5 颗 |<img src="/files/case_xiaoshitou_59.png" class="max-h-100">|[M3*20盘头螺丝](https://detail.tmall.com/item.htm?id=13866722304&skuId=22203663953)|-
-M3 拉铆螺母 5 颗 |<img src="/files/case_xiaoshitou_60.png" class="max-h-100">|[M3 拉铆螺母1](https://detail.tmall.com/item.htm?id=13896710227&skuId=4242448834389) <br>[M3 拉铆螺母2](https://detail.tmall.com/item.htm?id=579803806437&skuId=4024410619440)|-
+材料名称|图片|参考链接
+-|-|-
+5CM厚10MM 散热风扇|<img src="/files/case_xiaoshitou_42.jpg" class="max-h-100">| [12V涡轮鼓风机散热风扇](https://item.taobao.com/item.htm?id=569786345005)<br>此款静音风扇支持 pwm 调速，可后期改装
+散热片|<img src="/files/case_xiaoshitou_67.jpg" class="max-h-100">| [尺寸设计文件下载](https://d.sdut.me/case/xiaoshitou/sanreban.png) <br>需要按照尺寸定制切割
+2mm 厚 EVA 单面胶垫若干|<img src="/files/case_xiaoshitou_45.jpg" class="max-h-100">| [胶垫eva泡棉单面胶胶带](https://item.taobao.com/item.htm?id=592148239417)<br>垫在散热片下面，压紧散热片、防止损坏外壳
+双 90 度弯头 TypeC 充电线一根|<img src="/files/case_xiaoshitou_46.jpg" class="max-h-100">|[绿联type-c数据线双弯头](https://detail.tmall.com/item.htm?id=563863764427&skuId=4088026243561)
+亚克力板材若干|<img src="/files/case_xiaoshitou_44.jpg" class="max-h-100">|[亚克力板设计文件下载](https://d.sdut.me/case/xiaoshitou/eon_acrylic_case.dwg)<br>需要按照设计文件定制加工
+M3\*20盘头螺丝 5 颗 |<img src="/files/case_xiaoshitou_59.jpg" class="max-h-100">|[M3\*20盘头螺丝](https://detail.tmall.com/item.htm?id=13866722304&skuId=22203663953)
+M3 拉铆螺母 5 颗 |<img src="/files/case_xiaoshitou_60.jpg" class="max-h-100">|[M3 拉铆螺母1](https://detail.tmall.com/item.htm?id=13896710227&skuId=4242448834389) <br>[M3 拉铆螺母2](https://detail.tmall.com/item.htm?id=579803806437&skuId=4024410619440)
 
 ### 磁吸底座
 
@@ -63,19 +63,35 @@ M3 拉铆螺母 5 颗 |<img src="/files/case_xiaoshitou_60.png" class="max-h-100
 材料名称|图片|参考链接
 -|-|-
 80cm 长红黑导线各一根|-|-
-M3*25 盘头螺丝 2 颗|<img src="/files/case_xiaoshitou_59.png" class="max-h-100">|[M3*25 盘头螺丝](https://detail.tmall.com/item.htm?id=13866722304&skuId=22203663952)
-M3*35 盘头螺丝 2 颗|<img src="/files/case_xiaoshitou_59.png" class="max-h-100">|[M3*35 盘头螺丝](https://detail.tmall.com/item.htm?id=13866722304&skuId=22203663956)
-M3 拉铆螺母 4 颗 |<img src="/files/case_xiaoshitou_60.png" class="max-h-100">|[M3 拉铆螺母1](https://detail.tmall.com/item.htm?id=13896710227&skuId=4242448834389) <br>[M3 拉铆螺母2](https://detail.tmall.com/item.htm?id=579803806437&skuId=4024410619440)
-M3*12 沉头螺丝 8 颗|<img src="/files/case_xiaoshitou_56.png" class="max-h-100">|[M3*12 沉头螺丝](https://detail.tmall.com/item.htm?id=606211816686&skuId=4424207991350)
+M3\*25 盘头螺丝 2 颗|<img src="/files/case_xiaoshitou_59.jpg" class="max-h-100">|[M3\*25 盘头螺丝](https://detail.tmall.com/item.htm?id=13866722304&skuId=22203663952)
+M3\*35 盘头螺丝 2 颗|<img src="/files/case_xiaoshitou_59.jpg" class="max-h-100">|[M3\*35 盘头螺丝](https://detail.tmall.com/item.htm?id=13866722304&skuId=22203663956)
+M3 拉铆螺母 4 颗 |<img src="/files/case_xiaoshitou_60.jpg" class="max-h-100">|[M3 拉铆螺母1](https://detail.tmall.com/item.htm?id=13896710227&skuId=4242448834389) <br>[M3 拉铆螺母2](https://detail.tmall.com/item.htm?id=579803806437&skuId=4024410619440)
+M3\*12 沉头螺丝 8 颗|<img src="/files/case_xiaoshitou_56.jpg" class="max-h-100">|[M3\*12 沉头螺丝](https://detail.tmall.com/item.htm?id=606211816686&skuId=4424207991350)
 M3 螺母 8 颗 |<img src="/files/case_xiaoshitou_57.png" class="max-h-100">|[M3 螺母垫片](https://detail.tmall.com/item.htm?id=14499943965&skuId=3587794317034)
-M3 垫片 8 颗 |<img src="/files/case_xiaoshitou_58.png" class="max-h-100">|[M3 螺母垫片](https://detail.tmall.com/item.htm?id=14499943965&skuId=3587794317034)
-2*6.0 弹性触点 4 粒|<img src="/files/case_xiaoshitou_63.jpg" class="max-h-100">|[2*6.0 弹性触点](https://item.taobao.com/item.htm?id=600342336174)
-2*5.5 弹性触点 8 粒|<img src="/files/case_xiaoshitou_63.jpg" class="max-h-100">|[2*5.5 弹性触点](https://item.taobao.com/item.htm?id=600342336174)
-10*5 中间锥孔磁钢 8 颗，锥孔面 N S 成对|<img src="/files/case_xiaoshitou_54.png" class="max-h-100">|[磁铁圆形带孔强磁10*5](https://item.taobao.com/item.htm?id=575883003822)
-定制磁吸 pcb 板两块|<img src="/files/case_xiaoshitou_62.png" class="max-h-100">|[PCB 文件下载](https://d.sdut.me/case/xiaoshitou/CAM_for_neov2.rar)<br>1.6mm 厚双面绿油无铅玻纤板
-亚克力板材若干|<img src="/files/case_xiaoshitou_66.png" class="max-h-100">|[亚克力板设计文件下载](https://d.sdut.me/case/xiaoshitou/eon_acrylic_case.dwg)
-PC胶水|<img src="/files/case_xiaoshitou_65.png" class="max-h-100">|[PC胶水](https://detail.tmall.com/item.htm?id=583601617340)<br>用于快拆底座组件的粘合固定
+M3 垫片 8 颗 |<img src="/files/case_xiaoshitou_58.jpg" class="max-h-100">|[M3 螺母垫片](https://detail.tmall.com/item.htm?id=14499943965&skuId=3587794317034)
+2\*6.0 弹性触点 4 粒|<img src="/files/case_xiaoshitou_63.jpg" class="max-h-100">|[2\*6.0 弹性触点](https://item.taobao.com/item.htm?id=600342336174)
+2\*5.5 弹性触点 8 粒|<img src="/files/case_xiaoshitou_63.jpg" class="max-h-100">|[2\*5.5 弹性触点](https://item.taobao.com/item.htm?id=600342336174)
+10\*5 中间锥孔磁钢 8 颗，锥孔面 N S 成对|<img src="/files/case_xiaoshitou_54.png" class="max-h-100">|[磁铁圆形带孔强磁10\*5](https://item.taobao.com/item.htm?id=575883003822)
+定制磁吸 pcb 板两块|<img src="/files/case_xiaoshitou_62.jpg" class="max-h-100">|[PCB 文件下载](https://d.sdut.me/case/xiaoshitou/CAM_for_neov2.rar)<br>1.6mm 厚双面绿油无铅玻纤板<br>pcb打样50起不包邮，能得到10片左右<br>pcb焊了弹簧针的是上座，不焊弹簧针的就是下座
+亚克力板材若干|<img src="/files/case_xiaoshitou_66.jpg" class="max-h-100">|[亚克力板设计文件下载](https://d.sdut.me/case/xiaoshitou/eon_acrylic_case.dwg)<br>已包含在设计文件中
+PC胶水|<img src="/files/case_xiaoshitou_65.jpg" class="max-h-100">|[PC胶水](https://detail.tmall.com/item.htm?id=583601617340)<br>用于快拆底座组件的粘合固定
 
+
+
+### 加装均热板
+
+如果你觉得散热片的散热效果不明显，可能是因为热量主要集中在手机上半部分（摄像头区域位置），热量无法快速扩散出去，不过可以通过加装均热板，使热量均匀的分布在整个后面板上，配合大散热片的被动散热，效果更佳！
+
+
+<p class="no-margin">
+<img src="/files/case_xiaoshitou_71.jpeg" class="max-h-150">&emsp;<img src="/files/case_xiaoshitou_73.jpeg" class="max-h-150">&emsp;<img src="/files/case_xiaoshitou_72.jpeg" class="max-h-150">
+</p>
+
+材料名称|图片|参考链接
+-|-|-
+亚克力边框 2 条<br>加厚外壳边框|<img src="/files/case_xiaoshitou_69.jpg" class="max-h-100">|[亚克力板设计文件下载](https://d.sdut.me/case/xiaoshitou/eon_acrylic_case.dwg)<br>已包含在设计文件中
+140\*26\*2mm 均热板 2 条|<img src="/files/case_xiaoshitou_68.jpg" class="max-h-100">|[26宽度铝均热板](https://item.taobao.com/item.htm?id=525616626886)
+导热硅脂（可选）|<img src="/files/case_xiaoshitou_70.jpg" class="max-h-100">|[导热硅脂](https://detail.tmall.com/item.htm?id=520434708489&skuId=3860561336037)
 
 ### 改装 gopro 固定底座
 
@@ -88,8 +104,7 @@ PC胶水|<img src="/files/case_xiaoshitou_65.png" class="max-h-100">|[PC胶水](
 材料名称|图片|参考链接
 -|-|-|-
 gopro 固定底座 stl 文件|<img src="/files/case_xiaoshitou_32.jpg" class="max-h-100">|[gopro 固定底座 stl 文件](https://d.sdut.me/case/xiaoshitou/gopro_mount.stl)
-m3*22mm 螺丝、螺母、垫片|<img src="/files/case_xiaoshitou_47.png" class="max-h-100">|[M3*22 沉头螺丝](https://detail.tmall.com/item.htm?id=14499943965&skuId=3113865560744)<br>[M3螺母平垫弹垫](https://detail.tmall.com/item.htm?id=14499943965&skuId=3587794317034)
-
+m3\*22mm 螺丝、螺母、垫片|<img src="/files/case_xiaoshitou_47.jpg" class="max-h-100">|[M3\*22 沉头螺丝](https://detail.tmall.com/item.htm?id=14499943965&skuId=3113865560744)<br>[M3螺母平垫弹垫](https://detail.tmall.com/item.htm?id=14499943965&skuId=3587794317034)
 
 
 

@@ -36,7 +36,7 @@ RsVMUiFgloWGHETOy0Qvc5AwtqTJFLTD1Wza2uBilSVIEsg6Y83Gickh+ejOmEsY
 ### SSH 连接
 
 ```bash
-# 把 EON 私钥 保存到文件 eonkey.pem  
+# 把 EON 私钥 保存到文件 eonkey.pem
 echo "-----BEGIN PRIVATE KEY-----
 MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC+iXXq30Tq+J5N
 Kat3KWHCzcmwZ55nGh6WggAqECa5CasBlM9VeROpVu3beA+5h0MibRgbD4DMtVXB
@@ -64,16 +64,16 @@ jTadcgKFnRUmc+JT9p/ZbCxkA/ALFg8++G+0ghECgYA8vG3M/utweLvq4RI7l7U7
 b+i2BajfK2OmzNi/xugfeLjY6k2tfQGRuv6ppTjehtji2uvgDWkgjJUgPfZpir3I
 RsVMUiFgloWGHETOy0Qvc5AwtqTJFLTD1Wza2uBilSVIEsg6Y83Gickh+ejOmEsY
 6co17RFaAZHwGfCFFjO76Q==
------END PRIVATE KEY-----" > eonkey.pem 
+-----END PRIVATE KEY-----" > eonkey.pem
 
 # 为私钥设置权限
 chmod 600 eonkey.pem
 
-# 假设你的 EON ip 是 192.168.1.100(通常可以在路由器中查到) 
+# 假设你的 EON ip 是 192.168.1.100(通常可以在路由器中查到)
 ssh root@192.168.1.100 -p 8022 -i eonkey.pem
 ```
 
-### openpilot 编译 
+### openpilot 编译
 
 ```bash
 # 移除已经编译文件
@@ -83,14 +83,15 @@ git clean -xdf
 git reset --hard HEAD
 
 # 切换分支
-git checkout 0.6.6-zhs 
+git checkout 0.6.6-zhs
 
 # 切换分支并重新编译
-cd /data/openpilot && git clean -xdf && git reset --hard HEAD && git checkout 0.6.6-zhs && make && reboot
+# 0.7 之前的版本使用 make 代替 scons -i
+cd /data/openpilot && git clean -xdf && git reset --hard HEAD && git checkout 0.7.3-zhs && scons -i && reboot
 ```
 
 
-### 挂载 system 分区 
+### 挂载 system 分区
 
 ```bash
 # 重新挂载 system 分区为读写权限
@@ -137,7 +138,7 @@ settings
 getprop
 
 # 获取 IMEI
-getprop oem.device.imeicache 
+getprop oem.device.imeicache
 
 # 获取 serialno
 getprop ro.serialno
@@ -155,7 +156,7 @@ setprop  persist.sys.timezone Asia/Shanghai
 ### 获取设置系统配置
 
 ```bash
-# 在 EON 的 shell 中运行 
+# 在 EON 的 shell 中运行
 settings list global
 settings list system
 settings list secure
@@ -175,7 +176,7 @@ If '--cm' is given, the operations are performed on the CMSettings provider.
 
 ```bash
 # 显示软件包列表
-pm list packages -f 
+pm list packages -f
 
 #卸载软件包
 pm uninstall ai.comma.plus.offroad
@@ -219,7 +220,7 @@ pkg uninstall <packages>
 apt list --upgradable
 pkg upgrade
 
-pkg help 
+pkg help
 ```
 
 

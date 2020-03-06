@@ -85,7 +85,8 @@ cd openpilot
 git checkout {你所需要使用的版本分支}
 #
 # 编译旧版本的 openpilot
-make
+# 0.7 之前的版本使用 make
+scons -i
 #
 #等待编译完成后，重启
 reboot

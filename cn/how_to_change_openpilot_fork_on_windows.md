@@ -23,14 +23,14 @@
 
 ### 填写信息，SSH 连接到 EON
 
-1. 打开 Putty 填写 IP 和 Port  
+1. 打开 Putty 填写 IP 和 Port
 <img src="/files/putty_1.png" class="max-h-400">
-2. 点击左侧菜单 "Connection - SSH - Auth"，点击右侧最下面 Browse 选择 ppk 私钥  
+2. 点击左侧菜单 "Connection - SSH - Auth"，点击右侧最下面 Browse 选择 ppk 私钥
 <img src="/files/putty_2.png" class="max-h-400">
-3. 点击右下角 Open 按钮，弹出窗口点击 "是（Y）"  
+3. 点击右下角 Open 按钮，弹出窗口点击 "是（Y）"
 <img src="/files/putty_3.png" class="max-h-300">
-4. Putty 的 "login as :" 界面输入 `root`，然后回车  
-5. 进入 EON 的 shell 环境了    
+4. Putty 的 "login as :" 界面输入 `root`，然后回车
+5. 进入 EON 的 shell 环境了
 <img src="/files/putty_4.png" class="max-h-300">
 
 选项|填写|备注
@@ -65,17 +65,18 @@ cd openpilot
 git branch -a
 
 # 切换到目标分支
-git checkout kegman-0.6.6
+git checkout kegman-0.7.3
 
 # 重新查看确认当前分支
 git branch
 
 # 编译重启
-make && reboot
+# 0.7 之前的版本使用 make && reboot
+scons -i && reboot
 ```
 
 或者用一条命令运行：
 
 <pre style="white-space: pre-wrap;word-wrap: break-word;">
-cd /data && rm -rf openpilot && git clone https://gitee.com/afaaa/kegman openpilot && cd openpilot && git checkout kegman-0.6.6 && make && reboot
+cd /data && rm -rf openpilot && git clone https://gitee.com/afaaa/kegman openpilot && cd openpilot && git checkout kegman-0.7.3 && scons -i && reboot
 </pre>

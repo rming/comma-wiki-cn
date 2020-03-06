@@ -49,6 +49,27 @@ d.sdut.me/dp/devel-zhs
 ```bash
 d.sdut.me/op/release2
 ```
+### 使用方法
+
+如果你是在安装 NEOS 系统后第一次进入 openpilot，那么可以直接输入上述地址即可。
+
+NEOS 系统安装参考：
+
+- [Windows 下手动分布安装 openpilot 教程](/cn/how_to_flash_openpilot_on_windows_step_by_step.md)
+- [Windows 下一键安装 openpilot 教程](/cn/how_to_flash_openpilot_on_windows.md)
+- [macOS 下手动安装 openpilot 教程](cn/how_to_flash_openpilot_on_mac.md)
+
+
+如果你已经安装了 openpilot，那么你可以通过先 **卸载 openpilot**，然后重新回到输入 Software Url 的界面，输入上述地址即可。
+
+
+<center>
+<img src="/files/uninstall1.jpg" class="max-h-300">
+<img src="/files/uninstall2.jpg" class="max-h-300">
+<img src="/files/uninstall3.jpg" class="max-h-300">
+</center>
+
+
 
 ### 安装脚本更新
 

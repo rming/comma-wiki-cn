@@ -2,8 +2,8 @@
 
 - [更新记录[中文翻译]](openpilot_releases.md)
 
-Version 0.7.3 (2020-02-21)
-========================
+### Version 0.7.3 (2020-02-21)
+
  * ~~Improved autofocus for road facing camera~~
  * Support for 2020 Highlander thanks to che220!
  * Support for 2018 Lexus NX 300h thanks to kengggg!

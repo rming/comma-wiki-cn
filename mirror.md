@@ -34,5 +34,5 @@ raspberry-pilot|https://gitee.com/afaaa/raspberry-pilot
 dragonpilot|https://git.sdut.me/dragonpilot-community/dragonpilot
 Gernby|https://git.sdut.me/gernby/openpilot
 kegman|https://git.sdut.me/kegman/openpilot
-arne182|https://git.sdut.me/arne182/openpilot
+arne182|https://git.sdut.me/arne182/opeMpilot
 raspberry-pilot|https://git.sdut.me/gernby/raspberry-pilot

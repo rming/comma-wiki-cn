@@ -1,15 +1,15 @@
 ## 抓取车辆指纹2.0
 
-1. 使用电脑连接到 EON 并打开 SSH 窗口：
+1. 使用电脑连接到 EON 并打开 SSH 窗口[1]：
 ```bash
 killall tmux
 ```
-2. 启动车辆，在 SSH 窗口输入
+2. 启动车辆，在 SSH 窗口[1]输入
 ```bash
 cd /data/openpilot/selfdrive/boardd
 ./boardd
 ```
-3. 新打开一个 SSH 窗口输入
+3. 新打开一个 SSH 窗口[2]输入
 ```bash
 cd /data/openpilot/selfdrive/car/
 python fw_versions.py --scan

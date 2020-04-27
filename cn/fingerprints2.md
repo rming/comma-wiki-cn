@@ -4,27 +4,21 @@
 ```bash
 killall tmux
 ```
-
 2. 启动车辆，在 SSH 窗口输入
 ```bash
 cd /data/openpilot/selfdrive/boardd
 ./boardd
 ```
-
 3. 新打开一个 SSH 窗口输入
-
 ```bash
 cd /data/openpilot/selfdrive/car/
 python fw_versions.py --scan
 ```
-
 4. 等待命令执行结束
-
 ```bash
 Found FW versions
 {
     ...
 }
 ```
-
 以上内容就是你的车辆指纹2.0

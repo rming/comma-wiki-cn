@@ -1,21 +1,50 @@
 ## FAQ
 
-### Openpilot 一代硬件和二代硬件有什么区别？
+### Openpilot 一代硬件、二代硬件、二代硬件有什么区别？
 
 * [Openpilot 硬件一览表](/cn/hardwares.md)
 
-第二代相比较第一代有 2 个明显改进：
-1. 体积缩小了，panda 和 harness 变成了 2 个小黑盒子，giraffe 变成了线束，可以放进原车的 ACC 盒子里，第一代不行。
-2. 新增硬件 harness ，可以检测是否连接了EON，自动切换原车和 OP，而第一代需要手动拨动开关切换。
+**第二代相比较第一代有 2 个明显改进：**
+
+- 体积缩小了，panda 和 harness 变成了 2 个小黑盒子，giraffe 变成了线束，可以放进原车的 ACC 盒子里，第一代不行。
+- 新增硬件 harness ，可以检测是否连接了EON，自动切换原车和 OP，而第一代需要手动拨动开关切换。
+
+**第三代硬件 Comma2 改进：**
+
+- 内置 Black Panda，前置红外摄像头，可以在夜间监控驾驶员是否安全驾驶。
+- 移除了手机电池，避免设备长时间暴晒下的高温锂电池爆炸风险。
 
 
 ### Openpilot 的主要特性包括哪些？
 
-Openpilot 官方版本支持 **车道保持** 与 **ACC巡航**。
+Openpilot 官方版本支持 **车道保持** 、**ACC巡航**、**自动辅助变道**。
 
-分支版本 [arne182's Fork](https://github.com/arne182/openpilot) 也有对部分车型支持转向灯变道，依赖于原车盲区检测功能提供侧向车道检测信号，丰田车型适配较好。
+**车道保持：**控制方向盘，使车辆保持在左右两车道正中间。
+
+**ACC巡航：**检测前车、障碍物，根据前车速度调节车速（油门、刹车），与前车保持安全距离。
+
+**自动辅助变道：**当驾驶员需要切换车道时，需要打开转向灯（常亮），确认变向车道安全后，然后朝变道方向轻推方向盘，车辆将驶向旁边车道，变道完成后，需要驾驶员关闭转向灯。
 
 * 0.6.4 之后的版本在测试过程中发现，如果没有车道线情况下，会跟随前车轨迹行驶
+
+
+### 如何购买 openpilot 硬件？
+
+参考： [Openpilot 硬件购买篇](cn/how_to_buy_openpilot.md)
+
+
+### 如何安装 openpilot 软件？
+
+参考：
+
+
+- [Windows 下一键安装 openpilot 教程](cn/how_to_flash_openpilot_on_windows.md)
+- [Windows 下手动安装 openpilot 教程](cn/how_to_flash_openpilot_on_windows_step_by_step.md)
+- [macOS 下手动安装 openpilot 教程](cn/how_to_flash_openpilot_on_mac.md)
+- [通过界面安装 openpilot 分支版本](cn/how_to_change_openpilot_fork_via_ui.md)
+- [使用 Putty SSH 切换 openpilot 分支版本](cn/how_to_change_openpilot_fork_on_windows.md)
+
+
 
 
 ### Openpilot 与 原车 Acc LKAS 的区别到底有多大？
@@ -32,10 +61,10 @@ Openpilot 官方版本支持 **车道保持** 与 **ACC巡航**。
 原车不支持**全速域ACC**的情况下，可以尝试加装 [hw-pedal](https://github.com/commaai/neo/tree/master/pedal)，不过有一定的未知风险。
 
 
-
 ### Openpilot 还不具备预碰撞缓解功能（AEB）？
 
 Openpilot 软件本身暂时不支持 AEB 刹车，只能在激活自动驾驶的时候，检测到前方车辆或障碍物距离太近，提示用户或刹车减速。
+
 
 **通过 Supported Cars 表格的 Longitudinal 列，显示 Stock 的为使用原厂纵向控制，包括 ACC、AEB，显示 Yes 为 Openpilot 实现的纵向控制，暂时不支持 AEB。**
 
@@ -54,26 +83,16 @@ PS. 为了避免 EON 在阳光下长时间照射，带来分锂电池爆炸风�
 
 ### EON 可以一次性安装，以后上车即用么？
 
-目前来看，不可以，因为存在以下两个问题：
+如果你使用的是没有电池的 Comma 2，那么你可以把它一直挂在前挡风玻璃上，不用取下来。
 
-1. 为了避免 EON 在阳光下长时间照射，带来分锂电池爆炸风险，需要每次停车从前挡风玻璃上取下来。
-2. 大部分车型需要 EON 需要在汽车启动自检前启动完成，达到准备状态，否则启动车辆后 EON 再开始启动，可能会带来汽车自检会报错。
-
-
-* 大多数丰田车型存在这个问题
-* 本田 Bosch 硬件车型不存在这个问题，上车后启动后有报错信息，等待EON自动开机启动后，错误信息消失（比如 雅阁2019）
-
-### 有什么办法可以避免 EON 启动慢带来的车辆报错么？
-
-~~社区有人提出可以尝试使用程序控制的继电器开关，在启动车辆时，汽车电路连接原车线路，EON 启动完成准备后，程序控制继电器开关切换到 Openpilot 线路。~~
-
-* comma.ai 在2019.10.10凌晨6点（北京时间）发布了新硬件 harness，专门处理 原车/OP 的自动切换，可以做到启动车子的时候，使用原车ACC，当检测到 EON 连接上并且工作正常的情况下，自动切换到 openpilot；可以避免启动车子的时候大部分报错，但是 harness 自动切换的瞬间，还是会有报错，部分车型在切换成功后消失。
+但是如果你使用的是带有锂电池的手机（乐视3Pro 或 一加3T），那么建议每次停车从前挡风玻璃上取下来，避免 EON 在阳光下长时间照射，带来分锂电池爆炸风险。
 
 
 ### openpilot 只能运行在一加 3T 手机上么，其他手机可以么？
 
 因为 openpilot 的路径预测程序使用了 高通的机器学习平台（SNPE），所以目前只针对 骁龙821 CPU 进行了适配，并且因为摄像头模块等原因，目前只适配了 一加 3T 和 乐视 3 pro 两个机型。
 
-目前社区里已经有人把 SNPE 的模型移植到 x86 平台的引擎([zorrobyte/openpilot](https://github.com/zorrobyte/openpilot))
+如果需要运行在高通处理器的其他手机上，你可能需要修改摄像头相关的驱动代码。
 
+openpilot 目前已经可以运行在具有足够运算能力的电脑上了，Comma 官方 3月28日 在官方博客发布了 [Self-Driving Car For Free](https://medium.com/@comma_ai/self-driving-car-for-free-82e871fe0587)，文章中指出，openpilot 代码中已经支了 TensorFlow 的模型，新的模型已经放出（只是目前训练数据有限，能力较 SNPE 模型较差），因此我们可以把 openpilot 运行在任何支持 TensorFlow 模型的平台上了（运算能力足够的前提下），经过社区开发者的尝试，目前来看 Jetson TX2 是目前比较合适的 DIY 硬件。
 

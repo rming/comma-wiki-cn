@@ -9,7 +9,6 @@
 -|-
 github| github.com
 cnpmjs| github.com.cnpmjs.org
-afa|git.sdut.me
 
 当你需要下载 官方版本时，只需要把  `https://github.com/commaai/openpilot`替换成  `https://github.com.cnpmjs.org/commaai/openpilot` 即可，其他分支相同。
 
@@ -27,14 +26,3 @@ arne182|https://github.com.cnpmjs.org/arne182/ArnePilot
 raspberry-pilot|https://github.com.cnpmjs.org/gernby/raspberry-pilot
 
 
-备用地址：
-
-分支版本|git 地址
--|-
-官方版本|https://git.sdut.me/commaai/openpilot
-官方中文版|https://git.sdut.me/rming/openpilot
-dragonpilot|https://git.sdut.me/dragonpilot-community/dragonpilot
-Gernby|https://git.sdut.me/gernby/openpilot
-kegman|https://git.sdut.me/kegman/openpilot
-arne182|https://git.sdut.me/arne182/ArnePilot
-raspberry-pilot|https://git.sdut.me/gernby/raspberry-pilot

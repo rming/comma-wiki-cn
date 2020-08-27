@@ -16,11 +16,7 @@ openpilot 安装、使用过程中需要的软件、资料，或者疑问请参�
 
 捐助款项将全部用于 openpilot 相关的 服务器费用、运营支持。
 
-| Wechat |
-| :------: |
-| <a href="#donation"><img width="150" src="https://doc.sdut.me/files/zan.jpg"> </a>|
-
-<center>捐助名单见 <a href="https://github.com/rming/openpilot" target="_blank">afa/openpilot</a></center>
+捐助名单见 <a href="https://github.com/rming/openpilot" target="_blank">afa/openpilot</a>
 
 
 ### 联系方式

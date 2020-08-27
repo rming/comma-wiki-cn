@@ -82,8 +82,8 @@
         },
         "tbfed-pagefooter": {
             "copyright": "Copyright ©",
-            "modify_label": "该文件修订时间：",
-            "modify_format": "YYYY-MM-DD HH:mm:ss"
+            "modify_label": "<b style=\"color:red\">本站已停止维护，本页最后更新：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss</b>"
         },
         "3-ba": {
             "token": "93067bff7758a5f7a248a0b6e1d38f9d"

@@ -1,0 +1,767 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>failed to authenticate 和 无法绑定账户问题 · Openpilot 中文 Wiki</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../files/style1.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="EON_Connector.html" />
+    
+    
+    <link rel="prev" href="openpilot_partition_backup.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"Rming/comma-wiki-cn","types":["star"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="FAQ.html">
+            
+                <a href="FAQ.html">
+            
+                    
+                    新手必读
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="videos.html">
+            
+                <a href="videos.html">
+            
+                    
+                    相关视频
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../mirror.html">
+            
+                <a href="../mirror.html">
+            
+                    
+                    国内镜像
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="hardwares.html">
+            
+                <a href="hardwares.html">
+            
+                    
+                    常见硬件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Glossary_of_terminology.html">
+            
+                <a href="Glossary_of_terminology.html">
+            
+                    
+                    常见术语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="commands.html">
+            
+                <a href="commands.html">
+            
+                    
+                    常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="openpilot_releases.html">
+            
+                <a href="openpilot_releases.html">
+            
+                    
+                    更新记录[中文翻译]
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="openpilot_releases_en.html">
+            
+                <a href="openpilot_releases_en.html">
+            
+                    
+                    更新记录[英文原版]
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="openpilot_software_free_download.html">
+            
+                <a href="openpilot_software_free_download.html">
+            
+                    
+                    常用软件资料下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="how_to_buy_openpilot.html">
+            
+                <a href="how_to_buy_openpilot.html">
+            
+                    
+                    Openpilot 硬件购买篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="how_to_restore_openpilot_backup_via_twrp.html">
+            
+                <a href="how_to_restore_openpilot_backup_via_twrp.html">
+            
+                    
+                    使用 TWRP 恢复 openpilot 备份
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="how_to_change_openpilot_fork_on_windows.html">
+            
+                <a href="how_to_change_openpilot_fork_on_windows.html">
+            
+                    
+                    使用 Putty SSH 切换 openpilot 分支版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="how_to_change_openpilot_fork_via_ui.html">
+            
+                <a href="how_to_change_openpilot_fork_via_ui.html">
+            
+                    
+                    通过界面安装 openpilot 分支版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="how_to_connect_openpilot_via_iphone.html">
+            
+                <a href="how_to_connect_openpilot_via_iphone.html">
+            
+                    
+                    iPhone 手机上 SSH 连接到 openpilot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="how_to_flash_openpilot_on_windows.html">
+            
+                <a href="how_to_flash_openpilot_on_windows.html">
+            
+                    
+                    Windows 下一键安装 openpilot 教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="how_to_flash_openpilot_on_windows_step_by_step.html">
+            
+                <a href="how_to_flash_openpilot_on_windows_step_by_step.html">
+            
+                    
+                    Windows 下手动安装 openpilot 教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="how_to_flash_openpilot_on_mac.html">
+            
+                <a href="how_to_flash_openpilot_on_mac.html">
+            
+                    
+                    macOS 下手动安装 openpilot 教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="how_to_downgrade_neos.html">
+            
+                <a href="how_to_downgrade_neos.html">
+            
+                    
+                    NEOS 降级指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="how_to_flash_panda.html">
+            
+                <a href="how_to_flash_panda.html">
+            
+                    
+                    Panda 固件更新教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="Creating_Fingerprints.html">
+            
+                <a href="Creating_Fingerprints.html">
+            
+                    
+                    采集车辆指纹信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="fingerprints2.html">
+            
+                <a href="fingerprints2.html">
+            
+                    
+                    抓取车辆指纹2.0
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="eon_usb_eth0.html">
+            
+                <a href="eon_usb_eth0.html">
+            
+                    
+                    EON USB 有线网卡设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="openpilot_enable_wifi_hotspot.html">
+            
+                <a href="openpilot_enable_wifi_hotspot.html">
+            
+                    
+                    EON 开机自动开启 WIFI 热点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="Oneplus3t_tri_state_key_switch.html">
+            
+                <a href="Oneplus3t_tri_state_key_switch.html">
+            
+                    
+                    一加3T三段式开关切换 openpilot 版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="Oneplus3t_wifi_mac_02_00.html">
+            
+                <a href="Oneplus3t_wifi_mac_02_00.html">
+            
+                    
+                    一加3T手机WIFI mac 丢失问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="openpilot_partition_backup.html">
+            
+                <a href="openpilot_partition_backup.html">
+            
+                    
+                    一加3T手机分区一键备份恢复工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.28" data-path="openpilot_failed_to_authenticate.html">
+            
+                <a href="openpilot_failed_to_authenticate.html">
+            
+                    
+                    failed to authenticate 和 无法绑定账户问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="EON_Connector.html">
+            
+                <a href="EON_Connector.html">
+            
+                    
+                    EON 快拆底座制作指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="eon_acrylic_case.html">
+            
+                <a href="eon_acrylic_case.html">
+            
+                    
+                    EON 亚克力外壳
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="how_to_install_raspberrypilot.html">
+            
+                <a href="how_to_install_raspberrypilot.html">
+            
+                    
+                    raspberry-pilot 安装指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="../about.html">
+            
+                <a href="../about.html">
+            
+                    
+                    关于本站
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="../copyright.html">
+            
+                <a href="../copyright.html">
+            
+                    
+                    版权声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >failed to authenticate 和 无法绑定账户问题</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#failed-to-authenticate-&#x548C;-&#x65E0;&#x6CD5;&#x7ED1;&#x5B9A;&#x8D26;&#x6237;&#x95EE;&#x9898;"><b></b>failed to authenticate &#x548C; &#x65E0;&#x6CD5;&#x7ED1;&#x5B9A;&#x8D26;&#x6237;&#x95EE;&#x9898;</a></li><ul><li><span class="title-icon "></span><a href="#&#x95EE;&#x9898;&#x539F;&#x56E0;&#x63A2;&#x7A76;"><b></b>&#x95EE;&#x9898;&#x539F;&#x56E0;&#x63A2;&#x7A76;</a></li><li><span class="title-icon "></span><a href="#for-english"><b></b>FOR ENGLISH</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="failed-to-authenticate-&#x548C;-&#x65E0;&#x6CD5;&#x7ED1;&#x5B9A;&#x8D26;&#x6237;&#x95EE;&#x9898;"><a name="failed-to-authenticate-&#x548C;-&#x65E0;&#x6CD5;&#x7ED1;&#x5B9A;&#x8D26;&#x6237;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#failed-to-authenticate-&#x548C;-&#x65E0;&#x6CD5;&#x7ED1;&#x5B9A;&#x8D26;&#x6237;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>failed to authenticate &#x548C; &#x65E0;&#x6CD5;&#x7ED1;&#x5B9A;&#x8D26;&#x6237;&#x95EE;&#x9898;</h2>
+<p>&#x4E00;&#x4E9B;&#x624B;&#x673A;&#x8BBE;&#x5907;&#x5B89;&#x88C5;&#x597D; NEOS &#x7CFB;&#x7EDF;&#x540E;&#xFF0C;&#x8F93;&#x5165; openpilot.comma.ai &#x91CD;&#x542F;&#x4EE5;&#x540E;&#xFF0C;&#x51FA;&#x73B0;&#x8BBE;&#x5907;&#x9ED1;&#x5C4F;&#x7684;&#x60C5;&#x51B5;&#x3002;</p>
+<p>SSH &#x8FDB;&#x5165;&#x547D;&#x4EE4;&#x884C;&#x540E;&#xFF0C;&#x901A;&#x8FC7; tmux at &#x67E5;&#x770B;&#xFF0C;&#x53D1;&#x73B0;&#x6709; <code>openpilot failed to authenticate</code> &#x7684;&#x62A5;&#x9519;&#xFF0C;&#x65E0;&#x6CD5;&#x6B63;&#x5E38;&#x901A;&#x8FC7;commaai &#x7684; pilotauth &#x63A5;&#x53E3;&#x6CE8;&#x518C;&#x3002;</p>
+<pre class="language-"><code class="lang-bash">getting pilotauth
+failed to authenticate
+Traceback <span class="token punctuation">(</span>most recent call last<span class="token punctuation">)</span>:
+  File <span class="token string">&quot;/data/openpilot/selfdrive/registration.py&quot;</span>, line <span class="token number">94</span>, <span class="token keyword">in</span> register
+    dongle_id, access_token <span class="token operator">=</span> dongleauth<span class="token punctuation">[</span><span class="token string">&quot;dongle_id&quot;</span><span class="token punctuation">]</span>.encode<span class="token punctuation">(</span><span class="token string">&apos;ascii&apos;</span><span class="token punctuation">)</span>, dongleauth<span class="token punctuation">[</span><span class="token string">&quot;access_token&quot;</span><span class="token punctuation">]</span>.encode<span class="token punctuation">(</span><span class="token string">&apos;ascii&apos;</span><span class="token punctuation">)</span>
+KeyError: <span class="token string">&apos;dongle_id&apos;</span>
+Traceback <span class="token punctuation">(</span>most recent call last<span class="token punctuation">)</span>:
+  File <span class="token string">&quot;./manager.py&quot;</span>, line <span class="token number">622</span>, <span class="token keyword">in</span> <span class="token operator">&lt;</span>module<span class="token operator">&gt;</span>
+    main<span class="token punctuation">(</span><span class="token punctuation">)</span>
+  File <span class="token string">&quot;./manager.py&quot;</span>, line <span class="token number">598</span>, <span class="token keyword">in</span> main
+    manager_init<span class="token punctuation">(</span><span class="token punctuation">)</span>
+  File <span class="token string">&quot;./manager.py&quot;</span>, line <span class="token number">313</span>, <span class="token keyword">in</span> manager_init
+    raise Exception<span class="token punctuation">(</span><span class="token string">&quot;server registration failed&quot;</span><span class="token punctuation">)</span>
+Exception: server registration failed
+</code></pre>
+<center><small>&#x901A;&#x8FC7; ssh &#x8FDB;&#x5165; eon&#xFF0C;<code>tmux at</code> &#x540E;&#x770B;&#x5230;&#x7684;&#x62A5;&#x9519;&#x4FE1;&#x606F;</small></center>
+
+
+<p>&#x51FA;&#x73B0;&#x4E0A;&#x8FF0;&#x95EE;&#x9898;&#xFF0C;&#x6839;&#x636E;&#x731C;&#x6D4B;&#xFF0C;&#x53EF;&#x80FD;&#x662F;&#x4EE5;&#x4E0B; 2 &#x4E2A;&#x539F;&#x56E0;&#xFF1A;</p>
+<ul>
+<li>commaai &#x5B98;&#x65B9;&#x5DF2;&#x7ECF;&#x628A;&#x4F60;&#x7684;&#x8BBE;&#x5907; IMEI &#x6807;&#x8BC6;&#x4E3A;&#x5F02;&#x5E38;&#x8BBE;&#x5907;&#xFF0C;&#x65E0;&#x6CD5;&#x901A;&#x8FC7;&#x63A5;&#x53E3;&#x6CE8;&#x518C; DongleId</li>
+<li>&#x4F60;&#x7684;&#x8BBE;&#x5907;&#x4E4B;&#x524D;&#x6210;&#x529F;&#x6CE8;&#x518C;&#x8FC7; DongleID&#xFF0C;&#x4F46;&#x662F;&#x540E;&#x6765; persist &#x5206;&#x533A;&#x7684; /persist/comma/ &#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x79C1;&#x94A5;&#x3001;&#x516C;&#x94A5;&#x4E22;&#x5931;&#x4E86;&#xFF0C;&#x5BFC;&#x81F4;&#x4F60;&#x65E0;&#x6CD5;&#x6B63;&#x5E38;&#x901A;&#x8FC7; comma &#x7684;&#x63A5;&#x53E3;&#x91CD;&#x65B0;&#x83B7;&#x53D6; DongleId &#x548C; AccessToken</li>
+</ul>
+<p><strong>&#x4E0D;&#x8BBA;&#x51FA;&#x73B0;&#x4EE5;&#x4E0A;&#x54EA;&#x79CD;&#x60C5;&#x51B5;&#xFF0C;&#x56E0;&#x4E3A;&#x662F;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x7684;&#x62D2;&#x7EDD;&#x8BBF;&#x95EE;&#xFF0C;&#x6240;&#x4EE5;&#x4F60;&#x53EA;&#x80FD;&#x901A;&#x8FC7;&#x8054;&#x7CFB; commaai &#x5B98;&#x65B9;&#x7684;&#x4EBA;&#x5458;&#x6765;&#x8BF7;&#x6C42;&#x4ED6;&#x4EEC;&#x66F4;&#x6539;&#x6570;&#x636E;&#xFF0C;&#x5141;&#x8BB8;&#x4F60;&#x7684;&#x8BBE;&#x5907;&#x6B63;&#x5E38;&#x8BBF;&#x95EE; pilotauth &#x63A5;&#x53E3;&#x3002;</strong></p>
+<p>&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x9700;&#x8981;&#x628A;&#x8BBE;&#x5907;&#x7ED1;&#x5B9A;&#x5230;&#x4F60;&#x7684; comma &#x8D26;&#x53F7;&#xFF0C;&#x53EA;&#x662F;&#x60F3;&#x89E3;&#x51B3;&#x542F;&#x52A8;&#x9ED1;&#x5C4F;&#xFF0C;&#x8BA9; EON &#x6B63;&#x5E38;&#x542F;&#x52A8;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x5728;&#x8F66;&#x4E0A;&#x5DE5;&#x4F5C;&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x53EA;&#x9700;&#x8981;&#x521B;&#x5EFA;&#x4E24;&#x4E2A;&#x7A7A;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5373;&#x53EF;&#xFF0C;&#x4F60;&#x5E76;&#x4E0D;&#x9700;&#x8981;&#x771F;&#x5B9E;&#x7684; DongleId</p>
+<pre class="language-"><code class="lang-bash"><span class="token function">touch</span> /data/params/d/AccessToken
+<span class="token function">touch</span> /data/params/d/DongleId
+</code></pre>
+<p>&#x521B;&#x5EFA;&#x597D;&#x6587;&#x4EF6;&#x540E;&#x5373;&#x53EF;&#x91CD;&#x542F;&#x8FDB;&#x5165;&#x7CFB;&#x7EDF;&#x3002;</p>
+<h3 id="&#x95EE;&#x9898;&#x539F;&#x56E0;&#x63A2;&#x7A76;"><a name="&#x95EE;&#x9898;&#x539F;&#x56E0;&#x63A2;&#x7A76;" class="anchor-navigation-ex-anchor" href="#&#x95EE;&#x9898;&#x539F;&#x56E0;&#x63A2;&#x7A76;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95EE;&#x9898;&#x539F;&#x56E0;&#x63A2;&#x7A76;</h3>
+<p>EON &#x6BCF;&#x6B21;&#x542F;&#x52A8;&#x90FD;&#x4F1A;&#x8BF7;&#x6C42;comma &#x670D;&#x52A1;&#x5668;&#x9A8C;&#x8BC1;&#x8BBE;&#x5907;&#x7684;&#x7ED1;&#x5B9A;&#x4FE1;&#x606F;&#xFF0C;&#x8BF7;&#x6C42;&#x7684;&#x53C2;&#x6570;&#x5305;&#x542B;&#x4E0B;&#x5217;&#x6570;&#x636E;&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token function">cat</span> /persist/comma/id_rsa.pub
+<span class="token function">cat</span> /persist/comma/id_rsa
+getprop oem.device.imeicache
+getprop ro.serialno
+</code></pre>
+<p>openpilot &#x8BF7;&#x6C42;&#x670D;&#x52A1;&#x5668;&#x65F6;&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash">PUBLIC_KEY + IMEI + SN + JWT_TOKEN --<span class="token operator">&gt;</span> <span class="token operator">|</span> Comma Server<span class="token operator">|</span>
+<span class="token punctuation">[</span>DONGLE_ID, JWT_TOKEN<span class="token punctuation">]</span>             <span class="token operator">&lt;</span>-- <span class="token operator">|</span> Comma Server<span class="token operator">|</span>
+</code></pre>
+<p>&#x5176;&#x4E2D;</p>
+<pre class="language-"><code class="lang-bash">JWT_TOKEN <span class="token operator">=</span> RS256<span class="token punctuation">(</span>PRIVATE_KEY + EXPIRE_TIME<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x6BCF;&#x6B21;&#x5F00;&#x673A;&#xFF0C;openpilot &#x4F1A;&#x7528;&#x81EA;&#x5DF1;&#x6839;&#x636E; &#x79C1;&#x94A5; &#x751F;&#x6210;&#x7684; JWT_TOKEN&#x3001;&#x516C;&#x94A5;&#x3001;IMEI&#x3001;SN &#x53BB;&#x8BF7;&#x6C42; comma &#x670D;&#x52A1;&#x5668;&#x9A8C;&#x8BC1; JWT_TOKEN &#x5408;&#x6CD5;&#x6027;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x8FD4;&#x56DE;&#x8BBE;&#x5907;&#x7ED1;&#x5B9A;&#x4FE1;&#x606F;&#xFF08;Dongle ID&#x3001;JWT_TOKEN&#xFF09;</p>
+<p>&#x4EE5;&#x4E0B;&#x662F;&#x5BF9;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x9A8C;&#x8BC1;&#x7B56;&#x7565;&#x7684;&#x731C;&#x6D4B;&#xFF1A;</p>
+<p>&#x8BBE;&#x5907;&#x7B2C;&#x4E00;&#x6B21;&#x8BF7;&#x6C42;&#x63A5;&#x53E3;&#x65F6;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x5224;&#x65AD;&#xFF0C;&#x5982;&#x679C; IMEI/SN &#x6CA1;&#x6709;&#x7ED1;&#x5B9A;&#x7684; &#x516C;&#x94A5;&#xFF0C;&#x5219;&#x8FDB;&#x884C;&#x7ED1;&#x5B9A;&#xFF0C;&#x8FD9;&#x6837;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x5C31;&#x5B58;&#x50A8;&#x4E86; EON&#x516C;&#x94A5;&#x3001;IMEI&#x3001;SN &#x7684;&#x5173;&#x8054;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x8BBE;&#x5907;&#x518D;&#x6B21;&#x8BF7;&#x6C42;&#x63A5;&#x53E3;&#x65F6;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x4F7F;&#x7528; IMEI &#x4F5C;&#x4E3A;&#x4E3B;&#x7D22;&#x5F15;&#x67E5;&#x8BE2;&#x5F53;&#x524D; EON &#x7684;&#x516C;&#x94A5; &#x53BB;&#x9A8C;&#x8BC1; JWT_TOKEN &#x8BF7;&#x6C42;&#x53C2;&#x6570; &#x7684;&#x5408;&#x6CD5;&#x6027;&#xFF08;JWT_TOKEN &#x672C;&#x8D28;&#x662F;&#x79C1;&#x94A5; + &#x6709;&#x6548;&#x671F;&#xFF09;&#xFF0C;&#x51B3;&#x5B9A;&#x662F;&#x5426;&#x8FD4;&#x56DE;&#x8BBE;&#x5907;&#x4FE1;&#x606F;&#xFF08;Dongle ID&#x3001;JWT_TOKEN&#xFF09;
+&#x5982;&#x679C;&#x5728; IMEI &#x6CE8;&#x518C;&#x5B8C;&#x6210;&#x540E;&#xFF0C;EON &#x7684;&#x516C;&#x94A5;&#x3001;&#x79C1;&#x94A5;&#x4FE1;&#x606F;&#x53D1;&#x751F;&#x4E86;&#x53D8;&#x66F4;&#xFF08;/persist/comma/id_rsa.pub&#x3001;/persist/comma/id_rsa &#x4E22;&#x5931;&#x6216;&#x88AB;&#x4FEE;&#x6539;&#xFF09;&#xFF0C;&#x90A3;&#x4E48;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x5C31;&#x4F1A;&#x8FD4;&#x56DE; failed to authenticate &#x7684;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x53EF;&#x80FD;&#x662F;&#x5B58;&#x5728;&#x8FD9;&#x6837;&#x7684;&#x5173;&#x8054;&#x5173;&#x7CFB;&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash">USER_ID <span class="token operator">&lt;</span>---<span class="token operator">&gt;</span> Devices <span class="token punctuation">{</span>DONGLE_ID&#x3001;PUBLIC_KEY&#x3001;IMEI<span class="token punctuation">}</span>
+</code></pre>
+<p>comma api &#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x4E5F;&#x53EF;&#x4EE5;&#x4F50;&#x8BC1;&#xFF1A;</p>
+<ul>
+<li><a href="https://api.comma.ai/#device-info" target="_blank">device info</a></li>
+<li><a href="https://api.comma.ai/#openpilot-auth" target="_blank">openpilot auth</a></li>
+</ul>
+<h3 id="for-english"><a name="for-english" class="anchor-navigation-ex-anchor" href="#for-english"><i class="fa fa-link" aria-hidden="true"></i></a>FOR ENGLISH</h3>
+<h4 id="auth-request"><a name="auth-request" class="anchor-navigation-ex-anchor" href="#auth-request"><i class="fa fa-link" aria-hidden="true"></i></a>Auth request</h4>
+<p>openpilot auth request params like this</p>
+<pre class="language-"><code class="lang-bash">PUBLIC_KEY + IMEI + SN + JWT_TOKEN --<span class="token operator">&gt;</span> <span class="token operator">|</span> Comma Server<span class="token operator">|</span>
+<span class="token punctuation">[</span>DONGLE_ID, JWT_TOKEN<span class="token punctuation">]</span>             <span class="token operator">&lt;</span>-- <span class="token operator">|</span> Comma Server<span class="token operator">|</span>
+</code></pre>
+<p>Remark: <code>JWT_TOKEN = RS256(PRIVATE_KEY + EXPIRE_TIME)</code></p>
+<p>so if someone want to access your device (write), he need PUBLIC_KEY, PRIVATE_KEY, SN and IMEI.</p>
+<pre class="language-"><code class="lang-bash">IMEI        <span class="token operator">==</span> username
+PRIVATE_KEY <span class="token operator">==</span> password
+</code></pre>
+<p>It is easy to understand</p>
+<h4 id="issue-reason"><a name="issue-reason" class="anchor-navigation-ex-anchor" href="#issue-reason"><i class="fa fa-link" aria-hidden="true"></i></a>Issue reason</h4>
+<p>openpilot store the public key and private key in the persist partition.</p>
+<p>files:</p>
+<pre class="language-"><code class="lang-bash">/persist/comma/id_rsa.pub
+/persist/comma/id_rsa
+</code></pre>
+<p>so, &quot;failed to authenticate&quot; issue maybe caused by persist partition lost or rewrite(factory rewrite without comma id_rsa files).</p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification"><b style="color:red">&#x672C;&#x7AD9;&#x5DF2;&#x505C;&#x6B62;&#x7EF4;&#x62A4;&#xFF0C;&#x672C;&#x9875;&#x6700;&#x540E;&#x66F4;&#x65B0;&#xFF1A;
+2020-03-03 11:18:05</b>
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="openpilot_partition_backup.html" class="navigation navigation-prev " aria-label="Previous page: 一加3T手机分区一键备份恢复工具">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="EON_Connector.html" class="navigation navigation-next " aria-label="Next page: EON 快拆底座制作指南">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"failed to authenticate 和 无法绑定账户问题","level":"1.28","depth":1,"next":{"title":"EON 快拆底座制作指南","level":"1.29","depth":1,"path":"cn/EON_Connector.md","ref":"cn/EON_Connector.md","articles":[]},"previous":{"title":"一加3T手机分区一键备份恢复工具","level":"1.27","depth":1,"path":"cn/openpilot_partition_backup.md","ref":"cn/openpilot_partition_backup.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","prism","prism-themes","search-plus@^0.0.11","simple-page-toc@^0.1.1","github@^2.0.0","github-buttons@2.1.0","edit-link@^2.0.2","-sharing","sharing-plus@^0.0.2","tbfed-pagefooter@^0.0.1","custom-favicon","anchor-navigation-ex","3-ba","bilibili","copy-code-button","disqus","livereload"],"styles":{"website":"files/style1.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright ©","modify_label":"<b style=\"color:red\">本站已停止维护，本页最后更新：","modify_format":"YYYY-MM-DD HH:mm:ss</b>"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"disqus":{"useIdentifier":false,"shortName":"openpilot-zhong-wen-wiki"},"github":{"url":"https://github.com/Rming/comma-wiki-cn"},"livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"bilibili":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"sitemap-general":{"prefix":"http://sdut.me"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":"/files/favicon.ico","prism-themes":{},"github-buttons":{"repo":"Rming/comma-wiki-cn","types":["star"],"size":"small"},"custom-favicon":{},"3-ba":{"configuration":"auto","token":"93067bff7758a5f7a248a0b6e1d38f9d"},"copy-code-button":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon","qq","qzone"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"edit-link":{"label":"Edit This Page","base":"https://github.com/Rming/comma-wiki-cn/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Openpilot 中文 Wiki","language":"zh-hans","links":{"sidebar":{}},"gitbook":"*","description":"Openpilot 中文 Wiki"},"file":{"path":"cn/openpilot_failed_to_authenticate.md","mtime":"2020-03-03T03:18:05.718Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-27T15:36:58.460Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-3-ba/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

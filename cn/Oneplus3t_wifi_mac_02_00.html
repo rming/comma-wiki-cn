@@ -1,0 +1,737 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>一加3T手机WIFI mac 丢失问题 · Openpilot 中文 Wiki</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../files/style1.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="openpilot_partition_backup.html" />
+    
+    
+    <link rel="prev" href="Oneplus3t_tri_state_key_switch.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"Rming/comma-wiki-cn","types":["star"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="FAQ.html">
+            
+                <a href="FAQ.html">
+            
+                    
+                    新手必读
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="videos.html">
+            
+                <a href="videos.html">
+            
+                    
+                    相关视频
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../mirror.html">
+            
+                <a href="../mirror.html">
+            
+                    
+                    国内镜像
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="hardwares.html">
+            
+                <a href="hardwares.html">
+            
+                    
+                    常见硬件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Glossary_of_terminology.html">
+            
+                <a href="Glossary_of_terminology.html">
+            
+                    
+                    常见术语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="commands.html">
+            
+                <a href="commands.html">
+            
+                    
+                    常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="openpilot_releases.html">
+            
+                <a href="openpilot_releases.html">
+            
+                    
+                    更新记录[中文翻译]
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="openpilot_releases_en.html">
+            
+                <a href="openpilot_releases_en.html">
+            
+                    
+                    更新记录[英文原版]
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="openpilot_software_free_download.html">
+            
+                <a href="openpilot_software_free_download.html">
+            
+                    
+                    常用软件资料下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="how_to_buy_openpilot.html">
+            
+                <a href="how_to_buy_openpilot.html">
+            
+                    
+                    Openpilot 硬件购买篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="how_to_restore_openpilot_backup_via_twrp.html">
+            
+                <a href="how_to_restore_openpilot_backup_via_twrp.html">
+            
+                    
+                    使用 TWRP 恢复 openpilot 备份
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="how_to_change_openpilot_fork_on_windows.html">
+            
+                <a href="how_to_change_openpilot_fork_on_windows.html">
+            
+                    
+                    使用 Putty SSH 切换 openpilot 分支版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="how_to_change_openpilot_fork_via_ui.html">
+            
+                <a href="how_to_change_openpilot_fork_via_ui.html">
+            
+                    
+                    通过界面安装 openpilot 分支版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="how_to_connect_openpilot_via_iphone.html">
+            
+                <a href="how_to_connect_openpilot_via_iphone.html">
+            
+                    
+                    iPhone 手机上 SSH 连接到 openpilot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="how_to_flash_openpilot_on_windows.html">
+            
+                <a href="how_to_flash_openpilot_on_windows.html">
+            
+                    
+                    Windows 下一键安装 openpilot 教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="how_to_flash_openpilot_on_windows_step_by_step.html">
+            
+                <a href="how_to_flash_openpilot_on_windows_step_by_step.html">
+            
+                    
+                    Windows 下手动安装 openpilot 教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="how_to_flash_openpilot_on_mac.html">
+            
+                <a href="how_to_flash_openpilot_on_mac.html">
+            
+                    
+                    macOS 下手动安装 openpilot 教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="how_to_downgrade_neos.html">
+            
+                <a href="how_to_downgrade_neos.html">
+            
+                    
+                    NEOS 降级指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="how_to_flash_panda.html">
+            
+                <a href="how_to_flash_panda.html">
+            
+                    
+                    Panda 固件更新教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="Creating_Fingerprints.html">
+            
+                <a href="Creating_Fingerprints.html">
+            
+                    
+                    采集车辆指纹信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="fingerprints2.html">
+            
+                <a href="fingerprints2.html">
+            
+                    
+                    抓取车辆指纹2.0
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="eon_usb_eth0.html">
+            
+                <a href="eon_usb_eth0.html">
+            
+                    
+                    EON USB 有线网卡设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="openpilot_enable_wifi_hotspot.html">
+            
+                <a href="openpilot_enable_wifi_hotspot.html">
+            
+                    
+                    EON 开机自动开启 WIFI 热点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="Oneplus3t_tri_state_key_switch.html">
+            
+                <a href="Oneplus3t_tri_state_key_switch.html">
+            
+                    
+                    一加3T三段式开关切换 openpilot 版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.26" data-path="Oneplus3t_wifi_mac_02_00.html">
+            
+                <a href="Oneplus3t_wifi_mac_02_00.html">
+            
+                    
+                    一加3T手机WIFI mac 丢失问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="openpilot_partition_backup.html">
+            
+                <a href="openpilot_partition_backup.html">
+            
+                    
+                    一加3T手机分区一键备份恢复工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="openpilot_failed_to_authenticate.html">
+            
+                <a href="openpilot_failed_to_authenticate.html">
+            
+                    
+                    failed to authenticate 和 无法绑定账户问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="EON_Connector.html">
+            
+                <a href="EON_Connector.html">
+            
+                    
+                    EON 快拆底座制作指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="eon_acrylic_case.html">
+            
+                <a href="eon_acrylic_case.html">
+            
+                    
+                    EON 亚克力外壳
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="how_to_install_raspberrypilot.html">
+            
+                <a href="how_to_install_raspberrypilot.html">
+            
+                    
+                    raspberry-pilot 安装指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="../about.html">
+            
+                <a href="../about.html">
+            
+                    
+                    关于本站
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="../copyright.html">
+            
+                <a href="../copyright.html">
+            
+                    
+                    版权声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >一加3T手机WIFI mac 丢失问题</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#&#x4E00;&#x52A0;3t&#x624B;&#x673A;wifi-mac-&#x4E22;&#x5931;&#x95EE;&#x9898;"><b></b>&#x4E00;&#x52A0;3T&#x624B;&#x673A;WIFI mac &#x4E22;&#x5931;&#x95EE;&#x9898;</a></li><ul><li><span class="title-icon "></span><a href="#&#x8D77;&#x56E0;"><b></b>&#x8D77;&#x56E0;</a></li><li><span class="title-icon "></span><a href="#&#x63A2;&#x7A76;&#x539F;&#x56E0;"><b></b>&#x63A2;&#x7A76;&#x539F;&#x56E0;</a></li><li><span class="title-icon "></span><a href="#&#x89E3;&#x51B3;&#x95EE;&#x9898;"><b></b>&#x89E3;&#x51B3;&#x95EE;&#x9898;</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="&#x4E00;&#x52A0;3t&#x624B;&#x673A;wifi-mac-&#x4E22;&#x5931;&#x95EE;&#x9898;"><a name="&#x4E00;&#x52A0;3t&#x624B;&#x673A;wifi-mac-&#x4E22;&#x5931;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x52A0;3t&#x624B;&#x673A;wifi-mac-&#x4E22;&#x5931;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E00;&#x52A0;3T&#x624B;&#x673A;WIFI mac &#x4E22;&#x5931;&#x95EE;&#x9898;</h2>
+<hr>
+<p><strong>&#x91CD;&#x8981;&#xFF1A;</strong></p>
+<p><strong>&#x4E0D;&#x8981;&#x5728; Android 9.0 &#x7CFB;&#x7EDF;&#x4E0B;&#x89E3;&#x9501;&#x5237;&#x673A;&#xFF01;&#xFF01;&#xFF01;</strong></p>
+<p><strong>&#x8BF7;&#x5148;&#x964D;&#x7EA7;&#x5230; Android 8.0 &#x7CFB;&#x7EDF;&#x4EE5;&#x4E0B;&#x518D;&#x5237;&#x673A;&#xFF01;&#xFF01;&#xFF01;</strong></p>
+<p><strong>&#x5426;&#x5219;&#x4F1A;&#x51FA;&#x73B0; fastboot <code>FAILED (status read failed (Too many links)) &#x7684;&#x62A5;&#x9519;&#xFF01;&#xFF01;</code></strong></p>
+<p><strong>&#x540C;&#x65F6;&#x4F1A;&#x5BFC;&#x81F4; mac &#x4E22;&#x5931;&#x7684;&#x95EE;&#x9898;&#xFF01;&#xFF01;</strong></p>
+<hr>
+<h3 id="&#x8D77;&#x56E0;"><a name="&#x8D77;&#x56E0;" class="anchor-navigation-ex-anchor" href="#&#x8D77;&#x56E0;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8D77;&#x56E0;</h3>
+<p>&#x6700;&#x8FD1;&#x5728;&#x5BF9;&#x4E00;&#x52A0;3T&#x624B;&#x673A;&#x5237;&#x673A;&#x8FC7;&#x7A0B;&#x7535;&#x8111;&#x7A81;&#x7136;&#x62A5;&#x4E86;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#xFF0C;<code>usb_read failed with status e00002eb</code>&#xFF0C;&#x7136;&#x540E;&#x5237;&#x673A;&#x8FDB;&#x7A0B;&#x5C31;&#x4E2D;&#x65AD;&#x4E86;&#x3002;</p>
+<p><img src="../files/usb_error.jpg" alt="usb_read failed with status e00002eb"></p>
+<p>&#x91CD;&#x8BD5;&#x5237;&#x673A;&#x540E;&#xFF0C;&#x867D;&#x7136;&#x5237;&#x673A;&#x8FC7;&#x7A0B;&#x4E00;&#x5207;&#x6B63;&#x5E38;&#xFF0C;&#x4F46;&#x662F;&#x624B;&#x673A;&#x51FA;&#x73B0;&#x4E86;&#x4E00;&#x4E2A;&#x5947;&#x602A;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x8D77;&#x5148;&#x5728; Android &#x7CFB;&#x7EDF;&#x4E0B;&#xFF0C;&#x4E00;&#x5207;&#x6B63;&#x5E38;&#xFF0C;WIFI&#x5730;&#x5740;&#x83B7;&#x53D6;&#x6B63;&#x5E38;&#x3001;&#x84DD;&#x7259;&#x5F00;&#x5173;&#x8FDE;&#x63A5;&#x6B63;&#x5E38;&#xFF0C;&#x4F46;&#x662F;&#x5237;&#x5B8C; Openpilot &#x4EE5;&#x540E;&#xFF0C;
+&#x53D1;&#x73B0; WIFI &#x65E0;&#x6CD5;&#x6B63;&#x5E38;&#x4F7F;&#x7528;&#xFF0C;WIFI mac &#x5730;&#x5740; &#x53D8;&#x6210;&#x4E86; <code>02:00:00:00:00:00</code>&#xFF0C;&#x5E76;&#x4E14;&#x65E0;&#x6CD5;&#x6253;&#x5F00; WIFI &#x8FDE;&#x63A5;&#x3002;</p>
+<p><img src="../files/mac_02_00_00.jpg" alt="mac address 02:00:00:00:00:00"></p>
+<p>WIFI &#x65E0;&#x6CD5;&#x8FDE;&#x63A5;&#xFF0C;&#x90A3;&#x6211;&#x600E;&#x4E48;&#x53BB;&#x4E0B;&#x8F7D; Openpilot &#x5462;&#xFF0C;&#x600E;&#x4E48;&#x8FDE;&#x63A5;&#x624B;&#x673A; SSH &#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x5462;&#xFF0C;&#x771F;&#x7684;&#x662F;&#x53EA;&#x80FD;&#x79BB;&#x7EBF;&#x4F7F;&#x7528;&#x4E86;&#x3002;</p>
+<p>&#x6709;&#x5FAE;&#x4FE1;&#x7FA4;&#x53CB;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528; usb-eth &#x8FDE;&#x63A5;&#x624B;&#x673A;&#xFF0C;&#x6211;&#x627E;&#x5230;&#x4E86;&#x4E00;&#x4E2A; usb-eth &#x4F46;&#x662F;&#x5C1D;&#x8BD5;&#x540E;&#x53D1;&#x73B0;&#xFF0C;&#x624B;&#x673A;&#x5E76;&#x4E0D;&#x80FD;&#x8BC6;&#x522B;&#x6211;&#x7684;&#x8FD9;&#x4E2A; USB&#x7F51;&#x5361;&#xFF0C;&#x53EF;&#x80FD;&#x662F; NEOS &#x76EE;&#x524D;&#x53EA;&#x652F;&#x6301;&#x7279;&#x5B9A;&#x7F51;&#x5361;&#x82AF;&#x7247;&#x9A71;&#x52A8;&#x7684;&#x539F;&#x56E0;&#x3002;</p>
+<h3 id="&#x63A2;&#x7A76;&#x539F;&#x56E0;"><a name="&#x63A2;&#x7A76;&#x539F;&#x56E0;" class="anchor-navigation-ex-anchor" href="#&#x63A2;&#x7A76;&#x539F;&#x56E0;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x63A2;&#x7A76;&#x539F;&#x56E0;</h3>
+<p>&#x540E;&#x6765;&#x5F97;&#x77E5;&#xFF0C;&#x4E00;&#x822C;&#x51FA;&#x73B0;&#x83AB;&#x540D;&#x5176;&#x5999;&#x7684;&#x5237;&#x673A;&#x95EE;&#x9898;&#xFF0C;&#x90FD;&#x6709;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <a href="#">9008&#x6551;&#x7816;&#x5DE5;&#x5177;</a> &#x89E3;&#x51B3;&#xFF0C;&#x4E8E;&#x662F;&#x627E;&#x4E86;&#x4E00;&#x53F0; Windows &#x53F0;&#x5F0F;&#x673A;&#xFF0C;&#x5C1D;&#x8BD5;&#x4F7F;&#x7528;&#x5DE5;&#x5177;&#x4FEE;&#x590D;&#xFF0C;&#x4F46;&#x662F;&#x4FEE;&#x590D;&#x5B8C;&#x6BD5;&#x540E;&#xFF0C;&#x5728;&#x4F7F;&#x7528; TWRP &#x6062;&#x590D;&#x5907;&#x4EFD;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53C8;&#x51FA;&#x73B0;&#x4E86; <code>Failed to mount &apos;/persist&apos;(Invalid argument)</code> &#x7684;&#x62A5;&#x9519;&#x63D0;&#x793A;&#x3002;</p>
+<p><img src="../files/twrp_persist_error.jpg" alt="Failed to mount &apos;/persist&apos;(Invalid argument)"></p>
+<p>&#x7531; TWRP &#x7684;&#x62A5;&#x9519;&#x5F97;&#x77E5;&#xFF0C;&#x53EF;&#x80FD;&#x51FA;&#x95EE;&#x9898;&#x7684;&#x662F;&#x624B;&#x673A; <code>persist</code> &#x5206;&#x533A;&#xFF0C;&#x7ECF;&#x8FC7;&#x4E00;&#x756A;&#x4E86;&#x89E3;&#xFF1A;</p>
+<blockquote>
+<p>persist&#x5206;&#x533A;&#x662F;&#x7528;&#x4E8E;&#x4FDD;&#x5B58;FRP(factory reset protcect)&#x529F;&#x80FD;&#x7528;&#x5230;&#x5E10;&#x53F7;&#x3001;&#x5BC6;&#x7801;&#x7B49;&#x53D7;&#x4FDD;&#x62A4;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x907F;&#x514D;&#x5728;&#x6062;&#x590D;&#x51FA;&#x5382;&#x8BBE;&#x7F6E;&#x540E;&#x88AB;&#x6E05;&#x7A7A;&#x3002;</p>
+<p>&#x4EC0;&#x4E48;&#x662F;Persist&#x5206;&#x533A;&#xFF1A;Persist&#x5206;&#x533A;&#x662F;&#x7CFB;&#x7EDF;&#x7684;&#x4E00;&#x4E2A;ext4&#x5206;&#x533A;&#xFF0C;&#x7531;&#x4E8E;&#x6211;&#x4EEC;&#x7684;&#x7EBF;&#x5237;&#x5305;&#x90FD;&#x4E0D;&#x5305;&#x542B;&#x8FD9;&#x4E2A;&#x5206;&#x533A;&#xFF0C;&#x6240;&#x4EE5;&#x4F60;&#x9700;&#x8981;&#x81EA;&#x5DF1;&#x52A8;&#x624B;&#x4FEE;&#x590D;&#xFF0C;&#x8FD9;&#x4E2A;&#x5206;&#x533A;&#x5185;&#x5305;&#x542B;DRM&#x76F8;&#x5173;&#x6587;&#x4EF6;&#x3001;&#x4F20;&#x611F;&#x5668;&#x6CE8;&#x518C;&#x8868;&#x3001;&#x4F60;&#x7684;wifi&#x3001;&#x84DD;&#x7259;&#x3001;mac&#x5730;&#x5740;&#x90FD;&#x5728;&#x8FD9;&#x91CC;&#x4E86;&#x3002;</p>
+<p>&#x4E00;&#x822C;&#x89E3;&#x9501;&#x624B;&#x673A;&#x90FD;&#x8981;&#x5F3A;&#x5236;&#x7981;&#x6B62;&#x8BBF;&#x95EE;PERSIST&#x5206;&#x533A;&#x4E2D;&#x7684;&#x8D26;&#x53F7;&#x4FE1;&#x606F;&#xFF0C;&#x56E0;&#x6B64;&#x9700;&#x8981;&#x914D;&#x5408;&#x4FEE;&#x6539;&#x7248;&#x7684;&#x7CFB;&#x7EDF;&#xFF0C;&#x8BA9;&#x7CFB;&#x7EDF;&#x4E0D;&#x8BFB;&#x53D6;&#x8D26;&#x53F7;&#x4FE1;&#x606F;&#x4E5F;&#x80FD;&#x5DE5;&#x4F5C;&#xFF08;&#x539F;&#x751F;&#x5B89;&#x5353;&#x8868;&#x793A;&#x4F60;&#x4EEC;&#x90FD;&#x662F;&#x6E23;&#x6E23;&#xFF09;</p>
+<p>&#x68C0;&#x67E5;&#x7CFB;&#x7EDF;persist&#x5206;&#x533A;&#x6216;&#x4E3B;&#x677F;&#x786C;&#x4EF6;wf&#x6A21;&#x5757;persist&#x5206;&#x533A;&#x91CC;&#x9762;&#x6709;&#x4E2A;&#x6587;&#x4EF6;persist.img&#x7BA1;&#x84DD;&#x7259;&#x548C;wf&#x7684;       Persist: persist&#x5206;&#x533A;&#x662F;&#x7CFB;&#x7EDF;&#x7684;&#x4E00;&#x4E2A;ext4&#x5206;&#x533A;&#xFF0C;&#x8FD9;&#x4E2A;&#x5206;&#x533A;&#x5185;&#x5305;&#x542B;DRM&#x76F8;&#x5173;&#x6587;&#x4EF6;&#x3001;&#x4F20;&#x611F;&#x5668;&#x6CE8;&#x518C;&#x8868;&#x3001;&#x4F60;&#x7684;wifi&#x3001;&#x84DD;&#x7259;&#x3001;mac&#x5730;&#x5740;&#x90FD;&#x5728;&#x8FD9;&#x91CC;&#x4E86;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x53D1;&#x73B0;&#x6307;&#x5357;&#x9488;&#x4E0D;&#x52A8;&#x4E86;&#xFF0C;&#x9640;&#x87BA;&#x4EEA;&#x6CA1;&#x53CD;&#x5E94;&#x4E86;&#xFF0C;&#x76F8;&#x673A;&#x6253;&#x5F00;&#x8981;&#x597D;&#x51E0;&#x79D2;&#x4E86;&#xFF0C;&#x90A3;&#x4E48;&#x606D;&#x559C;&#x4F60;&#xFF0C;&#x591A;&#x534A;&#x662F;Pensist&#x5206;&#x533A;&#x95EE;&#x9898;</p>
+</blockquote>
+<h3 id="&#x89E3;&#x51B3;&#x95EE;&#x9898;"><a name="&#x89E3;&#x51B3;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x89E3;&#x51B3;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x89E3;&#x51B3;&#x95EE;&#x9898;</h3>
+<p>&#x4E8E;&#x662F;&#x627E;&#x5FAE;&#x4FE1;&#x7FA4;&#x5927;&#x4F6C;&#x4EEC;&#x5BFC;&#x51FA;&#x4E86;&#x522B;&#x4EBA;&#x624B;&#x673A;&#x91CC;&#x7684; persist.img &#x955C;&#x50CF;&#xFF0C;&#x7136;&#x540E;&#x5012;&#x5165;&#x5230;&#x6211;&#x7684;&#x624B;&#x673A;&#x91CC;&#xFF0C;&#x7136;&#x540E;&#x91CD;&#x542F;&#x8FDB;&#x5165;&#x7CFB;&#x7EDF;&#xFF0C;&#x95EE;&#x9898;&#x89E3;&#x51B3;&#x4E86;&#xFF0C;&#x4E0D;&#x8FC7;&#x56E0;&#x4E3A;&#x5012;&#x5165;&#x7684;&#x662F;&#x522B;&#x4EBA;&#x624B;&#x673A;&#x7684; persist &#x5206;&#x533A;&#x4FE1;&#x606F;&#xFF0C;&#x6240;&#x4EE5;&#xFF0C;&#x6211;&#x7684;&#x624B;&#x673A; WIFI mac &#x5730;&#x5740;&#x53D8;&#x5F97;&#x548C;&#x522B;&#x4EBA;&#x4E00;&#x6837;&#xFF0C;&#x4F46;&#x662F;&#x5E76;&#x65E0;&#x5927;&#x788D;&#x3002;</p>
+<h4 id="&#x4ECE;&#x6B63;&#x5E38;&#x4F7F;&#x7528;&#x7684;&#x624B;&#x673A;&#x4E2D;&#x5BFC;&#x51FA;-persistimg-&#x955C;&#x50CF;&#x5230;&#x7535;&#x8111;"><a name="&#x4ECE;&#x6B63;&#x5E38;&#x4F7F;&#x7528;&#x7684;&#x624B;&#x673A;&#x4E2D;&#x5BFC;&#x51FA;-persistimg-&#x955C;&#x50CF;&#x5230;&#x7535;&#x8111;" class="anchor-navigation-ex-anchor" href="#&#x4ECE;&#x6B63;&#x5E38;&#x4F7F;&#x7528;&#x7684;&#x624B;&#x673A;&#x4E2D;&#x5BFC;&#x51FA;-persistimg-&#x955C;&#x50CF;&#x5230;&#x7535;&#x8111;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4ECE;&#x6B63;&#x5E38;&#x4F7F;&#x7528;&#x7684;&#x624B;&#x673A;&#x4E2D;&#x5BFC;&#x51FA; persist.img &#x955C;&#x50CF;&#x5230;&#x7535;&#x8111;</h4>
+<p>&#x627E;&#x5230;&#x4E00;&#x53F0;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x4F7F;&#x7528;&#x7684;&#x624B;&#x673A;&#xFF0C;&#x8FDE;&#x63A5;&#x5230;&#x7535;&#x8111;&#xFF0C;&#x5F00;&#x542F; adb &#x8C03;&#x8BD5;&#xFF0C;&#x91CD;&#x542F;&#x8FDB;&#x5165; TWRP &#x6A21;&#x5F0F;&#xFF0C;&#x5728;&#x7535;&#x8111;&#x7AEF;&#x547D;&#x4EE4;&#x884C;&#x8FD0;&#x884C;&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># &#x628A; persist &#x955C;&#x50CF;&#x5907;&#x4EFD;&#x5230; /sdcard/persist.img</span>
+adb shell <span class="token string">&quot;dd if=/dev/block/bootdevice/by-name/persist of=/sdcard/persist.img&quot;</span>
+
+<span class="token comment"># &#x628A; persist.img &#x955C;&#x50CF; &#x4E0B;&#x8F7D;&#x5230;&#x7535;&#x8111;&#x4E0A;</span>
+adb pull /sdcard/persist.img  ~/
+</code></pre>
+<h4 id="&#x628A;-persistimg-&#x955C;&#x50CF;&#x5BFC;&#x5165;&#x5230;-mac-&#x4E22;&#x5931;&#x7684;&#x624B;&#x673A;"><a name="&#x628A;-persistimg-&#x955C;&#x50CF;&#x5BFC;&#x5165;&#x5230;-mac-&#x4E22;&#x5931;&#x7684;&#x624B;&#x673A;" class="anchor-navigation-ex-anchor" href="#&#x628A;-persistimg-&#x955C;&#x50CF;&#x5BFC;&#x5165;&#x5230;-mac-&#x4E22;&#x5931;&#x7684;&#x624B;&#x673A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x628A; persist.img &#x955C;&#x50CF;&#x5BFC;&#x5165;&#x5230; mac &#x4E22;&#x5931;&#x7684;&#x624B;&#x673A;</h4>
+<p>&#x4E22;&#x5931; mac &#x7684;&#x624B;&#x673A;&#xFF0C;&#x8FDE;&#x63A5;&#x5230;&#x7535;&#x8111;&#xFF0C;&#x5F00;&#x542F; adb &#x8C03;&#x8BD5;&#xFF0C;&#x91CD;&#x542F;&#x8FDB;&#x5165; TWRP &#x6A21;&#x5F0F;&#xFF0C;&#x5728;&#x7535;&#x8111;&#x7AEF;&#x547D;&#x4EE4;&#x884C;&#x8FD0;&#x884C;&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># &#x628A; persist.img &#x955C;&#x50CF; &#x4E0A;&#x4F20;&#x5230;&#x624B;&#x673A;</span>
+adb push ~/persist.img /sdcard/persist.img
+
+<span class="token comment"># &#x628A; persist.img &#x955C;&#x50CF;&#x5199;&#x5165; persist &#x5206;&#x533A;</span>
+adb shell <span class="token string">&quot;dd if=/sdcard/persist.img of=/dev/block/bootdevice/by-name/persist&quot;</span>
+
+<span class="token comment"># &#x91CD;&#x542F;&#x624B;&#x673A;</span>
+adb shell <span class="token function">reboot</span>
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#x64CD;&#x4F5C;&#x7684;&#x662F; persist &#x5206;&#x533A;&#xFF0C;&#x5176;&#x4ED6;&#x5206;&#x533A;&#xFF08;firmware&#x3001;dsp&#x3001;bt_firmware&#xFF09;&#x4E5F;&#x662F;&#x4E00;&#x6837;&#x7684;&#x539F;&#x7406;&#xFF0C;&#x66FF;&#x6362;&#x5206;&#x533A;&#x540D;&#x5B57;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;</p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification"><b style="color:red">&#x672C;&#x7AD9;&#x5DF2;&#x505C;&#x6B62;&#x7EF4;&#x62A4;&#xFF0C;&#x672C;&#x9875;&#x6700;&#x540E;&#x66F4;&#x65B0;&#xFF1A;
+2020-03-04 14:43:54</b>
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Oneplus3t_tri_state_key_switch.html" class="navigation navigation-prev " aria-label="Previous page: 一加3T三段式开关切换 openpilot 版本">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="openpilot_partition_backup.html" class="navigation navigation-next " aria-label="Next page: 一加3T手机分区一键备份恢复工具">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"一加3T手机WIFI mac 丢失问题","level":"1.26","depth":1,"next":{"title":"一加3T手机分区一键备份恢复工具","level":"1.27","depth":1,"path":"cn/openpilot_partition_backup.md","ref":"cn/openpilot_partition_backup.md","articles":[]},"previous":{"title":"一加3T三段式开关切换 openpilot 版本","level":"1.25","depth":1,"path":"cn/Oneplus3t_tri_state_key_switch.md","ref":"cn/Oneplus3t_tri_state_key_switch.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","prism","prism-themes","search-plus@^0.0.11","simple-page-toc@^0.1.1","github@^2.0.0","github-buttons@2.1.0","edit-link@^2.0.2","-sharing","sharing-plus@^0.0.2","tbfed-pagefooter@^0.0.1","custom-favicon","anchor-navigation-ex","3-ba","bilibili","copy-code-button","disqus","livereload"],"styles":{"website":"files/style1.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright ©","modify_label":"<b style=\"color:red\">本站已停止维护，本页最后更新：","modify_format":"YYYY-MM-DD HH:mm:ss</b>"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"disqus":{"useIdentifier":false,"shortName":"openpilot-zhong-wen-wiki"},"github":{"url":"https://github.com/Rming/comma-wiki-cn"},"livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"bilibili":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"sitemap-general":{"prefix":"http://sdut.me"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":"/files/favicon.ico","prism-themes":{},"github-buttons":{"repo":"Rming/comma-wiki-cn","types":["star"],"size":"small"},"custom-favicon":{},"3-ba":{"configuration":"auto","token":"93067bff7758a5f7a248a0b6e1d38f9d"},"copy-code-button":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon","qq","qzone"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"edit-link":{"label":"Edit This Page","base":"https://github.com/Rming/comma-wiki-cn/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Openpilot 中文 Wiki","language":"zh-hans","links":{"sidebar":{}},"gitbook":"*","description":"Openpilot 中文 Wiki"},"file":{"path":"cn/Oneplus3t_wifi_mac_02_00.md","mtime":"2020-03-04T06:43:54.421Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-27T15:36:58.460Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-3-ba/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

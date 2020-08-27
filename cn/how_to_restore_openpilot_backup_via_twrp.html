@@ -1,0 +1,708 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>使用 TWRP 恢复 openpilot 备份 · Openpilot 中文 Wiki</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../files/style1.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="how_to_change_openpilot_fork_on_windows.html" />
+    
+    
+    <link rel="prev" href="how_to_buy_openpilot.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"Rming/comma-wiki-cn","types":["star"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="FAQ.html">
+            
+                <a href="FAQ.html">
+            
+                    
+                    新手必读
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="videos.html">
+            
+                <a href="videos.html">
+            
+                    
+                    相关视频
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../mirror.html">
+            
+                <a href="../mirror.html">
+            
+                    
+                    国内镜像
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="hardwares.html">
+            
+                <a href="hardwares.html">
+            
+                    
+                    常见硬件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Glossary_of_terminology.html">
+            
+                <a href="Glossary_of_terminology.html">
+            
+                    
+                    常见术语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="commands.html">
+            
+                <a href="commands.html">
+            
+                    
+                    常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="openpilot_releases.html">
+            
+                <a href="openpilot_releases.html">
+            
+                    
+                    更新记录[中文翻译]
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="openpilot_releases_en.html">
+            
+                <a href="openpilot_releases_en.html">
+            
+                    
+                    更新记录[英文原版]
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="openpilot_software_free_download.html">
+            
+                <a href="openpilot_software_free_download.html">
+            
+                    
+                    常用软件资料下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="how_to_buy_openpilot.html">
+            
+                <a href="how_to_buy_openpilot.html">
+            
+                    
+                    Openpilot 硬件购买篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.12" data-path="how_to_restore_openpilot_backup_via_twrp.html">
+            
+                <a href="how_to_restore_openpilot_backup_via_twrp.html">
+            
+                    
+                    使用 TWRP 恢复 openpilot 备份
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="how_to_change_openpilot_fork_on_windows.html">
+            
+                <a href="how_to_change_openpilot_fork_on_windows.html">
+            
+                    
+                    使用 Putty SSH 切换 openpilot 分支版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="how_to_change_openpilot_fork_via_ui.html">
+            
+                <a href="how_to_change_openpilot_fork_via_ui.html">
+            
+                    
+                    通过界面安装 openpilot 分支版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="how_to_connect_openpilot_via_iphone.html">
+            
+                <a href="how_to_connect_openpilot_via_iphone.html">
+            
+                    
+                    iPhone 手机上 SSH 连接到 openpilot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="how_to_flash_openpilot_on_windows.html">
+            
+                <a href="how_to_flash_openpilot_on_windows.html">
+            
+                    
+                    Windows 下一键安装 openpilot 教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="how_to_flash_openpilot_on_windows_step_by_step.html">
+            
+                <a href="how_to_flash_openpilot_on_windows_step_by_step.html">
+            
+                    
+                    Windows 下手动安装 openpilot 教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="how_to_flash_openpilot_on_mac.html">
+            
+                <a href="how_to_flash_openpilot_on_mac.html">
+            
+                    
+                    macOS 下手动安装 openpilot 教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="how_to_downgrade_neos.html">
+            
+                <a href="how_to_downgrade_neos.html">
+            
+                    
+                    NEOS 降级指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="how_to_flash_panda.html">
+            
+                <a href="how_to_flash_panda.html">
+            
+                    
+                    Panda 固件更新教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="Creating_Fingerprints.html">
+            
+                <a href="Creating_Fingerprints.html">
+            
+                    
+                    采集车辆指纹信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="fingerprints2.html">
+            
+                <a href="fingerprints2.html">
+            
+                    
+                    抓取车辆指纹2.0
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="eon_usb_eth0.html">
+            
+                <a href="eon_usb_eth0.html">
+            
+                    
+                    EON USB 有线网卡设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="openpilot_enable_wifi_hotspot.html">
+            
+                <a href="openpilot_enable_wifi_hotspot.html">
+            
+                    
+                    EON 开机自动开启 WIFI 热点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="Oneplus3t_tri_state_key_switch.html">
+            
+                <a href="Oneplus3t_tri_state_key_switch.html">
+            
+                    
+                    一加3T三段式开关切换 openpilot 版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="Oneplus3t_wifi_mac_02_00.html">
+            
+                <a href="Oneplus3t_wifi_mac_02_00.html">
+            
+                    
+                    一加3T手机WIFI mac 丢失问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="openpilot_partition_backup.html">
+            
+                <a href="openpilot_partition_backup.html">
+            
+                    
+                    一加3T手机分区一键备份恢复工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="openpilot_failed_to_authenticate.html">
+            
+                <a href="openpilot_failed_to_authenticate.html">
+            
+                    
+                    failed to authenticate 和 无法绑定账户问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="EON_Connector.html">
+            
+                <a href="EON_Connector.html">
+            
+                    
+                    EON 快拆底座制作指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="eon_acrylic_case.html">
+            
+                <a href="eon_acrylic_case.html">
+            
+                    
+                    EON 亚克力外壳
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="how_to_install_raspberrypilot.html">
+            
+                <a href="how_to_install_raspberrypilot.html">
+            
+                    
+                    raspberry-pilot 安装指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="../about.html">
+            
+                <a href="../about.html">
+            
+                    
+                    关于本站
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="../copyright.html">
+            
+                <a href="../copyright.html">
+            
+                    
+                    版权声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >使用 TWRP 恢复 openpilot 备份</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;-twrp-&#x6062;&#x590D;-openpilot-&#x5907;&#x4EFD;"><b></b>&#x4F7F;&#x7528; TWRP &#x6062;&#x590D; openpilot &#x5907;&#x4EFD;</a></li></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="&#x4F7F;&#x7528;-twrp-&#x6062;&#x590D;-openpilot-&#x5907;&#x4EFD;"><a name="&#x4F7F;&#x7528;-twrp-&#x6062;&#x590D;-openpilot-&#x5907;&#x4EFD;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;-twrp-&#x6062;&#x590D;-openpilot-&#x5907;&#x4EFD;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528; TWRP &#x6062;&#x590D; openpilot &#x5907;&#x4EFD;</h2>
+<p><strong> &#x524D;&#x63D0;&#xFF1A;&#x786E;&#x4FDD;&#x624B;&#x673A;&#x5DF2;&#x7ECF; &#x89E3;&#x9501; Bootloader &#x5E76;&#x4E14;&#x5B89;&#x88C5;&#x4E86;&#x7B2C;&#x4E09;&#x65B9; twrp recovery</strong>  </p>
+<p>&#x53C2;&#x8003;&#xFF1A;<a href="how_to_flash_openpilot_on_windows_step_by_step.html">Windows &#x4E0B;&#x624B;&#x52A8;&#x5206;&#x5E03;&#x5B89;&#x88C5; openpilot &#x6559;&#x7A0B;&#xFF08;&#x5237;&#x5199; NEOS &#x7CFB;&#x7EDF; &#x524D;&#x7684;&#x90E8;&#x5206;&#xFF09;</a></p>
+<hr>
+<ol>
+<li>&#x5F00;&#x673A;&#xFF0C;&#x5728;&#x7B2C;&#x4E00;&#x4E2A;&#x754C;&#x9762;&#x663E;&#x793A;&#x65F6;&#xFF0C;&#x901A;&#x8FC7;&#x6309;&#x97F3;&#x91CF;&#x952E;&#x9009;&#x62E9; recovery &#x9009;&#x9879;&#xFF0C;&#x5E76;&#x6309; &#x7535;&#x6E90;&#x952E;&#x786E;&#x8BA4;</li>
+<li>&#x8FDB;&#x5165; Recovery &#x6A21;&#x5F0F;&#x540E;&#xFF0C;&#x5C06;&#x624B;&#x673A;&#x901A;&#x8FC7; USB &#x8FDE;&#x63A5;&#x5230;&#x7535;&#x8111;<br><img src="../files/twrp_1.jpg" class="max-h-300">
+<img src="../files/twrp_2.jpg" class="max-h-300">
+<img src="../files/twrp_3.jpg" class="max-h-300"></li>
+<li>&#x5728;&#x7535;&#x8111;&#x7AEF;&#x4E0B;&#x8F7D;&#x9700;&#x8981;&#x7684; TWRP &#x5907;&#x4EFD;&#x5E76;&#x89E3;&#x538B;&#xFF08;&#x4E0B;&#x8F7D;&#x5730;&#x5740;&#xFF1A;<a href="http://d.sdut.me/twrp_backup" target="_blank">http://d.sdut.me/twrp_backup</a> &#xFF09;</li>
+<li>&#x5C06;&#x5907;&#x4EFD;&#x6587;&#x4EF6;&#x5939;&#x590D;&#x5236;&#x5230;&#x624B;&#x673A;&#x5185;&#x7F6E;&#x5B58;&#x50A8;&#x76EE;&#x5F55; /TWRP &#x4E0B;&#xFF08;&#x5982;&#x679C;&#x5B58;&#x5728; <code>/TWRP/BACKUPS/{8&#x4F4D;&#x5B57;&#x7B26;&#x4E32;}/</code> &#x76EE;&#x5F55;&#xFF0C;&#x90A3;&#x5C31;&#x653E;&#x5728;&#x6B64;&#x76EE;&#x5F55;&#x4E0B;&#xFF09;&#xFF0C;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x89C1;&#x4E0B;&#x56FE;<br><img src="../files/twrp_0.png" class="max-h-300"></li>
+<li>&#x5728;&#x624B;&#x673A; TWRP &#x754C;&#x9762;&#xFF0C;&#x70B9;&#x51FB; &quot;&#x6062;&#x590D;&quot;&#xFF0C;&#x9009;&#x62E9;&#x521A;&#x624D;&#x4E0A;&#x4F20;&#x7684;&#x6587;&#x4EF6;&#x5939;&#x540D;&#x79F0;&#xFF0C;&#x786E;&#x8BA4;&#x52FE;&#x9009;&#x4E86; boot&#x3001;data&#x3001;system&#xFF0C;&#x5E76;&#x6ED1;&#x52A8;&#x786E;&#x8BA4;<br><img src="../files/twrp_3.jpg" class="max-h-300">
+<img src="../files/twrp_4.jpg" class="max-h-300">
+<img src="../files/twrp_5.jpg" class="max-h-300"></li>
+<li>&#x7B49;&#x5F85;&#x5237;&#x673A;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x70B9;&#x51FB; &quot;&#x91CD;&#x542F;&#x7CFB;&#x7EDF;&quot; &#x6309;&#x94AE;&#xFF0C;&#x91CD;&#x542F;&#x7CFB;&#x7EDF;<br><img src="../files/twrp_6.jpg" class="max-h-300">
+<img src="../files/twrp_7.jpg" class="max-h-300">
+<img src="../files/twrp_8.jpg" class="max-h-300"></li>
+<li>&#x7B49;&#x5F85;&#x8FDB;&#x5165; openpilot</li>
+</ol>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification"><b style="color:red">&#x672C;&#x7AD9;&#x5DF2;&#x505C;&#x6B62;&#x7EF4;&#x62A4;&#xFF0C;&#x672C;&#x9875;&#x6700;&#x540E;&#x66F4;&#x65B0;&#xFF1A;
+2019-11-29 16:47:23</b>
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="how_to_buy_openpilot.html" class="navigation navigation-prev " aria-label="Previous page: Openpilot 硬件购买篇">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="how_to_change_openpilot_fork_on_windows.html" class="navigation navigation-next " aria-label="Next page: 使用 Putty SSH 切换 openpilot 分支版本">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"使用 TWRP 恢复 openpilot 备份","level":"1.12","depth":1,"next":{"title":"使用 Putty SSH 切换 openpilot 分支版本","level":"1.13","depth":1,"path":"cn/how_to_change_openpilot_fork_on_windows.md","ref":"cn/how_to_change_openpilot_fork_on_windows.md","articles":[]},"previous":{"title":"Openpilot 硬件购买篇","level":"1.11","depth":1,"path":"cn/how_to_buy_openpilot.md","ref":"cn/how_to_buy_openpilot.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","prism","prism-themes","search-plus@^0.0.11","simple-page-toc@^0.1.1","github@^2.0.0","github-buttons@2.1.0","edit-link@^2.0.2","-sharing","sharing-plus@^0.0.2","tbfed-pagefooter@^0.0.1","custom-favicon","anchor-navigation-ex","3-ba","bilibili","copy-code-button","disqus","livereload"],"styles":{"website":"files/style1.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright ©","modify_label":"<b style=\"color:red\">本站已停止维护，本页最后更新：","modify_format":"YYYY-MM-DD HH:mm:ss</b>"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"disqus":{"useIdentifier":false,"shortName":"openpilot-zhong-wen-wiki"},"github":{"url":"https://github.com/Rming/comma-wiki-cn"},"livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"bilibili":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"sitemap-general":{"prefix":"http://sdut.me"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":"/files/favicon.ico","prism-themes":{},"github-buttons":{"repo":"Rming/comma-wiki-cn","types":["star"],"size":"small"},"custom-favicon":{},"3-ba":{"configuration":"auto","token":"93067bff7758a5f7a248a0b6e1d38f9d"},"copy-code-button":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon","qq","qzone"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"edit-link":{"label":"Edit This Page","base":"https://github.com/Rming/comma-wiki-cn/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Openpilot 中文 Wiki","language":"zh-hans","links":{"sidebar":{}},"gitbook":"*","description":"Openpilot 中文 Wiki"},"file":{"path":"cn/how_to_restore_openpilot_backup_via_twrp.md","mtime":"2019-11-29T08:47:23.767Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-27T15:36:58.460Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-3-ba/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

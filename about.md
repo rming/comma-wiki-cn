@@ -23,7 +23,7 @@ openpilot 安装、使用过程中需要的软件、资料，或者疑问请参�
 
 如果你有任何问题、建议或者资料要补充，请联系我：
 
-微信：afaaaaaaaaaaa
+微信：afa013
 
 邮件：rmingwang@gmail.com
 

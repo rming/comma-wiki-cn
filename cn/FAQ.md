@@ -1,6 +1,6 @@
 ## FAQ
 
-### Openpilot 一代硬件、二代硬件、二代硬件有什么区别？
+### Openpilot 一代硬件、二代硬件、三代硬件有什么区别？
 
 * [Openpilot 硬件一览表](/cn/hardwares.md)
 

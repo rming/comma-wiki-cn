@@ -1,6 +1,6 @@
 ## FAQ
 
-### Openpilot 一代硬件、二代硬件、二代硬件有什么区别？
+### Openpilot 一代硬件、二代硬件、三代硬件有什么区别？
 
 * [Openpilot 硬件一览表](/cn/hardwares.md)
 
@@ -94,5 +94,5 @@ PS. 为了避免 EON 在阳光下长时间照射，带来分锂电池爆炸风�
 
 如果需要运行在高通处理器的其他手机上，你可能需要修改摄像头相关的驱动代码。
 
-openpilot 目前已经可以运行在具有足够运算能力的电脑上了，Comma 官方 3月28日 在官方博客发布了 [Self-Driving Car For Free](https://medium.com/@comma_ai/self-driving-car-for-free-82e871fe0587)，文章中指出，openpilot 代码中已经支了 TensorFlow 的模型，新的模型已经放出（只是目前训练数据有限，能力较 SNPE 模型较差），因此我们可以把 openpilot 运行在任何支持 TensorFlow 模型的平台上了（运算能力足够的前提下），经过社区开发者的尝试，目前来看 Jetson TX2 是目前比较合适的 DIY 硬件。
+openpilot 目前已经可以运行在具有足够运算能力的电脑上了，Comma 官方 3月28日 在官方博客发布了 [Self-Driving Car For Free](https://medium.com/@comma_ai/self-driving-car-for-free-82e871fe0587)，文章中指出，openpilot 代码中已经支了 TensorFlow 的模型，新的模型已经放出（只是目前训练数据有限，能力较 SNPE 模型较差），因此我们可以（运算能力足够的前提下）把 openpilot 运行在任何支持 TensorFlow 模型的平台上了，经过社区开发者的尝试，目前来看 Jetson TX2 是目前比较合适的 DIY 硬件。
 

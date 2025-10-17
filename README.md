@@ -4,7 +4,7 @@
     <img src="/files/accord_openpilot.jpg" alt="十代雅阁安装 openpilot">
 </center>
 
-
+- [白描PDF：PDF 转 Word、Excel、PPT、Markdown、图片转文字，一应俱全](https://pdf.baimiaoapp.com/landing/afenld7rw8)
 - [新手必读](cn/FAQ.md)
 - [相关视频](cn/videos.md)
 - [国内镜像](/mirror.md)

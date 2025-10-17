@@ -635,7 +635,7 @@ root@localhost:/$ <span class="token function">cat</span> /REVISION
 <span class="token number">3</span>
 </code></pre>
 <pre class="language-"><code class="lang-bash"><span class="token comment"># &#x67E5;&#x8BE2; NEOS &#x4E3B;&#x7248;&#x672C;&#x53F7;</span>
-root@localhost:/$ python --version
+root@localhost:/$ python <span class="token parameter variable">--version</span>
 Python <span class="token number">2.7</span>.16
 </code></pre>
 <pre class="language-"><code class="lang-bash"><span class="token comment"># &#x67E5;&#x8BE2; openpilot &#x7248;&#x672C;&#x53F7;</span>
@@ -668,7 +668,7 @@ fastboot <span class="token function">reboot</span>
 <li>openpilot &#x5B89;&#x88C5;&#x5B8C;&#x6210;&#x540E;&#x4F1A;&#x91CD;&#x542F;&#xFF0C;&#x91CD;&#x542F;&#x540E;&#x4F1A;&#x51FA;&#x73B0;&#x5347;&#x7EA7;&#x754C;&#x9762;&#xFF0C;<strong>&#x4E00;&#x5B9A;&#x4E0D;&#x8981;&#x70B9;&#x5347;&#x7EA7;&#xFF01;&#xFF01;</strong></li>
 <li>SSH &#x8FDB;&#x5165;&#x5230; EON&#xFF0C;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#x5B89;&#x88C5;&#x4F60;&#x9700;&#x8981;&#x5B89;&#x88C5;&#x7684; openpilot &#x7248;&#x672C;&#xFF1A;<pre class="language-"><code class="lang-bash"><span class="token comment"># &#x5220;&#x9664;&#x9ED8;&#x8BA4;&#x5B89;&#x88C5;&#x7684;&#x65B0;&#x7248;&#x672C; openpilot</span>
 <span class="token builtin class-name">cd</span> /data
-<span class="token function">rm</span> -rf openpilot
+<span class="token function">rm</span> <span class="token parameter variable">-rf</span> openpilot
 <span class="token comment">#</span>
 <span class="token comment"># &#x5B89;&#x88C5;&#x65E7;&#x7248;&#x672C;&#x7684; openpilot fork</span>
 <span class="token function">git</span> clone https://gitee.com/afaaa/kegman
@@ -677,15 +677,15 @@ fastboot <span class="token function">reboot</span>
 <span class="token comment">#</span>
 <span class="token comment"># &#x7F16;&#x8BD1;&#x65E7;&#x7248;&#x672C;&#x7684; openpilot</span>
 <span class="token comment"># 0.7 &#x4E4B;&#x524D;&#x7684;&#x7248;&#x672C;&#x4F7F;&#x7528; make</span>
-scons -i
+scons <span class="token parameter variable">-i</span>
 <span class="token comment">#</span>
 <span class="token comment">#&#x7B49;&#x5F85;&#x7F16;&#x8BD1;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x91CD;&#x542F;</span>
 <span class="token function">reboot</span>
 </code></pre>
 </li>
 </ol>
-<footer class="page-footer"><span class="copyright">Copyright &#xA9; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification"><b style="color:red">&#x672C;&#x7AD9;&#x5DF2;&#x505C;&#x6B62;&#x7EF4;&#x62A4;&#xFF0C;&#x672C;&#x9875;&#x6700;&#x540E;&#x66F4;&#x65B0;&#xFF1A;
-2020-03-06 10:36:19</b>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification"><a href="https://pdf.baimiaoapp.com/landing/afenld7rw8" target="_blank">PDF&#x8F6C;Word&#x5728;&#x7EBF;&#x5DE5;&#x5177;</a>
+2025-10-17 19:35:18
 </span></footer>
                                 
                                 </section>
@@ -729,7 +729,7 @@ scons -i
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"NEOS 降级指南","level":"1.19","depth":1,"next":{"title":"Panda 固件更新教程","level":"1.20","depth":1,"path":"cn/how_to_flash_panda.md","ref":"cn/how_to_flash_panda.md","articles":[]},"previous":{"title":"macOS 下手动安装 openpilot 教程","level":"1.18","depth":1,"path":"cn/how_to_flash_openpilot_on_mac.md","ref":"cn/how_to_flash_openpilot_on_mac.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","prism","prism-themes","search-plus@^0.0.11","simple-page-toc@^0.1.1","github@^2.0.0","github-buttons@2.1.0","edit-link@^2.0.2","-sharing","sharing-plus@^0.0.2","tbfed-pagefooter@^0.0.1","custom-favicon","anchor-navigation-ex","3-ba","bilibili","copy-code-button","disqus","livereload"],"styles":{"website":"files/style1.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright ©","modify_label":"<b style=\"color:red\">本站已停止维护，本页最后更新：","modify_format":"YYYY-MM-DD HH:mm:ss</b>"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"disqus":{"useIdentifier":false,"shortName":"openpilot-zhong-wen-wiki"},"github":{"url":"https://github.com/Rming/comma-wiki-cn"},"livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"bilibili":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"sitemap-general":{"prefix":"http://sdut.me"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":"/files/favicon.ico","prism-themes":{},"github-buttons":{"repo":"Rming/comma-wiki-cn","types":["star"],"size":"small"},"custom-favicon":{},"3-ba":{"configuration":"auto","token":"93067bff7758a5f7a248a0b6e1d38f9d"},"copy-code-button":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon","qq","qzone"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"edit-link":{"label":"Edit This Page","base":"https://github.com/Rming/comma-wiki-cn/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Openpilot 中文 Wiki","language":"zh-hans","links":{"sidebar":{}},"gitbook":"*","description":"Openpilot 中文 Wiki"},"file":{"path":"cn/how_to_downgrade_neos.md","mtime":"2020-03-06T02:36:19.522Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-27T15:36:58.460Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"NEOS 降级指南","level":"1.19","depth":1,"next":{"title":"Panda 固件更新教程","level":"1.20","depth":1,"path":"cn/how_to_flash_panda.md","ref":"cn/how_to_flash_panda.md","articles":[]},"previous":{"title":"macOS 下手动安装 openpilot 教程","level":"1.18","depth":1,"path":"cn/how_to_flash_openpilot_on_mac.md","ref":"cn/how_to_flash_openpilot_on_mac.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","prism","prism-themes","search-plus@^0.0.11","simple-page-toc@^0.1.1","github@^2.0.0","github-buttons@2.1.0","edit-link@^2.0.2","-sharing","sharing-plus@^0.0.2","tbfed-pagefooter@^0.0.1","custom-favicon","anchor-navigation-ex","3-ba","bilibili","copy-code-button","disqus"],"styles":{"website":"files/style1.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright ©","modify_label":"<a href=\"https://pdf.baimiaoapp.com/landing/afenld7rw8\">PDF转Word在线工具</a>","modify_format":"YYYY-MM-DD HH:mm:ss</b>"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"disqus":{"useIdentifier":false,"shortName":"openpilot-zhong-wen-wiki"},"github":{"url":"https://github.com/Rming/comma-wiki-cn"},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"bilibili":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"sitemap-general":{"prefix":"http://sdut.me"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":"/files/favicon.ico","prism-themes":{},"github-buttons":{"repo":"Rming/comma-wiki-cn","types":["star"],"size":"small"},"custom-favicon":{},"3-ba":{"configuration":"auto","token":"93067bff7758a5f7a248a0b6e1d38f9d"},"copy-code-button":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon","qq","qzone"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"edit-link":{"label":"Edit This Page","base":"https://github.com/Rming/comma-wiki-cn/edit/master"},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Openpilot 中文 Wiki","language":"zh-hans","links":{"sidebar":{}},"gitbook":"*","description":"Openpilot 中文 Wiki"},"file":{"path":"cn/how_to_downgrade_neos.md","mtime":"2025-10-17T11:35:18.272Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-10-17T12:08:29.784Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -776,10 +776,6 @@ scons -i
     
         
         <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

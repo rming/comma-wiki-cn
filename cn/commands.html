@@ -646,41 +646,41 @@ RsVMUiFgloWGHETOy0Qvc5AwtqTJFLTD1Wza2uBilSVIEsg6Y83Gickh+ejOmEsY
 <span class="token function">chmod</span> <span class="token number">600</span> eonkey.pem
 
 <span class="token comment"># &#x5047;&#x8BBE;&#x4F60;&#x7684; EON ip &#x662F; 192.168.1.100(&#x901A;&#x5E38;&#x53EF;&#x4EE5;&#x5728;&#x8DEF;&#x7531;&#x5668;&#x4E2D;&#x67E5;&#x5230;)</span>
-<span class="token function">ssh</span> root@192.168.1.100 -p <span class="token number">8022</span> -i eonkey.pem
+<span class="token function">ssh</span> root@192.168.1.100 <span class="token parameter variable">-p</span> <span class="token number">8022</span> <span class="token parameter variable">-i</span> eonkey.pem
 </code></pre>
 <h3 id="openpilot-&#x7F16;&#x8BD1;"><a name="openpilot-&#x7F16;&#x8BD1;" class="anchor-navigation-ex-anchor" href="#openpilot-&#x7F16;&#x8BD1;"><i class="fa fa-link" aria-hidden="true"></i></a>openpilot &#x7F16;&#x8BD1;</h3>
 <pre class="language-"><code class="lang-bash"><span class="token comment"># &#x79FB;&#x9664;&#x5DF2;&#x7ECF;&#x7F16;&#x8BD1;&#x6587;&#x4EF6;</span>
-<span class="token function">git</span> clean -xdf
+<span class="token function">git</span> clean <span class="token parameter variable">-xdf</span>
 
 <span class="token comment"># &#x79FB;&#x9664; git &#x4FEE;&#x6539;</span>
-<span class="token function">git</span> reset --hard HEAD
+<span class="token function">git</span> reset <span class="token parameter variable">--hard</span> HEAD
 
 <span class="token comment"># &#x5207;&#x6362;&#x5206;&#x652F;</span>
 <span class="token function">git</span> checkout <span class="token number">0.6</span>.6-zhs
 
 <span class="token comment"># &#x5207;&#x6362;&#x5206;&#x652F;&#x5E76;&#x91CD;&#x65B0;&#x7F16;&#x8BD1;</span>
 <span class="token comment"># 0.7 &#x4E4B;&#x524D;&#x7684;&#x7248;&#x672C;&#x4F7F;&#x7528; make &#x4EE3;&#x66FF; scons -i</span>
-<span class="token builtin class-name">cd</span> /data/openpilot <span class="token operator">&amp;&amp;</span> <span class="token function">git</span> clean -xdf <span class="token operator">&amp;&amp;</span> <span class="token function">git</span> reset --hard HEAD <span class="token operator">&amp;&amp;</span> <span class="token function">git</span> checkout <span class="token number">0.7</span>.3-zhs <span class="token operator">&amp;&amp;</span> scons -i <span class="token operator">&amp;&amp;</span> <span class="token function">reboot</span>
+<span class="token builtin class-name">cd</span> /data/openpilot <span class="token operator">&amp;&amp;</span> <span class="token function">git</span> clean <span class="token parameter variable">-xdf</span> <span class="token operator">&amp;&amp;</span> <span class="token function">git</span> reset <span class="token parameter variable">--hard</span> HEAD <span class="token operator">&amp;&amp;</span> <span class="token function">git</span> checkout <span class="token number">0.7</span>.3-zhs <span class="token operator">&amp;&amp;</span> scons <span class="token parameter variable">-i</span> <span class="token operator">&amp;&amp;</span> <span class="token function">reboot</span>
 </code></pre>
 <h3 id="&#x6302;&#x8F7D;-system-&#x5206;&#x533A;"><a name="&#x6302;&#x8F7D;-system-&#x5206;&#x533A;" class="anchor-navigation-ex-anchor" href="#&#x6302;&#x8F7D;-system-&#x5206;&#x533A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6302;&#x8F7D; system &#x5206;&#x533A;</h3>
 <pre class="language-"><code class="lang-bash"><span class="token comment"># &#x91CD;&#x65B0;&#x6302;&#x8F7D; system &#x5206;&#x533A;&#x4E3A;&#x8BFB;&#x5199;&#x6743;&#x9650;</span>
-<span class="token function">mount</span> -o rw,remount /system
+<span class="token function">mount</span> <span class="token parameter variable">-o</span> rw,remount /system
 
 <span class="token comment"># &#x91CD;&#x65B0;&#x6302;&#x8F7D; system &#x5206;&#x533A;&#x4E3A;&#x53EA;&#x8BFB;&#x6743;&#x9650;</span>
-<span class="token function">mount</span> -o ro,remount /system
+<span class="token function">mount</span> <span class="token parameter variable">-o</span> ro,remount /system
 </code></pre>
 <h3 id="&#x6253;&#x5F00;&#x7CFB;&#x7EDF;&#x754C;&#x9762;&#x8F6F;&#x4EF6;&#x754C;&#x9762;"><a name="&#x6253;&#x5F00;&#x7CFB;&#x7EDF;&#x754C;&#x9762;&#x8F6F;&#x4EF6;&#x754C;&#x9762;" class="anchor-navigation-ex-anchor" href="#&#x6253;&#x5F00;&#x7CFB;&#x7EDF;&#x754C;&#x9762;&#x8F6F;&#x4EF6;&#x754C;&#x9762;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6253;&#x5F00;&#x7CFB;&#x7EDF;&#x754C;&#x9762;/&#x8F6F;&#x4EF6;&#x754C;&#x9762;</h3>
 <pre class="language-"><code class="lang-bash"><span class="token comment"># &#x5728; EON &#x7684; shell &#x4E2D;&#x8FD0;&#x884C;</span>
 <span class="token comment"># &#x6253;&#x5F00;&#x7CFB;&#x7EDF;&#x8BBE;&#x7F6E;</span>
-am start -a android.settings.SETTINGS
+am start <span class="token parameter variable">-a</span> android.settings.SETTINGS
 
 <span class="token comment"># &#x5173;&#x95ED;&#x7CFB;&#x7EDF;&#x8BBE;&#x7F6E; (kill)</span>
-<span class="token function">ps</span> aux <span class="token operator">|</span> <span class="token function">grep</span> settings<span class="token operator">|</span> <span class="token function">grep</span>  -v <span class="token function">grep</span><span class="token operator">|</span><span class="token function">awk</span> <span class="token string">&apos;{print <span class="token variable">$1</span>}&apos;</span> <span class="token operator">|</span><span class="token function">xargs</span> <span class="token function">kill</span>
+<span class="token function">ps</span> aux <span class="token operator">|</span> <span class="token function">grep</span> settings<span class="token operator">|</span> <span class="token function">grep</span>  <span class="token parameter variable">-v</span> <span class="token function">grep</span><span class="token operator">|</span><span class="token function">awk</span> <span class="token string">&apos;{print $1}&apos;</span> <span class="token operator">|</span><span class="token function">xargs</span> <span class="token function">kill</span>
 
 <span class="token comment"># &#x6253;&#x5F00;&#x5F00;&#x53D1;&#x8005;&#x9009;&#x9879;</span>
-am start -a android.settings.APPLICATION_DEVELOPMENT_SETTINGS
+am start <span class="token parameter variable">-a</span> android.settings.APPLICATION_DEVELOPMENT_SETTINGS
 
-am start -n ai.comma.plus.offroad/.MainActivity
+am start <span class="token parameter variable">-n</span> ai.comma.plus.offroad/.MainActivity
 </code></pre>
 <p>&#x6253;&#x5F00;&#x8F6F;&#x4EF6;&#x5305;&#x6307;&#x5B9A;&#x7684;&#x754C;&#x9762;&#xFF1A;</p>
 <p><code>am start -n {PACKAGE NAME}/.{ACTIVITY NAME}</code></p>
@@ -721,7 +721,7 @@ If &apos;--user NUM&apos; is not given, the operations are performed on the owne
 If &apos;--cm&apos; is given, the operations are performed on the CMSettings provider.</p>
 <h3 id="&#x8F6F;&#x4EF6;&#x5305;&#x7BA1;&#x7406;"><a name="&#x8F6F;&#x4EF6;&#x5305;&#x7BA1;&#x7406;" class="anchor-navigation-ex-anchor" href="#&#x8F6F;&#x4EF6;&#x5305;&#x7BA1;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8F6F;&#x4EF6;&#x5305;&#x7BA1;&#x7406;</h3>
 <pre class="language-"><code class="lang-bash"><span class="token comment"># &#x663E;&#x793A;&#x8F6F;&#x4EF6;&#x5305;&#x5217;&#x8868;</span>
-pm list packages -f
+pm list packages <span class="token parameter variable">-f</span>
 
 <span class="token comment">#&#x5378;&#x8F7D;&#x8F6F;&#x4EF6;&#x5305;</span>
 pm uninstall ai.comma.plus.offroad
@@ -731,14 +731,14 @@ pm <span class="token function">install</span> /sdcard/apk/ai.comma.plus.offroad
 </code></pre>
 <h3 id="&#x67E5;&#x770B;&#x7F51;&#x5361;&#x4FE1;&#x606F;"><a name="&#x67E5;&#x770B;&#x7F51;&#x5361;&#x4FE1;&#x606F;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;&#x7F51;&#x5361;&#x4FE1;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x770B;&#x7F51;&#x5361;&#x4FE1;&#x606F;</h3>
 <pre class="language-"><code class="lang-bash"><span class="token comment"># &#x67E5;&#x770B;&#x7F51;&#x5361;&#x4FE1;&#x606F;</span>
-<span class="token function">ifconfig</span> -a
+<span class="token function">ifconfig</span> <span class="token parameter variable">-a</span>
 
 <span class="token function">ip</span> addr show
 </code></pre>
 <h3 id="git&#x4EE3;&#x7406;&#x8BBE;&#x7F6E;"><a name="git&#x4EE3;&#x7406;&#x8BBE;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#git&#x4EE3;&#x7406;&#x8BBE;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>git&#x4EE3;&#x7406;&#x8BBE;&#x7F6E;</h3>
 <pre class="language-"><code class="lang-bash"><span class="token comment"># http &#x4EE3;&#x7406;&#x5730;&#x5740; 192.168.1.101:1087</span>
 <span class="token comment"># &#x4EE3;&#x7406;&#x53EF;&#x4EE5;&#x662F;&#x8BBE;&#x7F6E;&#x5728;&#x540C;&#x5C40;&#x57DF;&#x7F51;&#x7684;&#x7535;&#x8111;&#x4E0A;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x516C;&#x7F51;&#x670D;&#x52A1;&#x5668;&#x4E0A;</span>
-<span class="token function">git</span> clone https://github.com/commaai/openpilot.git --config <span class="token string">&quot;http.proxy=192.168.1.101:1087&quot;</span>
+<span class="token function">git</span> clone https://github.com/commaai/openpilot.git <span class="token parameter variable">--config</span> <span class="token string">&quot;http.proxy=192.168.1.101:1087&quot;</span>
 </code></pre>
 <h3 id="termux-&#x5305;&#x7BA1;&#x7406;"><a name="termux-&#x5305;&#x7BA1;&#x7406;" class="anchor-navigation-ex-anchor" href="#termux-&#x5305;&#x7BA1;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>Termux &#x5305;&#x7BA1;&#x7406;</h3>
 <pre class="language-"><code class="lang-bash">pkg search <span class="token operator">&lt;</span>term<span class="token operator">&gt;</span>
@@ -751,13 +751,13 @@ pkg <span class="token function">install</span> <span class="token operator">&lt
 pkg reinstall <span class="token operator">&lt;</span>packages<span class="token operator">&gt;</span>
 pkg uninstall <span class="token operator">&lt;</span>packages<span class="token operator">&gt;</span>
 
-<span class="token function">apt</span> list --upgradable
+<span class="token function">apt</span> list <span class="token parameter variable">--upgradable</span>
 pkg upgrade
 
 pkg <span class="token builtin class-name">help</span>
 </code></pre>
-<footer class="page-footer"><span class="copyright">Copyright &#xA9; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification"><b style="color:red">&#x672C;&#x7AD9;&#x5DF2;&#x505C;&#x6B62;&#x7EF4;&#x62A4;&#xFF0C;&#x672C;&#x9875;&#x6700;&#x540E;&#x66F4;&#x65B0;&#xFF1A;
-2020-03-06 10:35:14</b>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification"><a href="https://pdf.baimiaoapp.com/landing/afenld7rw8" target="_blank">PDF&#x8F6C;Word&#x5728;&#x7EBF;&#x5DE5;&#x5177;</a>
+2025-10-17 19:35:18
 </span></footer>
                                 
                                 </section>
@@ -801,7 +801,7 @@ pkg <span class="token builtin class-name">help</span>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"常用命令","level":"1.6","depth":1,"next":{"title":"更新记录[中文翻译]","level":"1.7","depth":1,"path":"cn/openpilot_releases.md","ref":"cn/openpilot_releases.md","articles":[]},"previous":{"title":"常见术语","level":"1.5","depth":1,"path":"cn/Glossary_of_terminology.md","ref":"cn/Glossary_of_terminology.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","prism","prism-themes","search-plus@^0.0.11","simple-page-toc@^0.1.1","github@^2.0.0","github-buttons@2.1.0","edit-link@^2.0.2","-sharing","sharing-plus@^0.0.2","tbfed-pagefooter@^0.0.1","custom-favicon","anchor-navigation-ex","3-ba","bilibili","copy-code-button","disqus","livereload"],"styles":{"website":"files/style1.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright ©","modify_label":"<b style=\"color:red\">本站已停止维护，本页最后更新：","modify_format":"YYYY-MM-DD HH:mm:ss</b>"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"disqus":{"useIdentifier":false,"shortName":"openpilot-zhong-wen-wiki"},"github":{"url":"https://github.com/Rming/comma-wiki-cn"},"livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"bilibili":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"sitemap-general":{"prefix":"http://sdut.me"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":"/files/favicon.ico","prism-themes":{},"github-buttons":{"repo":"Rming/comma-wiki-cn","types":["star"],"size":"small"},"custom-favicon":{},"3-ba":{"configuration":"auto","token":"93067bff7758a5f7a248a0b6e1d38f9d"},"copy-code-button":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon","qq","qzone"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"edit-link":{"label":"Edit This Page","base":"https://github.com/Rming/comma-wiki-cn/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Openpilot 中文 Wiki","language":"zh-hans","links":{"sidebar":{}},"gitbook":"*","description":"Openpilot 中文 Wiki"},"file":{"path":"cn/commands.md","mtime":"2020-03-06T02:35:14.372Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-27T15:36:58.460Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"常用命令","level":"1.6","depth":1,"next":{"title":"更新记录[中文翻译]","level":"1.7","depth":1,"path":"cn/openpilot_releases.md","ref":"cn/openpilot_releases.md","articles":[]},"previous":{"title":"常见术语","level":"1.5","depth":1,"path":"cn/Glossary_of_terminology.md","ref":"cn/Glossary_of_terminology.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","prism","prism-themes","search-plus@^0.0.11","simple-page-toc@^0.1.1","github@^2.0.0","github-buttons@2.1.0","edit-link@^2.0.2","-sharing","sharing-plus@^0.0.2","tbfed-pagefooter@^0.0.1","custom-favicon","anchor-navigation-ex","3-ba","bilibili","copy-code-button","disqus"],"styles":{"website":"files/style1.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright ©","modify_label":"<a href=\"https://pdf.baimiaoapp.com/landing/afenld7rw8\">PDF转Word在线工具</a>","modify_format":"YYYY-MM-DD HH:mm:ss</b>"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"disqus":{"useIdentifier":false,"shortName":"openpilot-zhong-wen-wiki"},"github":{"url":"https://github.com/Rming/comma-wiki-cn"},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"bilibili":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"sitemap-general":{"prefix":"http://sdut.me"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":"/files/favicon.ico","prism-themes":{},"github-buttons":{"repo":"Rming/comma-wiki-cn","types":["star"],"size":"small"},"custom-favicon":{},"3-ba":{"configuration":"auto","token":"93067bff7758a5f7a248a0b6e1d38f9d"},"copy-code-button":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon","qq","qzone"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"edit-link":{"label":"Edit This Page","base":"https://github.com/Rming/comma-wiki-cn/edit/master"},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Openpilot 中文 Wiki","language":"zh-hans","links":{"sidebar":{}},"gitbook":"*","description":"Openpilot 中文 Wiki"},"file":{"path":"cn/commands.md","mtime":"2025-10-17T11:35:18.272Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-10-17T12:08:29.784Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -848,10 +848,6 @@ pkg <span class="token builtin class-name">help</span>
     
         
         <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

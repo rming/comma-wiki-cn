@@ -1,0 +1,20 @@
+{
+  "name": "comma-wiki-cn",
+  "version": "1.0.0",
+  "description": "<center>     <img src=\"/files/accord_openpilot.jpg\" alt=\"十代雅阁安装 openpilot\"> </center>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rming/comma-wiki-cn.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rming/comma-wiki-cn/issues"
+  },
+  "homepage": "https://github.com/rming/comma-wiki-cn#readme"
+}

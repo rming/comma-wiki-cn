@@ -9,6 +9,7 @@ openpilot 安装、使用过程中需要的软件、资料，或者疑问请参�
 - [Openpilot 国内镜像](https://doc.sdut.me/mirror.html)
 - [[Bilibili] Openpilot-China](https://space.bilibili.com/9843793)
 - [[YouTube] Openpilot China](https://www.youtube.com/channel/UC79hb9uL4o3YsqFLnFZVzbA)
+- [白描PDF：PDF 转 Word、Excel、PPT、Markdown、图片转文字，一应俱全](https://pdf.baimiaoapp.com/landing/afenld7rw8)
 
 ### Donation
 

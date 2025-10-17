@@ -3,11 +3,10 @@
     "description": "Openpilot 中文 Wiki",
     "language": "zh-hans",
     "links": {
-        "sidebar": {
-        }
+        "sidebar": {}
     },
-    "styles":{
-        "website":"files/style1.css"
+    "styles": {
+        "website": "files/style1.css"
     },
     "plugins": [
         "-lunr",
@@ -82,7 +81,7 @@
         },
         "tbfed-pagefooter": {
             "copyright": "Copyright ©",
-            "modify_label": "<b style=\"color:red\">本站已停止维护，本页最后更新：",
+            "modify_label": "<a href=\"https://pdf.baimiaoapp.com/landing/afenld7rw8\">PDF转Word在线工具</a>",
             "modify_format": "YYYY-MM-DD HH:mm:ss</b>"
         },
         "3-ba": {
@@ -105,7 +104,7 @@
             "printLog": false,
             "multipleH1": true,
             "mode": "float",
-            "showGoTop":true,
+            "showGoTop": true,
             "float": {
                 "floatIcon": "fa fa-navicon",
                 "showLevelIcon": false,
